@@ -1,0 +1,18 @@
+make.exe --dry-run --keep-going --print-directory
+make.exe: entrant dans le r�pertoire � c:/Users/T470S/Desktop/Bootloader-Makefile �
+make.exe -C Bootloader/. flash
+ 
+make.exe[1]: entrant dans le r�pertoire � c:/Users/T470S/Desktop/Bootloader-Makefile/Bootloader �
+openocd -f interface/stlink.cfg -f board/stm32f103c8_blue_pill.cfg -c "program build/Bootloader.bin 0x08000000	verify reset exit"
+ 
+make.exe[1]: quittant le r�pertoire � c:/Users/T470S/Desktop/Bootloader-Makefile/Bootloader �
+ 
+make.exe -C MainApp/. flash
+ 
+make.exe[1]: entrant dans le r�pertoire � c:/Users/T470S/Desktop/Bootloader-Makefile/MainApp �
+openocd -f interface/stlink.cfg -f board/stm32f103c8_blue_pill.cfg -c "program build/Main_App.bin 0x08004000  verify reset exit"
+ 
+make.exe[1]: quittant le r�pertoire � c:/Users/T470S/Desktop/Bootloader-Makefile/MainApp �
+ 
+make.exe: quittant le r�pertoire � c:/Users/T470S/Desktop/Bootloader-Makefile �
+ 
