@@ -1,0 +1,8 @@
+#convert image from Ihex format to Binary as they are easier to proceed
+
+App.hex
+-intel
+-offset - -minimum-addr App.hex 
+-intel  
+-o App.bin 
+-binary

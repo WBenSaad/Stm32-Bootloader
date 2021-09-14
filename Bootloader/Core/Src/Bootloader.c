@@ -136,7 +136,7 @@ int main(void)
         
         HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
         HAL_Delay(2000);
-        test= 22 ;
+        
         JumpToMain();
         
   }

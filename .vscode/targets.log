@@ -18,7 +18,7 @@ make.exe -C Bootloader/.
 # Ce logiciel est construit pour i386-pc-mingw32
  
 
-# Base de donn�es de Make, imprim�e le Tue Sep 14 22:22:06 2021
+# Base de donn�es de Make, imprim�e le Tue Sep 14 23:54:18 2021
 
 # Variables
 
@@ -40,8 +40,7 @@ TARGET = Bootloader
 AS_DEFS = 
 # makefile (de � makefile �, ligne 114)
 AS_INCLUDES = 
-# automa 
-tique
+# automatique
 @D = $(patsubst %/,%,$(dir $@))
 # environnement
 HOMEDRIVE = C:
@@ -61,7 +60,8 @@ WINDIR = C:\WINDOWS
 VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{},"_languagePackSupport":true}
 # makefile (de � makefile �, ligne 83)
 SZ = $(PREFIX)size
-# makefile (de � makefile �, ligne 136)
+# makefile ( 
+de � makefile �, ligne 136)
 CFLAGS = $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"$(@:%.o=%.d)"
 # environnement
 ONEDRIVE = C:\Users\T470S\OneDrive
@@ -86,7 +86,7 @@ PROGRAMDATA = C:\ProgramData
 # environnement
 AUTINSTLOG = C:\ProgramData\Siemens\Automation\Logfiles\Setup\
 # environnement
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-032a3682-6b83-42ff-bd5f-3c4fda3c24a3-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-16f5ea19-3cf8-44ec-9fe5-b50a0c0c186e-sock
 # environnement
 VSCODE_CWD = C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code
 # environnement
@@ -116,7 +116,7 @@ LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BU
 # automatique
 %F = $(notdir $%)
 # environnement
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6324_QPDDLOJRXWYPJQLD
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_19716_SVUKTAXFRQSWKLHK
 # makefile (de � makefile �, ligne 64)
 ASM_SOURCES = startup_stm32f103xb.s
 # makefile (de � makefile �, ligne 25)
@@ -140,7 +140,7 @@ PUBLIC = C:\Users\Public
 # environnement
 VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
 # environnement
-VSCODE_CODE_CACHE_PATH = C:\Users\T470S\AppData\Roaming\Code\CachedData\e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff
+VSCODE_CODE_CACHE_PATH = C:\Users\T470S\AppData\Roaming\Code\CachedData\83bd43bc519d15e50c4272c6cf5c1479df196a4d
 # environnement
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environnement
@@ -200,7 +200,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
 # environnement
 OS = Windows_NT
 # environnement
-VSCODE_IPC_HOOK = \\.\pipe\85882168863b9832fefcb27b826716b2-1.60.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\85882168863b9832fefcb27b826716b2-1.60.1-main-sock
 # environnement
 HOMEPATH = \Users\T470S
 # environnement
@@ -219,6 +219,8 @@ SYSTEMROOT = C:\WINDOWS
 +F = $(notdir $+)
 # environnement
 APPDATA = C:\Users\T470S\AppData\Roaming
+# environnement
+__COMPAT_LAYER = DetectorsMessageBoxErrors
 # environnement
 TEMP = C:\Users\T470S\AppData\Local\Temp
 # environnement
@@ -254,16 +256,15 @@ LANG = C
 # environnement
 PROCESSOR_LEVEL = 6
 # environnement
-VSCODE_PID = 6324
+VSCODE_PID = 19716
 # environnement
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-A47D7VN
 # variables initialis�es dans les statistiques de table de hachage:
-# Charge=117/1024=11%, Refait le hachage=0, Collisions=13/224=6%
+# Charge=118/1024=12%, Refait le hachage=0, Collisions=13/225=6%
 
 # Valeurs de variable avec mod�le sp�cifique
 
-# pas de valeurs de varia 
-ble avec mod�le sp�cifique
+# pas de valeurs de variable avec mod�le sp�cifique
 
 # R�pertoires
 
@@ -272,13 +273,14 @@ ble avec mod�le sp�cifique
 # C:\Users\T470S\AppData\Local\Programs\Python\Python38\Scripts\ (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/Scripts/, mtime 1620245485): 5 fichiers, non impossibilit�s.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (p�riph�rique C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1619092694): 30 fichiers, non impossibilit�s.
 # C:\WINDOWS\System32\Wbem (p�riph�rique C:/WINDOWS/System32/Wbem, mtime 1620652955): 171 fichiers, non impossibilit�s.
-# . (p�riph�rique c:/Users/T470S/Desktop/Bootloader/Bootloader, mtime 1631481753): 11 fichiers, non impossibilit�s.
+# . (p�riph�rique c:/Users/T470S/Desktop/Bootloader/Bootloader, mtime 1631481753): 11 fichiers, non 
+ impossibilit�s.
 # C:\Program Files\Renode\bin (p�riph�rique C:/Program Files/Renode/bin, mtime 1628336759): 50 fichiers, non impossibilit�s.
 # Core/Src (p�riph�rique c:/Users/T470S/Desktop/Bootloader/Bootloader/Core/Src, mtime 1631481753): 10 fichiers, non impossibilit�s.
 # C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility (p�riph�rique C:/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility, mtime 1619115277): 11 fichiers, non impossibilit�s.
 # C:\Dwimperl\c\bin (p�riph�rique C:/Dwimperl/c/bin, mtime 1630279056): 74 fichiers, non impossibilit�s.
 # C:\src\OpenOCD-20210729-0.11.0\bin (p�riph�rique C:/src/OpenOCD-20210729-0.11.0/bin, mtime 1631200447): 7 fichiers, non impossibilit�s.
-# build (p�riph�rique c:/Users/T470S/Desktop/Bootloader/Bootloader/build, mtime 1631647869): 80 fichiers, non impossibilit�s.
+# build (p�riph�rique c:/Users/T470S/Desktop/Bootloader/Bootloader/build, mtime 1631656253): 80 fichiers, non impossibilit�s.
 # C:\WINDOWS\System32\OpenSSH\ : statut indisponible.
 # C:\Program Files\PuTTY\ (p�riph�rique C:/Program Files/PuTTY/, mtime 1628953769): 12 fichiers, non impossibilit�s.
 # C:\Program Files\Common Files\Siemens\Automation\Simatic OAM\bin (p�riph�rique C:/Program Files/Common Files/Siemens/Automation/Simatic OAM/bin, mtime 1627555803): 53 fichiers, non impossibilit�s.
@@ -289,7 +291,7 @@ ble avec mod�le sp�cifique
 # C:\Dwimperl\perl\bin (p�riph�rique C:/Dwimperl/perl/bin, mtime 1630279069): 127 fichiers, non impossibilit�s.
 # C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin (p�riph�rique C:/Program Files/AdoptOpenJDK/jdk-11.0.11.9-hotspot/bin, mtime 1620076192): 127 fichiers, non impossibilit�s.
 # C:\src\srecord-1.63-win32 (p�riph�rique C:/src/srecord-1.63-win32, mtime 1631563718): 8 fichiers, non impossibilit�s.
-# C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code\bin (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1631043668): 4 fichiers, non impossibilit�s.
+# C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code\bin (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1631642100): 4 fichiers, non impossibilit�s.
 # C:\src\stlink-1.7.0-x86_64-w64-mingw32\stlink-1.7.0-x86_64-w64-mingw32\bin (p�riph�rique C:/src/stlink-1.7.0-x86_64-w64-mingw32/stlink-1.7.0-x86_64-w64-mingw32/bin, mtime 1619304258): 6 fichiers, non impossibilit�s.
 # C:\Program Files\Git\cmd (p�riph�rique C:/Program Files/Git/cmd, mtime 1620305829): 8 fichiers, non impossibilit�s.
 # C:\WINDOWS\system32 (p�riph�rique C:/WINDOWS/system32, mtime 1631052573): 3217 fichiers, non impossibilit�s.
@@ -333,8 +335,7 @@ build/crc.o: Core/Src/crc.c makefile Core/Src/crc.c Core/Inc/crc.h Core/Inc/main
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 #  commandes � ex�cuter (de � makefile �, ligne 165):
-	$(CC) -c $(CFLAGS)  
--Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
 	
 
 # Pas une cible :
@@ -357,7 +358,8 @@ build/stm32f1xx_hal_rcc_ex.d:
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal_msp.o: Core/Src/stm32f1xx_hal_msp.c makefile Core/Src/stm32f1xx_hal_msp.c Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h | build
+build/stm32f1xx_hal_msp.o: Core/Src/stm32f1xx_hal_msp.c makefile Core/Src/stm32f1xx_hal_msp.c Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_h 
+al.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h | build
 #  Recherche de r�gle implicite effectu�e.
 #  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_msp �
 #  Derni�re modification 2021-09-13 16:10:07
@@ -427,7 +429,8 @@ build/tim.o: Core/Src/tim.c makefile Core/Src/tim.c Core/Inc/tim.h Core/Inc/main
 build/stm32f1xx_hal.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h | build
 #  Recherche de r�gle implicite effectu�e.
 #  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal �
-#  Derni�re modification 2021-09-13 16:10:08
+#  Derni�re modificatio 
+n 2021-09-13 16:10:08
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -444,8 +447,7 @@ all: build/Bootloader.elf build/Bootloader.hex build/Bootloader.bin
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal_cortex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx 
-_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h | build
+build/stm32f1xx_hal_cortex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h | build
 #  Recherche de r�gle implicite effectu�e.
 #  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_cortex �
 #  Derni�re modification 2021-09-13 16:10:11
@@ -606,7 +608,7 @@ Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 build/Bootloader.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-14 21:31:08
+#  Derni�re modification 2021-09-14 23:50:52
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -674,14 +676,14 @@ Core/Inc/stm32f1xx_hal_conf.h:
 # Pas une cible :
 Core/Src/Bootloader.c:
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-14 21:31:00
+#  Derni�re modification 2021-09-14 23:44:01
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/gpio.o: Core/Src/gpio.c makefile Core/Src/gpio.c Core/Inc/gpio.h Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drive 
-rs/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h | build
+build/gpio.o: Core/Src/gpio.c makefile Core/Src/gpio.c Core/Inc/gpio.h Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Le 
+gacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h | build
 #  Recherche de r�gle implicite effectu�e.
 #  Pr�fixe de sch�ma implicite/statique : � gpio �
 #  Derni�re modification 2021-09-13 16:10:06
@@ -733,7 +735,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c:
 
 build:
 #  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Derni�re modification 2021-09-14 21:31:09
+#  Derni�re modification 2021-09-14 23:50:53
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 #  commandes � ex�cuter (de � makefile �, ligne 182):
@@ -842,7 +844,7 @@ build/stm32f1xx_hal_tim_ex.d:
 build/Bootloader.o: Core/Src/Bootloader.c makefile Core/Src/Bootloader.c Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h Core/Inc/crc.h Core/Inc/main.h Core/Inc/tim.h Core/Inc/usart.h Core/Inc/gpio.h | build
 #  Recherche de r�gle implicite effectu�e.
 #  Pr�fixe de sch�ma implicite/statique : � Bootloader �
-#  Derni�re modification 2021-09-14 21:31:08
+#  Derni�re modification 2021-09-14 23:50:52
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -854,7 +856,7 @@ build/Bootloader.o: Core/Src/Bootloader.c makefile Core/Src/Bootloader.c Core/In
 build/Bootloader.hex: build/Bootloader.elf | build
 #  Recherche de r�gle implicite effectu�e.
 #  Pr�fixe de sch�ma implicite/statique : � Bootloader �
-#  Derni�re modification 2021-09-14 21:31:09
+#  Derni�re modification 2021-09-14 23:50:52
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -934,7 +936,7 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 build/Bootloader.bin: build/Bootloader.elf | build
 #  Recherche de r�gle implicite effectu�e.
 #  Pr�fixe de sch�ma implicite/statique : � Bootloader �
-#  Derni�re modification 2021-09-14 21:31:09
+#  Derni�re modification 2021-09-14 23:50:53
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -1039,7 +1041,7 @@ Drivers/CMSIS/Include/cmsis_version.h:
 
 build/Bootloader.elf: build/Bootloader.o build/gpio.o build/crc.o build/tim.o build/usart.o build/stm32f1xx_it.o build/stm32f1xx_hal_msp.o build/stm32f1xx_hal_gpio_ex.o build/stm32f1xx_hal_crc.o build/stm32f1xx_hal.o build/stm32f1xx_hal_rcc.o build/stm32f1xx_hal_rcc_ex.o build/stm32f1xx_hal_gpio.o build/stm32f1xx_hal_dma.o build/stm32f1xx_hal_cortex.o build/stm32f1xx_hal_pwr.o build/stm32f1xx_hal_flash.o build/stm32f1xx_hal_flash_ex.o build/stm32f1xx_hal_exti.o build/stm32f1xx_hal_tim.o build/stm32f1xx_hal_tim_ex.o build/stm32f1xx_hal_uart.o build/system_stm32f1xx.o build/startup_stm32f103xb.o makefile
 #  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Derni�re modification 2021-09-14 21:31:09
+#  Derni�re modification 2021-09-14 23:50:52
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -1078,9 +1080,9 @@ Drivers/CMSIS/Include/cmsis_gcc.h:
 #  Derni�re modification 2021-06-27 01:18:57
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
-# variables initialis�es dans les statistiques de table de hachage:
-# Charge=0/32 
-=0%, Refait le hachage=0, Collisions=0/0=0%
+# variables initiali 
+s�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c:
@@ -1409,7 +1411,8 @@ build/stm32f1xx_hal_flash_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_f
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
-#  commandes � ex�cuter (de � makefile �, ligne 165):
+#  commandes � ex�cuter (de � makef 
+ile �, ligne 165):
 	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
 	
 
@@ -1424,8 +1427,7 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h:
 # Pas une cible :
 build/stm32f1xx_it.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
-#  Recherche de r�gle implicite effectu�e. 
-
+#  Recherche de r�gle implicite effectu�e.
 #  Derni�re modification 2021-09-13 16:10:07
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
@@ -1447,7 +1449,7 @@ vpath %.c Core/Src;Drivers/STM32F1xx_HAL_Driver/Src
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 3495 / max = 3495 / min = 3495 / avg = 3495
 
-# Fin de la base de donn�es de Make le Tue Sep 14 22:22:06 2021
+# Fin de la base de donn�es de Make le Tue Sep 14 23:54:18 2021
 
  
 make.exe -C MainApp/. 
@@ -1461,7 +1463,7 @@ make.exe -C MainApp/.
 # Ce logiciel est construit pour i386-pc-mingw32
  
 
-# Base de donn�es de Make, imprim�e le Tue Sep 14 22:22:06 2021
+# Base de donn�es de Make, imprim�e le Tue Sep 14 23:54:18 2021
 
 # Variables
 
@@ -1529,7 +1531,7 @@ PROGRAMDATA = C:\ProgramData
 # environnement
 AUTINSTLOG = C:\ProgramData\Siemens\Automation\Logfiles\Setup\
 # environnement
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-032a3682-6b83-42ff-bd5f-3c4fda3c24a3-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-16f5ea19-3cf8-44ec-9fe5-b50a0c0c186e-sock
 # environnement
 VSCODE_CWD = C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code
 # environnement
@@ -1559,7 +1561,7 @@ LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BU
 # automatique
 %F = $(notdir $%)
 # environnement
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6324_QPDDLOJRXWYPJQLD
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_19716_SVUKTAXFRQSWKLHK
 # makefile (de � makefile �, ligne 59)
 ASM_SOURCES = startup_stm32f103xb.s
 # makefile (de � makefile �, ligne 26)
@@ -1583,7 +1585,7 @@ PUBLIC = C:\Users\Public
 # environnement
 VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
 # environnement
-VSCODE_CODE_CACHE_PATH = C:\Users\T470S\AppData\Roaming\Code\CachedData\e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff
+VSCODE_CODE_CACHE_PATH = C:\Users\T470S\AppData\Roaming\Code\CachedData\83bd43bc519d15e50c4272c6cf5c1479df196a4d
 # environnement
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environnement
@@ -1643,7 +1645,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
 # environnement
 OS = Windows_NT
 # environnement
-VSCODE_IPC_HOOK = \\.\pipe\85882168863b9832fefcb27b826716b2-1.60.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\85882168863b9832fefcb27b826716b2-1.60.1-main-sock
 # environnement
 HOMEPATH = \Users\T470S
 # environnement
@@ -1662,6 +1664,8 @@ SYSTEMROOT = C:\WINDOWS
 +F = $(notdir $+)
 # environnement
 APPDATA = C:\Users\T470S\AppData\Roaming
+# environnement
+__COMPAT_LAYER = DetectorsMessageBoxErrors
 # environnement
 TEMP = C:\Users\T470S\AppData\Local\Temp
 # environnement
@@ -1696,12 +1700,13 @@ OBJECTS = $(addprefix $(BUILD_DIR)/,$(notdir $(C_SOURCES:.c=.o))) $(addprefix $(
 LANG = C
 # environnement
 PROCESSOR_LEVEL = 6
-# environnement
-VSCODE_PID = 6324
+# environ 
+nement
+VSCODE_PID = 19716
 # environnement
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-A47D7VN
 # variables initialis�es dans les statistiques de table de hachage:
-# Charge=117/1024=11%, Refait le hachage=0, Collisions=14/225=6%
+# Charge=118/1024=12%, Refait le hachage=0, Collisions=13/213=6%
 
 # Valeurs de variable avec mod�le sp�cifique
 
@@ -1709,19 +1714,19 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-A47D7VN
 
 # R�pertoires
 
-# C:\Users\T470S\AppData\Local\Programs\Python\Python38\ (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/, mtime 1620245485): 18 fichiers, non impossibilit�s.
+# C:\Users\T470S\AppData\Local\Programs\Python\Python38\ (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/, mtime 1620245485): 18 fichiers, non impossibilit�s. 
+
 # C:\Users\T470S\AppData\Local\Microsoft\WindowsApps (p�riph�rique C:/Users/T470S/AppData/Local/Microsoft/WindowsApps, mtime 1629588726): 25 fichiers, non impossibilit�s.
 # C:\Users\T470S\AppData\Local\Programs\Python\Python38\Scripts\ (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/Scripts/, mtime 1620245485): 5 fichiers, non impossibilit�s.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (p�riph�rique C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1619092694): 30 fichiers, non impossibilit�s.
-# C:\WINDOWS\System32\Wbem (p�riph�rique C:/WINDOW 
-S/System32/Wbem, mtime 1620652955): 171 fichiers, non impossibilit�s.
+# C:\WINDOWS\System32\Wbem (p�riph�rique C:/WINDOWS/System32/Wbem, mtime 1620652955): 171 fichiers, non impossibilit�s.
 # . (p�riph�rique c:/Users/T470S/Desktop/Bootloader/MainApp, mtime 1631481753): 10 fichiers, non impossibilit�s.
 # C:\Program Files\Renode\bin (p�riph�rique C:/Program Files/Renode/bin, mtime 1628336759): 50 fichiers, non impossibilit�s.
-# Core/Src (p�riph�rique c:/Users/T470S/Desktop/Bootloader/MainApp/Core/Src, mtime 1631481753): Pas de fichiers, non impossibilit�s jusqu'ici.
+# Core/Src (p�riph�rique c:/Users/T470S/Desktop/Bootloader/MainApp/Core/Src, mtime 1631481753): 6 fichiers, non impossibilit�s.
 # C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility (p�riph�rique C:/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility, mtime 1619115277): 11 fichiers, non impossibilit�s.
 # C:\Dwimperl\c\bin (p�riph�rique C:/Dwimperl/c/bin, mtime 1630279056): 74 fichiers, non impossibilit�s.
 # C:\src\OpenOCD-20210729-0.11.0\bin (p�riph�rique C:/src/OpenOCD-20210729-0.11.0/bin, mtime 1631200447): 7 fichiers, non impossibilit�s.
-# build (p�riph�rique c:/Users/T470S/Desktop/Bootloader/MainApp/build, mtime 1631642419): 62 fichiers, non impossibilit�s.
+# build (p�riph�rique c:/Users/T470S/Desktop/Bootloader/MainApp/build, mtime 1631656260): 62 fichiers, non impossibilit�s.
 # C:\WINDOWS\System32\OpenSSH\ : statut indisponible.
 # C:\Program Files\PuTTY\ (p�riph�rique C:/Program Files/PuTTY/, mtime 1628953769): 12 fichiers, non impossibilit�s.
 # C:\Program Files\Common Files\Siemens\Automation\Simatic OAM\bin (p�riph�rique C:/Program Files/Common Files/Siemens/Automation/Simatic OAM/bin, mtime 1627555803): 53 fichiers, non impossibilit�s.
@@ -1732,14 +1737,15 @@ S/System32/Wbem, mtime 1620652955): 171 fichiers, non impossibilit�s.
 # C:\Dwimperl\perl\bin (p�riph�rique C:/Dwimperl/perl/bin, mtime 1630279069): 127 fichiers, non impossibilit�s.
 # C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin (p�riph�rique C:/Program Files/AdoptOpenJDK/jdk-11.0.11.9-hotspot/bin, mtime 1620076192): 127 fichiers, non impossibilit�s.
 # C:\src\srecord-1.63-win32 (p�riph�rique C:/src/srecord-1.63-win32, mtime 1631563718): 8 fichiers, non impossibilit�s.
-# C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code\bin (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1631043668): 4 fichiers, non impossibilit�s.
+# C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code\bin (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1631642100): 4 fichiers, non impossibilit�s.
 # C:\src\stlink-1.7.0-x86_64-w64-mingw32\stlink-1.7.0-x86_64-w64-mingw32\bin (p�riph�rique C:/src/stlink-1.7.0-x86_64-w64-mingw32/stlink-1.7.0-x86_64-w64-mingw32/bin, mtime 1619304258): 6 fichiers, non impossibilit�s.
 # C:\Program Files\Git\cmd (p�riph�rique C:/Program Files/Git/cmd, mtime 1620305829): 8 fichiers, non impossibilit�s.
-# C:\WINDOWS\system32 (p�riph�rique C:/WINDOWS/system32, mtime 1631052573): 3217 fichiers, non impossibilit�s.
-# Drivers/STM32F1xx_HAL_Driver/Src (p�riph�rique c:/Users/T470S/Desktop/Bootloader/MainApp/Drivers/STM32F1xx_HAL_Driver/Src, mtime 1631481753): Pas de fichiers, non impossibilit�s jusqu'ici.
+# C:\WINDOWS\system32 (p�riph�rique C:/WINDOWS/system32, mtime 163105257 
+3): 3217 fichiers, non impossibilit�s.
+# Drivers/STM32F1xx_HAL_Driver/Src (p�riph�rique c:/Users/T470S/Desktop/Bootloader/MainApp/Drivers/STM32F1xx_HAL_Driver/Src, mtime 1631481753): 15 fichiers, non impossibilit�s.
 # C:\Program Files (x86)\GnuWin32\bin (p�riph�rique C:/Program Files (x86)/GnuWin32/bin, mtime 1627598314): 7 fichiers, non impossibilit�s.
 
-# 4252 fichiers, non impossibilit�s dans 28 r�pertoires.
+# 4273 fichiers, non impossibilit�s dans 28 r�pertoires.
 
 # R�gles Implicites
 
@@ -1769,10 +1775,9 @@ build/%.bin: build/%.elf | build
 
 # Pas une cible :
 build/stm32f1xx_hal_gpio_ex.d:
-#  Une valeur pa 
-r d�faut MAKEFILES ou -include/sinclude makefile.
+#  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:36
+#  Derni�re modification 2021-09-14 23:50:54
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -1782,32 +1787,51 @@ r d�faut MAKEFILES ou -include/sinclude makefile.
 build/stm32f1xx_hal_rcc_ex.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:38
+#  Derni�re modification 2021-09-14 23:50:56
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal_msp.o: Core/Src/stm32f1xx_hal_msp.c Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_msp.o: Core/Src/stm32f1xx_hal_msp.c makefile Core/Src/stm32f1xx_hal_msp.c Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/ 
+Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_msp �
+#  Derni�re modification 2021-09-14 23:50:54
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c:
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+
+build/main.o: Core/Src/main.c Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_e 
+xti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 #  Recherche de r�gle implicite n'a pas �t� effectu�e.
 #  Heure de modification jamais v�rifi�e.
 #  Fichier n'a pas �t� mis � jour.
 
-build/main.o: Core/Src/main.c Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
-
-build/stm32f1xx_hal_gpio.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_gpio.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_gpio �
+#  Derni�re modification 2021-09-14 23:50:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -1819,39 +1843,63 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h:
 
 # Pas une cible :
 Core/Src/stm32f1xx_it.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-09-07 20:05:17
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal �
+#  Derni�re modification 2021-09-14 23:50:55
+#  Fichier a �t� mis � jour.
+#  Mise � jo 
+ur r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 all: build/Main_App.elf build/Main_App.hex build/Main_App.bin
 #  Recherche de r�gle implicite effectu�e.
 # Fichier inexistant.
 #  Fichier a �t� mis � jour.
-#  A besoin d'�tre mis � jour (l'option -q est activ�e).
+#  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
-# Charge=0/32=0%, Refait le hachage=0, Collisions=0/13=0%
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal_rcc.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_rcc.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_rcc �
+#  Derni�re modification 2021-09-14 23:50:56
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -1863,9 +1911,12 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h:
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 # Pas une cible :
 .DEFAULT:
@@ -1881,25 +1932,39 @@ Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h:
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal_exti.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_exti.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_exti �
+#  Derni�re modification 2021-09-14 23:50:59
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 # Pas une cible :
 build/MainApp.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-14 20:00:19
+#  Derni�re modification 2021-09-14 23:50:53
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/startup_stm32f103xb.o: startup_stm32f103xb.s
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/startup_stm32f103xb.o: startup_stm32f103xb.s makefile startup_stm32f103xb.s | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � startup_stm32f103xb �
+#  Derni�re modification 2021-09-14 23:51:00
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 163):
+	$(AS) -c $(CFLAGS) $< -o $@
+	
 
 Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -1911,20 +1976,30 @@ Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_it.o: Core/Src/stm32f1xx_it.c Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf 
-.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h Core/Inc/stm32f1xx_it.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_it.o: Core/Src/stm32f1xx_it.c makefile Core/Src/stm32f1xx_it.c Core/Inc/main.h  
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h Core/Inc/stm32f1xx_it.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_it �
+#  Derni�re modification 2021-09-14 23:50:54
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 # Pas une cible :
 Core/Src/MainApp.c:
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-14 19:59:22
+#  Derni�re modification 2021-09-14 22:22:12
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -1934,16 +2009,23 @@ Core/Src/MainApp.c:
 build/stm32f1xx_hal_tim.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:36
+#  Derni�re modification 2021-09-14 23:50:54
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal_gpio_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_gpio_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_gpio_ex �
+#  Derni�re modification 2021-09-14 23:50:54
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 Core/Inc/stm32f1xx_hal_conf.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -1956,7 +2038,7 @@ Core/Inc/stm32f1xx_hal_conf.h:
 # Pas une cible :
 makefile:
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-14 22:22:02
+#  Derni�re modification 2021-09-14 23:44:54
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -1966,7 +2048,7 @@ makefile:
 build/system_stm32f1xx.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:41
+#  Derni�re modification 2021-09-14 23:51:00
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -1974,39 +2056,56 @@ build/system_stm32f1xx.d:
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 build:
 #  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Derni�re modification 2021-09-14 20:00:19
+#  Derni�re modification 2021-09-14 23:51:00
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 #  commandes � ex�cuter (de � makefile �, ligne 176):
 	mkdir $@		
 	
 
-build/stm32f1xx_hal_rcc_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_rcc_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_c 
+ortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_rcc_ex �
+#  Derni�re modification 2021-09-14 23:50:56
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 # Pas une cible :
 build/stm32f1xx_hal_pwr.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:40
+#  Derni�re modification 2021-09-14 23:50:58
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-# Pas une cible :
-build/Main_App.bin:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/Main_App.bin: build/Main_App.elf | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � Main_App �
+#  Derni�re modification 2021-09-14 23:51:00
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 173):
+	$(BIN) $< $@	
+	
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -2020,42 +2119,32 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 build/stm32f1xx_hal_flash.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:40
+#  Derni�re modification 2021-09-14 23:50:58
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-# Pas une cible :
-build/Main_App.hex:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/Main_App.hex: build/Main_App.elf | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � Main_App �
+#  Derni�re modification 2021-09-14 23:51:00
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 170):
+	$(HEX) $< $@
+	
 
-build/MainApp.o: Core/Src/MainApp.c makefile Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+build/MainApp.o: Core/Src/MainApp.c makefile Core/Src/MainApp.c Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
 #  Recherche de r�gle implicite effectu�e.
 #  Pr�fixe de sch�ma implicite/statique : � MainApp �
-#  Derni�re modification 2021-09-14 20:00:19
+#  Derni�re modification 2021-09-14 23:50:53
 #  Fichier a �t� mis � jour.
-#  A besoin d'�tre mis � jour (l'option -q est activ�e).
-# automatique
-# @ := build/MainApp.o
-# automatique
-# % := 
-# automatique
-# * := MainApp
-# automatique
-# + := Core/Src/MainApp.c makefile Core/Src/MainApp.c Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-# automatique
-# | := build
-# automatique
-# < := Core/Src/MainApp.c
-# automatique
-# ^ := Core/Src/MainApp.c makefile Core/Inc/main.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-# automatique
-# ? := makefile
+#  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
-# Charge=8/32=25%, Refait le hachage=0, Collisions=1/25=4%
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 #  commandes � ex�cuter (de � makefile �, ligne 160):
 	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
 	
@@ -2064,7 +2153,7 @@ build/MainApp.o: Core/Src/MainApp.c makefile Core/Inc/main.h Drivers/STM32F1xx_H
 build/stm32f1xx_hal_dma.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:39
+#  Derni�re modification 2021-09-14 23:50:57
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -2074,7 +2163,7 @@ build/stm32f1xx_hal_dma.d:
 build/stm32f1xx_hal_tim_ex.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:37
+#  Derni�re modification 2021-09-14 23:50:55
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -2096,15 +2185,21 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h:
 
 # Pas une cible :
 Core/Src/system_stm32f1xx.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:56
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -2114,10 +2209,17 @@ Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal_tim.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_tim.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_tim �
+#  Derni�re modification 2021-09-14 23:50:54
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -2129,11 +2231,11 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h:
 
 build/Main_App.elf: build/MainApp.o build/stm32f1xx_it.o build/stm32f1xx_hal_msp.o build/stm32f1xx_hal_gpio_ex.o build/stm32f1xx_hal_tim.o build/stm32f1xx_hal_tim_ex.o build/stm32f1xx_hal.o build/stm32f1xx_hal_rcc.o build/stm32f1xx_hal_rcc_ex.o build/stm32f1xx_hal_gpio.o build/stm32f1xx_hal_dma.o build/stm32f1xx_hal_cortex.o build/stm32f1xx_hal_pwr.o build/stm32f1xx_hal_flash.o build/stm32f1xx_hal_flash_ex.o build/stm32f1xx_hal_exti.o build/system_stm32f1xx.o build/startup_stm32f103xb.o makefile
 #  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Derni�re modification 2021-09-14 20:00:19
+#  Derni�re modification 2021-09-14 23:51:00
 #  Fichier a �t� mis � jour.
-#  A besoin d'�tre mis � jour (l'option -q est activ�e).
+#  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
-# Charge=0/32=0%, Refait le hachage=0, Collisions=0/13=0%
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 #  commandes � ex�cuter (de � makefile �, ligne 166):
 	$(CC) $(OBJECTS) $(LDFLAGS) -o $@
 	$(SZ) $@
@@ -2143,7 +2245,7 @@ build/Main_App.elf: build/MainApp.o build/stm32f1xx_it.o build/stm32f1xx_hal_msp
 build/stm32f1xx_hal_cortex.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:39
+#  Derni�re modification 2021-09-14 23:50:58
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -2151,14 +2253,25 @@ build/stm32f1xx_hal_cortex.d:
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal_pwr.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_pwr.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c makefile Drivers/STM32F1xx_HAL_Driver 
+/Src/stm32f1xx_hal_pwr.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_pwr �
+#  Derni�re modification 2021-09-14 23:50:58
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 Core/Inc/main.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -2168,17 +2281,23 @@ Core/Inc/main.h:
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/system_stm32f1xx.o: Core/Src/system_stm32f1xx.c Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_ 
-rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/system_stm32f1xx.o: Core/Src/system_stm32f1xx.c makefile Core/Src/system_stm32f1xx.c Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � system_stm32f1xx �
+#  Derni�re modification 2021-09-14 23:51:00
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 # Pas une cible :
 build/stm32f1xx_hal_flash_ex.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:40
+#  Derni�re modification 2021-09-14 23:50:59
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -2218,14 +2337,24 @@ Drivers/CMSIS/Include/cmsis_gcc.h:
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal_flash.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_flash.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_flash �
+#  Derni�re modification 2021-09-14 23:50:58
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -2239,7 +2368,7 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
 build/stm32f1xx_hal_msp.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:36
+#  Derni�re modification 2021-09-14 23:50:54
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -2259,7 +2388,7 @@ build/main.d:
 build/stm32f1xx_hal_gpio.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:38
+#  Derni�re modification 2021-09-14 23:50:57
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -2267,25 +2396,46 @@ build/stm32f1xx_hal_gpio.d:
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal_dma.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_dma.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Devi 
+ce/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_dma �
+#  Derni�re modification 2021-09-14 23:50:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
-build/stm32f1xx_hal_tim_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_tim_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_tim_ex �
+#  Derni�re modification 2021-09-14 23:50:55
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -2299,7 +2449,7 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h:
 build/stm32f1xx_hal.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:37
+#  Derni�re modification 2021-09-14 23:50:55
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -2325,7 +2475,7 @@ flash: all
 build/stm32f1xx_hal_rcc.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:37
+#  Derni�re modification 2021-09-14 23:50:55
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -2333,9 +2483,12 @@ build/stm32f1xx_hal_rcc.d:
 
 # Pas une cible :
 Core/Src/stm32f1xx_hal_msp.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-09-07 20:05:18
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -2352,9 +2505,12 @@ Core/Src/main.c:
 #  Fichier n'a pas �t� mis � jour.
 
 Core/Inc/stm32f1xx_it.h:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-09-07 20:05:17
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -2368,7 +2524,7 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 build/stm32f1xx_hal_exti.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:41
+#  Derni�re modification 2021-09-14 23:50:59
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -2386,7 +2542,7 @@ Drivers/CMSIS/Include/cmsis_compiler.h:
 build/startup_stm32f103xb.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:41
+#  Derni�re modification 2021-09-14 23:51:00
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -2394,9 +2550,12 @@ build/startup_stm32f103xb.d:
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -2406,22 +2565,35 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal_cortex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_cortex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_cortex �
+#  Derni�re modification 2021-09-14 23:50:58
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 # Pas une cible :
 startup_stm32f103xb.s:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:56
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 # Pas une cible :
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c:
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+#  Recherche de r�gle implicite effectu�e.
+#  Derni�re modification 2021-06-27 01:21:57
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -2431,10 +2603,17 @@ Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h:
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
-build/stm32f1xx_hal_flash_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-#  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Heure de modification jamais v�rifi�e.
-#  Fichier n'a pas �t� mis � jour.
+build/stm32f1xx_hal_flash_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c makefile Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h Core/Inc/stm32f1xx_hal_conf.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h Drivers/CMSIS/Include/core_cm3.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h | build
+#  Recherche de r�gle implicite effectu�e.
+#  Pr�fixe de sch�ma implicite/statique : � stm32f1xx_hal_flash_ex �
+#  Derni�re modification 2021-09-14 23:50:59
+#  Fichier a �t� mis � jour.
+#  Mise � jour r�ussie
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+#  commandes � ex�cuter (de � makefile �, ligne 160):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h:
 #  Recherche de r�gle implicite effectu�e.
@@ -2445,18 +2624,18 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 # Pas une cible :
-build/stm32f1xx_it.d:
+build/st 
+m32f1xx_it.d:
 #  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-13 16:10:35
+#  Derni�re modification 2021-09-14 23:50:54
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
 
 # statistiques des fichiers de la table de hachage:
-# Charge=90/1024=9% 
-, Refait le hachage=0, Collisions=13/954=1%
+# Charge=90/1024=9%, Refait le hachage=0, Collisions=39/1224=3%
 # Chemins de Recherche VPATH
 
 vpath %.c Core/Src;Drivers/STM32F1xx_HAL_Driver/Src
@@ -2470,13 +2649,310 @@ vpath %.c Core/Src;Drivers/STM32F1xx_HAL_Driver/Src
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 3602 / max = 3602 / min = 3602 / avg = 3602
 
-# Fin de la base de donn�es de Make le Tue Sep 14 22:22:06 2021
+# Fin de la base de donn�es de Make le Tue Sep 14 23:54:18 2021
 
  
-make.exe: *** [MainApp/.] Erreur 1
+make.exe -C srec/. 
+ 
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# Ceci est un logiciel libre ; voir le source pour les conditions de copie.
+# Il n'y a PAS de garantie ; tant pour une utilisation COMMERCIALE que pour
+# R�PONDRE � UN BESOIN PARTICULIER.
+
+# Ce logiciel est construit pour i386-pc-mingw32
+ 
+# make.exe[1]: entrant dans le r�pertoire � c:/Users/T470S/Desktop/Bootloader/srec �
  
 
-# Base de donn�es de Make, imprim�e le Tue Sep 14 22:22:06 2021
+# Base de donn�es de Make, imprim�e le Tue Sep 14 23:54:18 2021
+
+# Variables
+
+# automatique
+<D = $(patsubst %/,%,$(dir $<))
+# automatique
+?F = $(notdir $?)
+# makefile
+MAKEFLAGS = wRrqp
+# environnement
+VSCODE_LOG_NATIVE = false
+# automatique
+?D = $(patsubst %/,%,$(dir $?))
+# automatique
+@D = $(patsubst %/,%,$(dir $@))
+# environnement
+HOMEDRIVE = C:
+# automatique
+@F = $(notdir $@)
+# automatique
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := c:/Users/T470S/Desktop/Bootloader/srec
+# d�faut
+SHELL := sh.exe
+# environnement
+WINDIR = C:\WINDOWS
+# environnement
+VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{},"_languagePackSupport":true}
+# environnement
+ONEDRIVE = C:\Users\T470S\OneDrive
+# environnement
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile
+MAKEFILE_LIST := 
+# environnement
+TMP = C:\Users\T470S\AppData\Local\Temp
+# environnement
+VSCODE_VERBOSE_LOGGING = true
+# environnement
+PROGRAMW6432 = C:\Program Files
+# environnement
+PROGRAMDATA = C:\ProgramData
+# environnement
+AUTINSTLOG = C:\ProgramData\Siemens\Automation\Logfiles\Setup\
+# environnement
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-16f5ea19-3cf8-44ec-9fe5-b50a0c0c186e-sock
+# environnement
+VSCODE_CWD = C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code
+# environnement
+PATH = C:\Program Files\Renode\bin;C:\Program Files\Common Files\Siemens\Automation\Simatic OAM\bin;C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin;C:\Users\T470S\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\T470S\AppData\Local\Programs\Python\Python38\;C:\Users\T470S\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\GnuWin32\bin;C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code\bin;C:\src\OpenOCD-20210729-0.11.0\bin;C:\src\stlink-1.7.0-x86_64-w64-mingw32\stlink-1.7.0-x86_64-w64-mingw32\bin;C:\src\srecord-1.63-win32;
+# environnement
+SIMATIC_OAM_DATA = C:\ProgramData\Siemens\Automation\Simatic OAM
+# environnement
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environnement
+NIEXTCCOMPILERSUPP = C:\Program Files (x86)\National Instruments\Shared\ExternalCompilerSupport\C\
+# environnement
+PROCESSOR_ARCHITECTURE = x86
+# environnement
+USERPROFILE = C:\Users\T470S
+# environnement
+ALLUSERSPROFILE = C:\ProgramData
+# environnement
+VSCODE_LOG_STACK = false
+# environnement
+NUMBER_OF_PROCESSORS = 4
+# environnement
+ELECTRON_RUN_AS_NODE = 1
+# d�faut
+.FEATURES := target-specific order-only second-expansion else-if archives
+# automatique
+%F = $(notdir $%)
+# environnement
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_19716_SVUKTAXFRQSWKLHK
+# environnement
+VSCODE_PIPE_LOGGING = true
+# environnement
+COMPUTERNAME = DESKTOP-A47D7VN
+# environnement
+PROGRAMFILES = C:\Program Files (x86)
+# environnement
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environnement
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environnement
+USERNAME = T470S
+# environnement
+SIMATIC_OAM = C:\Program Files\Common Files\Siemens\Automation\Simatic OAM
+# environnement
+PUBLIC = C:\Users\Public
+# environnement
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environnement
+VSCODE_CODE_CACHE_PATH = C:\Users\T470S\AppData\Roaming\Code\CachedData\83bd43bc519d15e50c4272c6cf5c1479df196a4d
+# environnement
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environnement
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environnement
+LOGONSERVER = \\DESKTOP-A47D7VN
+# environnement
+ONEDRIVECONSUMER = C:\Users\T470S\OneDrive
+# environnement
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environnement
+USERDOMAIN = DESKTOP-A47D7VN
+# d�faut
+MAKE = $(MAKE_COMMAND)
+# d�faut
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := 
+# environnement
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatique
+%D = $(patsubst %/,%,$(dir $%))
+# environnement
+LOCALAPPDATA = C:\Users\T470S\AppData\Local
+# environnement
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# d�faut
+MAKE_COMMAND := make.exe
+# environnement
+PROCESSOR_ARCHITEW6432 = AMD64
+# d�faut
+.VARIABLES := 
+# automatique
+*F = $(notdir $*)
+# environnement
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+# environnement
+OS = Windows_NT
+# environnement
+VSCODE_IPC_HOOK = \\.\pipe\85882168863b9832fefcb27b826716b2-1.60.1-main-sock
+# environnement
+HOMEPATH = \Users\T470S
+# environnement
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environnement
+PROMPT = $P$G
+# environnement
+MFLAGS = -wRrqp
+# automatique
+*D = $(patsubst %/,%,$(dir $*))
+# environnement
+SYSTEMROOT = C:\WINDOWS
+# automatique
++D = $(patsubst %/,%,$(dir $+))
+# automatique
++F = $(notdir $+)
+# environnement
+APPDATA = C:\Users\T470S\AppData\Roaming
+# environnement
+__COMPAT_LAYER = DetectorsMessageBoxErrors
+# environnement
+TEMP = C:\Users\T470S\AppData\Local\Temp
+# environnement
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# d�faut
+MAKEFILES := 
+# environnement
+IDF_TOOLS_PATH = C:\Users\T470S\.espressif
+# automatique
+<F = $(notdir $<)
+# environnement
+LC_ALL = C
+# automatique
+^F = $(notdir $^)
+# d�faut
+SUFFIXES := 
+# environnement
+SYSTEMDRIVE = C:
+# environnement
+SESSIONNAME = Console
+# environnement
+PROCESSOR_REVISION = 4e03
+# environnement
+MAKELEVEL := 1
+# environnement
+LANG = C
+# environnement
+PROCESSOR_LEVEL = 6
+# environnement
+VSCODE_PID = 19716
+# environnement
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-A47D7VN
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=92/1024=9%, Refait le hachage=0, Collisions=10/111=9%
+
+# Valeurs de variable avec mod�le sp�cifique
+
+# pas de valeurs de variable avec mod�le sp�cifique
+
+# R�pertoires
+
+# C:\Users\T470S\AppData\Local\Programs\Python\Python38\ (p�riph�riq 
+ue C:/Users/T470S/AppData/Local/Programs/Python/Python38/, mtime 1620245485): 18 fichiers, non impossibilit�s.
+# C:\Users\T470S\AppData\Local\Microsoft\WindowsApps (p�riph�rique C:/Users/T470S/AppData/Local/Microsoft/WindowsApps, mtime 1629588726): 25 fichiers, non impossibilit�s.
+# C:\Users\T470S\AppData\Local\Programs\Python\Python38\Scripts\ (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/Scripts/, mtime 1620245485): 5 fichiers, non impossibilit�s.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (p�riph�rique C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1619092694): 30 fichiers, non impossibilit�s.
+# C:\WINDOWS\System32\Wbem (p�riph�rique C:/WINDOWS/System32/Wbem, mtime 1620652955): 171 fichiers, non impossibilit�s.
+# . (p�riph�rique c:/Users/T470S/Desktop/Bootloader/srec, mtime 1631655668): 6 fichiers, non impossibilit�s.
+# C:\Program Files\Renode\bin (p�riph�rique C:/Program Files/Renode/bin, mtime 1628336759): 50 fichiers, non impossibilit�s.
+# C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility (p�riph�rique C:/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility, mtime 1619115277): 11 fichiers, non impossibilit�s.
+# C:\Dwimperl\c\bin (p�riph�rique C:/Dwimperl/c/bin, mtime 1630279056): 74 fichiers, non impossibilit�s.
+# C:\src\OpenOCD-20210729-0.11.0\bin (p�riph�rique C:/src/OpenOCD-20210729-0.11.0/bin, mtime 1631200447): 7 fichiers, non impossibilit�s.
+# C:\WINDOWS\System32\OpenSSH\ : statut indisponible.
+# C:\Program Files\PuTTY\ (p�riph�rique C:/Program Files/PuTTY/, mtime 1628953769): 12 fichiers, non impossibilit�s.
+# C:\Program Files\Common Files\Siemens\Automation\Simatic OAM\bin (p�riph�rique C:/Program Files/Common Files/Siemens/Automation/Simatic OAM/bin, mtime 1627555803): 53 fichiers, non impossibilit�s.
+# C:\Dwimperl\perl\site\bin (p�riph�rique C:/Dwimperl/perl/site/bin, mtime 1630279079): 65 fichiers, non impossibilit�s.
+# C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (p�riph�rique C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1629627825): 4 fichiers, non impossibilit�s.
+# C:\WINDOWS (p�riph�rique C:/WINDOWS, mtime 1631453426): 116 fichiers, non impossibilit�s.
+# C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin (p�riph�rique C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin, mtime 1627595024): 35 fichiers, non impossibilit�s.
+# C:\Dwimperl\perl\bin (p�riph�rique C:/Dwimperl/perl/bin, mtime 1630279069): 127 fichiers, non impossibilit�s.
+# C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin (p�riph�rique C:/Program Files/AdoptOpenJDK/jdk-11.0.11.9-hotspot/bin, mtime 1620076192): 127 fichiers, non impossibilit�s.
+# C:\src\srecord-1.63-win32 (p�riph�rique C:/src/srecord-1.63-win32, mtime 1631563718): 8 fichiers, non impossibilit�s.
+# C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code\bin (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1631642100): 4 fichiers, non impossibilit�s.
+# C:\src\stlink-1.7.0-x86_64-w64-mingw32\stlink-1.7.0-x86_64-w64-mingw32\bin (p�riph�rique C:/src/stlink-1.7.0-x86_64-w64-mingw32/stlink-1.7.0-x86_64-w64-mingw32/bin, mtime 1619304258): 6 fichiers, non impossibilit�s.
+# C:\Program Files\Git\cmd (p�riph�rique C:/Program Files/Git/cmd, mtime 1620305829): 8 fichiers, non impossibilit�s.
+# C:\WINDOWS\system32 (p�riph�rique C:/WINDOWS/system32, mtime 1631052573): 3217 fichiers, non impossibilit�s.
+# C:\Program Files (x86)\GnuWin32\bin (p�riph�rique C:/Program Files (x86)/GnuWin32/bin, mtime 1627598314): 7 fichiers, non impossibilit�s.
+
+# 4186 fichiers, non impossibilit�s dans 25 r�pertoires.
+
+# R�gles Implicites
+
+# Pas de r�gles implicites.
+
+# Fichiers
+
+# Pas une cible :
+.DEFAULT:
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+#  Heure de modification jamais v�rifi�e.
+#  Fichier n'a pas �t� mis � jour.
+
+# Pas une cible :
+makefile:
+#  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
+#  Recherche de r�gle implicite effectu�e.
+# Fichier inexistant.
+#  Fichier a �t� mis � jour.
+#  N'a pas pu �tre mis � jour.
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+
+# Pas une cible :
+.SUFFIXES:
+#  Recherche de r�gle implicite n'a pas �t� effectu�e.
+#  Heure de modification jamais v�rifi�e.
+#  Fichier n'a pas �t� mis � jour.
+
+# Pas une cible :
+GNUmakefile:
+#  Une valeur par d�faut MAKEFILES ou -include/sinclude makefile.
+#  Recherche de r�gle implicite effectu�e.
+# Fichier inexistant.
+#  Fichier a �t� mis � jour.
+#  N'a pas 
+make.exe[1]: *** Pas de cibles sp�cifi�es et aucun makefile n'a �t� trouv�. Arr�t.
+ 
+ pu �tre mis � jour.
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
+
+# statistiques des fichiers de la table de hachage:
+# Charge=4/1024=0%, Refait le hachage=0, Collisions=0/15=0%
+# Chemins de Recherche VPATH
+
+# Pas de chemins de recherche � vpath �.
+
+# Pas de chemin de recherche g�n�ral (variable � VPATH �).
+
+# # of strings in strcache: 0
+# # of strcache buffers: 0
+# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+
+# Fin de la base de donn�es de Make le Tue Sep 14 23:54:18 2021
+
+# make.exe[1]: quittant le r�pertoire � c:/Users/T470S/Desktop/Bootloader/srec �
+ 
+make.exe: *** [srec/.] Erreur 2
+ 
+
+# Base de donn�es de Make, imprim�e le Tue Sep 14 23:54:18 2021
 
 # Variables
 
@@ -2525,7 +3001,7 @@ PROGRAMDATA = C:\ProgramData
 # environnement
 AUTINSTLOG = C:\ProgramData\Siemens\Automation\Logfiles\Setup\
 # environnement
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-032a3682-6b83-42ff-bd5f-3c4fda3c24a3-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-16f5ea19-3cf8-44ec-9fe5-b50a0c0c186e-sock
 # environnement
 VSCODE_CWD = C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code
 # environnement
@@ -2558,7 +3034,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatique
 %F = $(notdir $%)
 # environnement
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6324_QPDDLOJRXWYPJQLD
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_19716_SVUKTAXFRQSWKLHK
 # environnement
 VSCODE_PIPE_LOGGING = true
 # environnement
@@ -2578,7 +3054,7 @@ PUBLIC = C:\Users\Public
 # environnement
 VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
 # environnement
-VSCODE_CODE_CACHE_PATH = C:\Users\T470S\AppData\Roaming\Code\CachedData\e7d7e9a9348e6a8cc8c03f877d39cb72e5dfb1ff
+VSCODE_CODE_CACHE_PATH = C:\Users\T470S\AppData\Roaming\Code\CachedData\83bd43bc519d15e50c4272c6cf5c1479df196a4d
 # environnement
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environnement
@@ -2624,7 +3100,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
 # environnement
 OS = Windows_NT
 # environnement
-VSCODE_IPC_HOOK = \\.\pipe\85882168863b9832fefcb27b826716b2-1.60.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\85882168863b9832fefcb27b826716b2-1.60.1-main-sock
 # environnement
 HOMEPATH = \Users\T470S
 # environnement
@@ -2645,6 +3121,8 @@ Boot_Dir := c:/Users/T470S/Desktop/Bootloader/Bootloader/build
 +F = $(notdir $+)
 # environnement
 APPDATA = C:\Users\T470S\AppData\Roaming
+# environnement
+__COMPAT_LAYER = DetectorsMessageBoxErrors
 # environnement
 TEMP = C:\Users\T470S\AppData\Local\Temp
 # environnement
@@ -2667,7 +3145,6 @@ SUFFIXES :=
 SYSTEMDRIVE = C:
 # environnement
 SESSIONNAME = Console
- 
 # environnement
 PROCESSOR_REVISION = 4e03
 # environnement
@@ -2679,13 +3156,14 @@ LANG = C
 # environnement
 PROCESSOR_LEVEL = 6
 # environnement
-VSCODE_PID = 6324
+VSCODE_PID = 19716
 # makefile (de � makefile �, ligne 12)
 mkfile_path := c:/Users/T470S/Desktop/Bootloader/makefile
 # environnement
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-A47D7VN
-# variables initialis�es dans les statistiques de table de hachage:
-# Charge=101/1024=10%, Refait le hachage=0, Collisions=12/139=9%
+# variables initialis�es dans les statistiques 
+ de table de hachage:
+# Charge=102/1024=10%, Refait le hachage=0, Collisions=12/145=8%
 
 # Valeurs de variable avec mod�le sp�cifique
 
@@ -2693,23 +3171,21 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-A47D7VN
 
 # R�pertoires
 
-# Signed.hex (cl� c:/Users/T470S/Desktop/Bootloader/Signed.hex, mtime 1631650880): n'a pu �tre ouvert.
 # C:\Users\T470S\AppData\Local\Programs\Python\Python38\ (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/, mtime 1620245485): 18 fichiers, non impossibilit�s.
 # C:\Users\T470S\AppData\Local\Microsoft\WindowsApps (p�riph�rique C:/Users/T470S/AppData/Local/Microsoft/WindowsApps, mtime 1629588726): 25 fichiers, non impossibilit�s.
 # C:\Users\T470S\AppData\Local\Programs\Python\Python38\Scripts\ (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/Scripts/, mtime 1620245485): 5 fichiers, non impossibilit�s.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (p�riph�rique C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1619092694): 30 fichiers, non impossibilit�s.
-# Flashable_Hex.hex (cl� c:/Users/T470S/Desktop/Bootloader/Flashable_Hex.hex, mtime 1631650880): n'a pu �tre ouvert.
 # C:\WINDOWS\System32\Wbem (p�riph�rique C:/WINDOWS/System32/Wbem, mtime 1620652955): 171 fichiers, non impossibilit�s.
-# . (p�riph�rique c:/Users/T470S/Desktop/Bootloader, mtime 1631650820): 12 fichiers, non impossibilit�s.
+# . (p�riph�rique c:/Users/T470S/Desktop/Bootloader, mtime 1631656261): 10 fichiers, non impossibilit�s.
 # C:\Program Files\Renode\bin (p�riph�rique C:/Program Files/Renode/bin, mtime 1628336759): 50 fichiers, non impossibilit�s.
 # C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility (p�riph�rique C:/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility, mtime 1619115277): 11 fichiers, non impossibilit�s.
+# App.hex (cl� c:/Users/T470S/Desktop/Bootloader/App.hex, mtime 1631656354): n'a pu �tre ouvert.
 # C:\Dwimperl\c\bin (p�riph�rique C:/Dwimperl/c/bin, mtime 1630279056): 74 fichiers, non impossibilit�s.
-# Makefile (cl� c:/Users/T470S/Desktop/Bootloader/Makefile, mtime 1631642302): n'a pu �tre ouvert.
+# Makefile (cl� c:/Users/T470S/Desktop/Bootloader/Makefile, mtime 1631655846): n'a pu �tre ouvert.
 # C:\src\OpenOCD-20210729-0.11.0\bin (p�riph�rique C:/src/OpenOCD-20210729-0.11.0/bin, mtime 1631200447): 7 fichiers, non impossibilit�s.
-# Bootloader (p�riph�rique c:/Users/T470S/Desktop/Bootloader/Boot 
-loader, mtime 1631481753): 1 fichiers, non impossibilit�s jusqu'ici.
-# output.hex (cl� c:/Users/T470S/Desktop/Bootloader/output.hex, mtime 1631650880): n'a pu �tre ouvert.
-# script.bat (cl� c:/Users/T470S/Desktop/Bootloader/script.bat, mtime 1631638747): n'a pu �tre ouvert.
+# Bootloader (p�riph�rique c:/Users/T470S/Desktop/Bootloader/Bootloader, mtime 1631481753): 1 fichiers, non impossibilit�s jusq 
+u'ici.
+# script.bat (cl� c:/Users/T470S/Desktop/Bootloader/script.bat, mtime 1631656399): n'a pu �tre ouvert.
 # C:\WINDOWS\System32\OpenSSH\ : statut indisponible.
 # C:\Program Files\PuTTY\ (p�riph�rique C:/Program Files/PuTTY/, mtime 1628953769): 12 fichiers, non impossibilit�s.
 # C:\Program Files\Common Files\Siemens\Automation\Simatic OAM\bin (p�riph�rique C:/Program Files/Common Files/Siemens/Automation/Simatic OAM/bin, mtime 1627555803): 53 fichiers, non impossibilit�s.
@@ -2719,17 +3195,17 @@ loader, mtime 1631481753): 1 fichiers, non impossibilit�s jusqu'ici.
 # C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin (p�riph�rique C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin, mtime 1627595024): 35 fichiers, non impossibilit�s.
 # C:\Dwimperl\perl\bin (p�riph�rique C:/Dwimperl/perl/bin, mtime 1630279069): 127 fichiers, non impossibilit�s.
 # C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin (p�riph�rique C:/Program Files/AdoptOpenJDK/jdk-11.0.11.9-hotspot/bin, mtime 1620076192): 127 fichiers, non impossibilit�s.
-# srec (p�riph�rique c:/Users/T470S/Desktop/Bootloader/srec, mtime 1631646743): 1 fichiers, non impossibilit�s jusqu'ici.
+# srec (p�riph�rique c:/Users/T470S/Desktop/Bootloader/srec, mtime 1631655668): 1 fichiers, non impossibilit�s jusqu'ici.
 # C:\src\srecord-1.63-win32 (p�riph�rique C:/src/srecord-1.63-win32, mtime 1631563718): 8 fichiers, non impossibilit�s.
-# C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code\bin (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1631043668): 4 fichiers, non impossibilit�s.
+# C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code\bin (p�riph�rique C:/Users/T470S/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1631642100): 4 fichiers, non impossibilit�s.
 # C:\src\stlink-1.7.0-x86_64-w64-mingw32\stlink-1.7.0-x86_64-w64-mingw32\bin (p�riph�rique C:/src/stlink-1.7.0-x86_64-w64-mingw32/stlink-1.7.0-x86_64-w64-mingw32/bin, mtime 1619304258): 6 fichiers, non impossibilit�s.
 # C:\Program Files\Git\cmd (p�riph�rique C:/Program Files/Git/cmd, mtime 1620305829): 8 fichiers, non impossibilit�s.
 # C:\WINDOWS\system32 (p�riph�rique C:/WINDOWS/system32, mtime 1631052573): 3217 fichiers, non impossibilit�s.
 # MainApp (p�riph�rique c:/Users/T470S/Desktop/Bootloader/MainApp, mtime 1631481753): 1 fichiers, non impossibilit�s jusqu'ici.
-# C:\Program Fil 
-es (x86)\GnuWin32\bin (p�riph�rique C:/Program Files (x86)/GnuWin32/bin, mtime 1627598314): 7 fichiers, non impossibilit�s.
+# C:\Program Files (x86)\GnuWin32\bin (p�riph�rique C:/Program Files (x86)/GnuWin32/bin, mtime 1627598314): 7 fichiers, non impossibilit�s.
 
-# 4195 fichiers, non impossibilit�s dans 33 r�pertoires.
+# 4193 fichiers, non impossibilit�s dans 
+ 31 r�pertoires.
 
 # R�gles Implicites
 
@@ -2760,7 +3236,8 @@ Bootloader/.:
 # ^ := 
 # automatique
 # ? := 
-# variables initialis�es dans les statistiques de table de hachage:
+# variables i 
+nitialis�es dans les statistiques de table de hachage:
 # Charge=8/32=25%, Refait le hachage=0, Collisions=2/13=15%
 #  commandes � ex�cuter (de � makefile �, ligne 32):
 	$(MAKE) -C $@ 
@@ -2773,7 +3250,7 @@ all: build
 # Fichier inexistant.
 #  Fichier n'a pas �t� mis � jour.
 # variables initialis�es dans les statistiques de table de hachage:
-# Charge=0/32=0%, Refait le hachage=0, Collisions=0/8=0%
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/12=0%
 
 .PHONY: all Bootloader/. MainApp/. srec/. flash Bootloader/. MainApp/. srec/.
 #  Recherche de r�gle implicite n'a pas �t� effectu�e.
@@ -2783,11 +3260,10 @@ all: build
 MainApp/.:
 #  Cible factice (d�pendance de .PHONY).
 #  Recherche de r�gle implicite n'a pas �t� effectu�e.
-#  Pr�fixe de sch�ma 
- implicite/statique : �  �
+#  Pr�fixe de sch�ma implicite/statique : �  �
 # Fichier inexistant.
 #  Fichier a �t� mis � jour.
-#  N'a pas pu �tre mis � jour.
+#  Mise � jour r�ussie
 # automatique
 # @ := MainApp/.
 # automatique
@@ -2819,7 +3295,7 @@ MainApp/.:
 # Pas une cible :
 makefile:
 #  Recherche de r�gle implicite effectu�e.
-#  Derni�re modification 2021-09-14 19:58:22
+#  Derni�re modification 2021-09-14 23:44:06
 #  Fichier a �t� mis � jour.
 #  Mise � jour r�ussie
 # variables initialis�es dans les statistiques de table de hachage:
@@ -2830,7 +3306,7 @@ build: Bootloader/. MainApp/. srec/.
 # Fichier inexistant.
 #  Fichier n'a pas �t� mis � jour.
 # variables initialis�es dans les statistiques de table de hachage:
-# Charge=0/32=0%, Refait le hachage=0, Collisions=0/8=0%
+# Charge=0/32=0%, Refait le hachage=0, Collisions=0/12=0%
 
 # Pas une cible :
 .SUFFIXES:
@@ -2847,14 +3323,36 @@ flash:
 srec/.:
 #  Cible factice (d�pendance de .PHONY).
 #  Recherche de r�gle implicite n'a pas �t� effectu�e.
-# Fichier inexistant.
-#  Fichier n'a pas �t� mis � jour.
+#  Pr�fixe de sch�ma implicite/statique : �  �
+# Fichier inexistant. 
+
+#  Fichier a �t� mis � jour.
+#  N'a pas pu �tre mis � jour.
+# automatique
+# @ := srec/.
+# automatique
+# % := 
+# automatique
+# * := 
+# automatique
+# + := 
+# automatique
+# | := 
+# automatique
+# < := 
+# automatique
+# ^ := 
+# automatique
+# ? := 
+# variables initialis�es dans les statistiques de table de hachage:
+# Charge=8/32=25%, Refait le hachage=0, Collisions=2/13=15%
 #  commandes � ex�cuter (de � makefile �, ligne 32):
 	$(MAKE) -C $@ 
 	
 
 # statistiques des fichiers de la table de hachage:
-# Charge=10/1024=1%, Refait le hachage=0, Collisions=0/38=0%
+# Charge=10/1024= 
+1%, Refait le hachage=0, Collisions=0/39=0%
 # Chemins de Recherche VPATH
 
 # Pas de chemins de recherche � vpath �.
@@ -2862,11 +3360,10 @@ srec/.:
 # Pas de chemin de recherche g�n�ral (variable � VPATH �).
 
 # # of strings in strcache: 1
-# # o 
-f strcache buffers: 1
+# # of strcache buffers: 1
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Fin de la base de donn�es de Make le Tue Sep 14 22:22:06 2021
+# Fin de la base de donn�es de Make le Tue Sep 14 23:54:18 2021
 
  

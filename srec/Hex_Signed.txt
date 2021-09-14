@@ -1,7 +1,8 @@
-#Checksum
-output.hex
+#Sign the Image with a checksum placed at the end of the flash
+
+App.hex
 -intel
--fill 0xff -over output.hex -intel
+-fill 0xff -over App.hex -intel
 -range-padding 4 
 -stm32-l-e 0x0801FFFC 
 --o App.hex

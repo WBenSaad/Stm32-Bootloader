@@ -1,5 +1,7 @@
-Signed.hex
+App.hex
 -intel
 -Output_Block_Size=16
 -address-length=4
--o Flashable_Hex.hex
+-o App.hex
+-intel
+

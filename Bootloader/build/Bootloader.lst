@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
   30:Core/Src/Bootloader.c **** #define	  Reset_Handler			(App_Adress + 4)
   31:Core/Src/Bootloader.c **** typedef   void (*pFunction) (void);
   32:Core/Src/Bootloader.c **** 
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 2
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 2
 
 
   33:Core/Src/Bootloader.c ****  __attribute__((section(".noinit"))) volatile uint32_t test ;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
   46              	.LVL1:
   68:Core/Src/Bootloader.c **** 
   69:Core/Src/Bootloader.c **** pFunction Jump= (pFunction) reset_Handler;
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 3
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 3
 
 
   47              		.loc 1 69 1 is_stmt 1 view .LVU5
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
   16:Drivers/CMSIS/Include/cmsis_gcc.h ****  * www.apache.org/licenses/LICENSE-2.0
   17:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
   18:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Unless required by applicable law or agreed to in writing, software
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 4
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 4
 
 
   19:Drivers/CMSIS/Include/cmsis_gcc.h ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
   73:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
   74:Drivers/CMSIS/Include/cmsis_gcc.h ****   struct __attribute__((packed)) T_UINT32 { uint32_t v; };
   75:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 5
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 5
 
 
   76:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32(x)                  (((struct T_UINT32 *)(x))->v)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  130:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  131:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsie i" : : : "memory");
  132:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 6
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 6
 
 
  133:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  187:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  188:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  189:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Control Register (non-secure)
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 7
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 7
 
 
  190:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Writes the given value to the non-secure Control Register when in secure state.
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  244:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Process Stack Pointer (PSP).
  245:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               PSP Register value
  246:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 8
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 8
 
 
  247:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_PSP(void)
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  301:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_MSP(void)
  302:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  303:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 9
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 9
 
 
  304:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
   94              		.loc 1 85 1 view .LVU22
   95 002a 00BF     		.align	2
   96              	.L3:
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 10
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 10
 
 
   97 002c 00400008 		.word	134234112
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  128:Core/Src/Bootloader.c **** 
  129:Core/Src/Bootloader.c ****     (test==1)                                     ||      //Bootloader was issued by main app after
  130:Core/Src/Bootloader.c **** 
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 11
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 11
 
 
  131:Core/Src/Bootloader.c ****     *(volatile uint32_t *)App_Adress==0xFFFF     // ||      //App wasn't flashed
@@ -609,7 +609,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  136:Core/Src/Bootloader.c ****         
  137:Core/Src/Bootloader.c ****         HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
  138:Core/Src/Bootloader.c ****         HAL_Delay(2000);
- 139:Core/Src/Bootloader.c ****         test= 22 ;
+ 139:Core/Src/Bootloader.c ****         
  140:Core/Src/Bootloader.c ****         JumpToMain();
  141:Core/Src/Bootloader.c ****         
  142:Core/Src/Bootloader.c ****   }
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  185:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
  186:Core/Src/Bootloader.c **** 
  187:Core/Src/Bootloader.c ****   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 12
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 12
 
 
  188:Core/Src/Bootloader.c ****   {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  142              		.syntax unified
  143              		.thumb
  144              		.thumb_func
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 13
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 13
 
 
  145              		.fpu softvfp
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  174:Core/Src/Bootloader.c ****   {
  188              		.loc 1 174 3 view .LVU42
  174:Core/Src/Bootloader.c ****   {
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 14
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 14
 
 
  189              		.loc 1 174 7 is_stmt 0 view .LVU43
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  228              		.cfi_restore_state
  176:Core/Src/Bootloader.c ****   }
  229              		.loc 1 176 5 is_stmt 1 view .LVU59
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 15
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 15
 
 
  230 004a FFF7FEFF 		bl	Error_Handler
@@ -898,11 +898,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  277              		.loc 1 127 2 view .LVU68
  127:Core/Src/Bootloader.c **** 
  278              		.loc 1 127 5 is_stmt 0 view .LVU69
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 16
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 16
 
 
  279 001a 4FF48051 		mov	r1, #4096
- 280 001e 1048     		ldr	r0, .L18
+ 280 001e 0E48     		ldr	r0, .L18
  281 0020 FFF7FEFF 		bl	HAL_GPIO_ReadPin
  282              	.LVL19:
  127:Core/Src/Bootloader.c **** 
@@ -910,7 +910,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  284 0024 48B9     		cbnz	r0, .L14
  129:Core/Src/Bootloader.c **** 
  285              		.loc 1 129 10 discriminator 1 view .LVU71
- 286 0026 0F4B     		ldr	r3, .L18+4
+ 286 0026 0D4B     		ldr	r3, .L18+4
  287 0028 1B68     		ldr	r3, [r3]
  127:Core/Src/Bootloader.c **** 
  288              		.loc 1 127 49 discriminator 1 view .LVU72
@@ -918,102 +918,95 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
  290 002c 05D0     		beq	.L14
  131:Core/Src/Bootloader.c ****   
  291              		.loc 1 131 5 view .LVU73
- 292 002e 0E4B     		ldr	r3, .L18+8
+ 292 002e 0C4B     		ldr	r3, .L18+8
  293 0030 1A68     		ldr	r2, [r3]
  129:Core/Src/Bootloader.c **** 
  294              		.loc 1 129 51 view .LVU74
  295 0032 4FF6FF73 		movw	r3, #65535
  296 0036 9A42     		cmp	r2, r3
- 297 0038 0ED1     		bne	.L15
+ 297 0038 0BD1     		bne	.L15
  298              	.L14:
  137:Core/Src/Bootloader.c ****         HAL_Delay(2000);
  299              		.loc 1 137 9 is_stmt 1 view .LVU75
  300 003a 0122     		movs	r2, #1
  301 003c 1021     		movs	r1, #16
- 302 003e 0B48     		ldr	r0, .L18+12
+ 302 003e 0948     		ldr	r0, .L18+12
  303 0040 FFF7FEFF 		bl	HAL_GPIO_WritePin
  304              	.LVL20:
- 138:Core/Src/Bootloader.c ****         test= 22 ;
+ 138:Core/Src/Bootloader.c ****         
  305              		.loc 1 138 9 view .LVU76
  306 0044 4FF4FA60 		mov	r0, #2000
  307 0048 FFF7FEFF 		bl	HAL_Delay
  308              	.LVL21:
- 139:Core/Src/Bootloader.c ****         JumpToMain();
- 309              		.loc 1 139 9 view .LVU77
- 139:Core/Src/Bootloader.c ****         JumpToMain();
- 310              		.loc 1 139 13 is_stmt 0 view .LVU78
- 311 004c 054B     		ldr	r3, .L18+4
- 312 004e 1622     		movs	r2, #22
- 313 0050 1A60     		str	r2, [r3]
  140:Core/Src/Bootloader.c ****         
- 314              		.loc 1 140 9 is_stmt 1 view .LVU79
- 315 0052 FFF7FEFF 		bl	JumpToMain
- 316              	.LVL22:
- 317              	.L16:
+ 309              		.loc 1 140 9 view .LVU77
+ 310 004c FFF7FEFF 		bl	JumpToMain
+ 311              	.LVL22:
+ 312              	.L16:
  149:Core/Src/Bootloader.c ****   {
- 318              		.loc 1 149 3 discriminator 1 view .LVU80
+ 313              		.loc 1 149 3 discriminator 1 view .LVU78
  154:Core/Src/Bootloader.c ****   /* USER CODE END 3 */
- 319              		.loc 1 154 3 discriminator 1 view .LVU81
+ 314              		.loc 1 154 3 discriminator 1 view .LVU79
  149:Core/Src/Bootloader.c ****   {
- 320              		.loc 1 149 9 discriminator 1 view .LVU82
- 321 0056 FEE7     		b	.L16
- 322              	.L15:
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 17
-
-
+ 315              		.loc 1 149 9 discriminator 1 view .LVU80
+ 316 0050 FEE7     		b	.L16
+ 317              	.L15:
  144:Core/Src/Bootloader.c ****   /* USER CODE END 2 */
- 323              		.loc 1 144 5 view .LVU83
- 324 0058 FFF7FEFF 		bl	JumpToMain
- 325              	.LVL23:
- 326 005c FBE7     		b	.L16
- 327              	.L19:
- 328 005e 00BF     		.align	2
- 329              	.L18:
- 330 0060 000C0140 		.word	1073810432
- 331 0064 00000000 		.word	.LANCHOR0
- 332 0068 00400008 		.word	134234112
- 333 006c 00080140 		.word	1073809408
- 334              		.cfi_endproc
- 335              	.LFE66:
- 337              		.global	test
- 338              		.section	.noinit,"aw"
- 339              		.align	2
- 340              		.set	.LANCHOR0,. + 0
- 343              	test:
- 344 0000 00000000 		.space	4
- 345              		.text
- 346              	.Letext0:
- 347              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
- 348              		.file 4 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
- 349              		.file 5 "Drivers/CMSIS/Include/core_cm3.h"
- 350              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
- 351              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h"
- 352              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
- 353              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
- 354              		.file 10 "Core/Inc/gpio.h"
- 355              		.file 11 "Core/Inc/crc.h"
- 356              		.file 12 "Core/Inc/usart.h"
- 357              		.file 13 "Core/Inc/tim.h"
- 358              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
- 359              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 360              		.file 16 "<built-in>"
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 18
+ 318              		.loc 1 144 5 view .LVU81
+ 319 0052 FFF7FEFF 		bl	JumpToMain
+ 320              	.LVL23:
+ 321 0056 FBE7     		b	.L16
+ 322              	.L19:
+ 323              		.align	2
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 17
+
+
+ 324              	.L18:
+ 325 0058 000C0140 		.word	1073810432
+ 326 005c 00000000 		.word	.LANCHOR0
+ 327 0060 00400008 		.word	134234112
+ 328 0064 00080140 		.word	1073809408
+ 329              		.cfi_endproc
+ 330              	.LFE66:
+ 332              		.global	test
+ 333              		.section	.noinit,"aw"
+ 334              		.align	2
+ 335              		.set	.LANCHOR0,. + 0
+ 338              	test:
+ 339 0000 00000000 		.space	4
+ 340              		.text
+ 341              	.Letext0:
+ 342              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
+ 343              		.file 4 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
+ 344              		.file 5 "Drivers/CMSIS/Include/core_cm3.h"
+ 345              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
+ 346              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h"
+ 347              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
+ 348              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 349              		.file 10 "Core/Inc/gpio.h"
+ 350              		.file 11 "Core/Inc/crc.h"
+ 351              		.file 12 "Core/Inc/usart.h"
+ 352              		.file 13 "Core/Inc/tim.h"
+ 353              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 354              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 355              		.file 16 "<built-in>"
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s 			page 18
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Bootloader.c
-C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:16     .text.JumpToMain:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:24     .text.JumpToMain:00000000 JumpToMain
-C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:97     .text.JumpToMain:0000002c $d
-C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:102    .text.Error_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:109    .text.Error_Handler:00000000 Error_Handler
-C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:140    .text.SystemClock_Config:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:147    .text.SystemClock_Config:00000000 SystemClock_Config
-C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:240    .text.main:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:247    .text.main:00000000 main
-C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:330    .text.main:00000060 $d
-C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:343    .noinit:00000000 test
-C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:339    .noinit:00000000 $d
+C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s:16     .text.JumpToMain:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s:24     .text.JumpToMain:00000000 JumpToMain
+C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s:97     .text.JumpToMain:0000002c $d
+C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s:102    .text.Error_Handler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s:109    .text.Error_Handler:00000000 Error_Handler
+C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s:140    .text.SystemClock_Config:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s:147    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s:240    .text.main:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s:247    .text.main:00000000 main
+C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s:325    .text.main:00000058 $d
+C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s:338    .noinit:00000000 test
+C:\Users\T470S\AppData\Local\Temp\cckt9eSu.s:334    .noinit:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_RCC_DeInit
