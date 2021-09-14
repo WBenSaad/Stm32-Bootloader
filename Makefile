@@ -29,7 +29,7 @@ all: build
 
 build: $(SUBDIRS)
 $(SUBDIRS):
-	$(MAKE) -C $@ flash
+	$(MAKE) -C $@ 
 
 
 #flash: $(SUBDIRS)

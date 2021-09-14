@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,38 +58,40 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
   30:Core/Src/Bootloader.c **** #define	  Reset_Handler			(App_Adress + 4)
   31:Core/Src/Bootloader.c **** typedef   void (*pFunction) (void);
   32:Core/Src/Bootloader.c **** 
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 2
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 2
 
 
-  33:Core/Src/Bootloader.c **** /* USER CODE END Includes */
+  33:Core/Src/Bootloader.c ****  __attribute__((section(".noinit"))) volatile uint32_t test ;
   34:Core/Src/Bootloader.c **** 
-  35:Core/Src/Bootloader.c **** /* Private typedef -----------------------------------------------------------*/
-  36:Core/Src/Bootloader.c **** /* USER CODE BEGIN PTD */
-  37:Core/Src/Bootloader.c **** //void  (*Jump)(void);
-  38:Core/Src/Bootloader.c **** void  JumpToMain(void);
-  39:Core/Src/Bootloader.c **** /* USER CODE END PTD */
-  40:Core/Src/Bootloader.c **** 
-  41:Core/Src/Bootloader.c **** /* Private define ------------------------------------------------------------*/
-  42:Core/Src/Bootloader.c **** /* USER CODE BEGIN PD */
-  43:Core/Src/Bootloader.c **** /* USER CODE END PD */
-  44:Core/Src/Bootloader.c **** 
-  45:Core/Src/Bootloader.c **** /* Private macro -------------------------------------------------------------*/
-  46:Core/Src/Bootloader.c **** /* USER CODE BEGIN PM */
-  47:Core/Src/Bootloader.c **** 
-  48:Core/Src/Bootloader.c **** /* USER CODE END PM */
+  35:Core/Src/Bootloader.c **** /* USER CODE END Includes */
+  36:Core/Src/Bootloader.c **** 
+  37:Core/Src/Bootloader.c **** /* Private typedef -----------------------------------------------------------*/
+  38:Core/Src/Bootloader.c **** /* USER CODE BEGIN PTD */
+  39:Core/Src/Bootloader.c **** //void  (*Jump)(void);
+  40:Core/Src/Bootloader.c **** void  JumpToMain(void);
+  41:Core/Src/Bootloader.c **** /* USER CODE END PTD */
+  42:Core/Src/Bootloader.c **** 
+  43:Core/Src/Bootloader.c **** /* Private define ------------------------------------------------------------*/
+  44:Core/Src/Bootloader.c **** /* USER CODE BEGIN PD */
+  45:Core/Src/Bootloader.c **** /* USER CODE END PD */
+  46:Core/Src/Bootloader.c **** 
+  47:Core/Src/Bootloader.c **** /* Private macro -------------------------------------------------------------*/
+  48:Core/Src/Bootloader.c **** /* USER CODE BEGIN PM */
   49:Core/Src/Bootloader.c **** 
-  50:Core/Src/Bootloader.c **** /* Private variables ---------------------------------------------------------*/
+  50:Core/Src/Bootloader.c **** /* USER CODE END PM */
   51:Core/Src/Bootloader.c **** 
-  52:Core/Src/Bootloader.c **** /* USER CODE BEGIN PV */
+  52:Core/Src/Bootloader.c **** /* Private variables ---------------------------------------------------------*/
   53:Core/Src/Bootloader.c **** 
-  54:Core/Src/Bootloader.c **** /* USER CODE END PV */
+  54:Core/Src/Bootloader.c **** /* USER CODE BEGIN PV */
   55:Core/Src/Bootloader.c **** 
-  56:Core/Src/Bootloader.c **** /* Private function prototypes -----------------------------------------------*/
-  57:Core/Src/Bootloader.c **** void SystemClock_Config(void);
-  58:Core/Src/Bootloader.c **** /* USER CODE BEGIN PFP */
-  59:Core/Src/Bootloader.c **** 
-  60:Core/Src/Bootloader.c **** void JumpToMain(void){
-  27              		.loc 1 60 22 view -0
+  56:Core/Src/Bootloader.c **** /* USER CODE END PV */
+  57:Core/Src/Bootloader.c **** 
+  58:Core/Src/Bootloader.c **** /* Private function prototypes -----------------------------------------------*/
+  59:Core/Src/Bootloader.c **** void SystemClock_Config(void);
+  60:Core/Src/Bootloader.c **** /* USER CODE BEGIN PFP */
+  61:Core/Src/Bootloader.c **** 
+  62:Core/Src/Bootloader.c **** void JumpToMain(void){
+  27              		.loc 1 62 22 view -0
   28              		.cfi_startproc
   29              		@ args = 0, pretend = 0, frame = 0
   30              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -100,60 +102,60 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
   35              		.cfi_offset 5, -12
   36              		.cfi_offset 6, -8
   37              		.cfi_offset 14, -4
-  61:Core/Src/Bootloader.c **** 	
-  62:Core/Src/Bootloader.c **** //pFunction  (*Jump)(void);
-  63:Core/Src/Bootloader.c **** 
-  64:Core/Src/Bootloader.c **** uint32_t reset_Handler =*(volatile uint32_t *)Reset_Handler;
-  38              		.loc 1 64 1 view .LVU1
-  39              		.loc 1 64 10 is_stmt 0 view .LVU2
+  63:Core/Src/Bootloader.c **** 	
+  64:Core/Src/Bootloader.c **** //pFunction  (*Jump)(void);
+  65:Core/Src/Bootloader.c **** 
+  66:Core/Src/Bootloader.c **** uint32_t reset_Handler =*(volatile uint32_t *)Reset_Handler;
+  38              		.loc 1 66 1 view .LVU1
+  39              		.loc 1 66 10 is_stmt 0 view .LVU2
   40 0002 0A4C     		ldr	r4, .L3
   41 0004 6568     		ldr	r5, [r4, #4]
   42              	.LVL0:
-  65:Core/Src/Bootloader.c **** uint32_t msp_val = *(volatile uint32_t *)App_Adress;
-  43              		.loc 1 65 1 is_stmt 1 view .LVU3
-  44              		.loc 1 65 10 is_stmt 0 view .LVU4
+  67:Core/Src/Bootloader.c **** uint32_t msp_val = *(volatile uint32_t *)App_Adress;
+  43              		.loc 1 67 1 is_stmt 1 view .LVU3
+  44              		.loc 1 67 10 is_stmt 0 view .LVU4
   45 0006 2668     		ldr	r6, [r4]
   46              	.LVL1:
-  66:Core/Src/Bootloader.c **** 
-  67:Core/Src/Bootloader.c **** pFunction Jump= (pFunction) reset_Handler;
-  47              		.loc 1 67 1 is_stmt 1 view .LVU5
   68:Core/Src/Bootloader.c **** 
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 3
+  69:Core/Src/Bootloader.c **** pFunction Jump= (pFunction) reset_Handler;
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 3
 
 
-  69:Core/Src/Bootloader.c **** 	  HAL_RCC_DeInit();
-  48              		.loc 1 69 4 view .LVU6
+  47              		.loc 1 69 1 is_stmt 1 view .LVU5
+  70:Core/Src/Bootloader.c **** 
+  71:Core/Src/Bootloader.c **** 	  HAL_RCC_DeInit();
+  48              		.loc 1 71 4 view .LVU6
   49 0008 FFF7FEFF 		bl	HAL_RCC_DeInit
   50              	.LVL2:
-  70:Core/Src/Bootloader.c **** 	  HAL_DeInit();
-  51              		.loc 1 70 4 view .LVU7
+  72:Core/Src/Bootloader.c **** 	  HAL_DeInit();
+  51              		.loc 1 72 4 view .LVU7
   52 000c FFF7FEFF 		bl	HAL_DeInit
   53              	.LVL3:
-  71:Core/Src/Bootloader.c **** 
-  72:Core/Src/Bootloader.c **** 	  SysTick->CTRL = 0;
-  54              		.loc 1 72 4 view .LVU8
-  55              		.loc 1 72 18 is_stmt 0 view .LVU9
+  73:Core/Src/Bootloader.c **** 
+  74:Core/Src/Bootloader.c **** 	  SysTick->CTRL = 0;
+  54              		.loc 1 74 4 view .LVU8
+  55              		.loc 1 74 18 is_stmt 0 view .LVU9
   56 0010 4FF0E023 		mov	r3, #-536813568
   57 0014 0022     		movs	r2, #0
   58 0016 1A61     		str	r2, [r3, #16]
-  73:Core/Src/Bootloader.c **** 	  SysTick->LOAD = 0;
-  59              		.loc 1 73 4 is_stmt 1 view .LVU10
-  60              		.loc 1 73 18 is_stmt 0 view .LVU11
+  75:Core/Src/Bootloader.c **** 	  SysTick->LOAD = 0;
+  59              		.loc 1 75 4 is_stmt 1 view .LVU10
+  60              		.loc 1 75 18 is_stmt 0 view .LVU11
   61 0018 5A61     		str	r2, [r3, #20]
-  74:Core/Src/Bootloader.c **** 	  SysTick->VAL = 0;
-  62              		.loc 1 74 4 is_stmt 1 view .LVU12
-  63              		.loc 1 74 17 is_stmt 0 view .LVU13
+  76:Core/Src/Bootloader.c **** 	  SysTick->VAL = 0;
+  62              		.loc 1 76 4 is_stmt 1 view .LVU12
+  63              		.loc 1 76 17 is_stmt 0 view .LVU13
   64 001a 9A61     		str	r2, [r3, #24]
-  75:Core/Src/Bootloader.c **** 
-  76:Core/Src/Bootloader.c **** SCB->VTOR = App_Adress;
-  65              		.loc 1 76 1 is_stmt 1 view .LVU14
-  66              		.loc 1 76 11 is_stmt 0 view .LVU15
+  77:Core/Src/Bootloader.c **** 
+  78:Core/Src/Bootloader.c **** SCB->VTOR = App_Adress;
+  65              		.loc 1 78 1 is_stmt 1 view .LVU14
+  66              		.loc 1 78 11 is_stmt 0 view .LVU15
   67 001c 03F55063 		add	r3, r3, #3328
   68 0020 9C60     		str	r4, [r3, #8]
-  77:Core/Src/Bootloader.c **** 
-  78:Core/Src/Bootloader.c **** 
-  79:Core/Src/Bootloader.c **** __set_MSP(msp_val);
-  69              		.loc 1 79 1 is_stmt 1 view .LVU16
+  79:Core/Src/Bootloader.c **** 
+  80:Core/Src/Bootloader.c **** 
+  81:Core/Src/Bootloader.c **** __set_MSP(msp_val);
+  69              		.loc 1 81 1 is_stmt 1 view .LVU16
   70              	.LVL4:
   71              	.LBB6:
   72              	.LBI6:
@@ -176,11 +178,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
   16:Drivers/CMSIS/Include/cmsis_gcc.h ****  * www.apache.org/licenses/LICENSE-2.0
   17:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
   18:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Unless required by applicable law or agreed to in writing, software
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 4
+
+
   19:Drivers/CMSIS/Include/cmsis_gcc.h ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
   20:Drivers/CMSIS/Include/cmsis_gcc.h ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 4
-
-
   21:Drivers/CMSIS/Include/cmsis_gcc.h ****  * See the License for the specific language governing permissions and
   22:Drivers/CMSIS/Include/cmsis_gcc.h ****  * limitations under the License.
   23:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -236,11 +238,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
   73:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
   74:Drivers/CMSIS/Include/cmsis_gcc.h ****   struct __attribute__((packed)) T_UINT32 { uint32_t v; };
   75:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 5
+
+
   76:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32(x)                  (((struct T_UINT32 *)(x))->v)
   77:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 5
-
-
   78:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_WRITE
   79:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
   80:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
@@ -296,11 +298,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
  130:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  131:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsie i" : : : "memory");
  132:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 6
+
+
  133:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  134:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 6
-
-
  135:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  136:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Disable IRQ Interrupts
  137:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Disables IRQ interrupts by setting the I-bit in the CPSR.
@@ -356,11 +358,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
  187:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  188:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  189:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Control Register (non-secure)
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 7
+
+
  190:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Writes the given value to the non-secure Control Register when in secure state.
  191:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    control  Control Register value to set
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 7
-
-
  192:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  193:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_CONTROL_NS(uint32_t control)
  194:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -416,11 +418,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
  244:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Process Stack Pointer (PSP).
  245:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               PSP Register value
  246:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 8
+
+
  247:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_PSP(void)
  248:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 8
-
-
  249:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  250:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  251:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, psp"  : "=r" (result) );
@@ -476,11 +478,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
  301:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_MSP(void)
  302:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  303:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 9
+
+
  304:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  305:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msp" : "=r" (result) );
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 9
-
-
  306:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  307:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  308:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -522,25 +524,25 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
   84              		.syntax unified
   85              	.LBE7:
   86              	.LBE6:
-  80:Core/Src/Bootloader.c **** 
-  81:Core/Src/Bootloader.c **** Jump();
-  87              		.loc 1 81 1 is_stmt 1 view .LVU20
+  82:Core/Src/Bootloader.c **** 
+  83:Core/Src/Bootloader.c **** Jump();
+  87              		.loc 1 83 1 is_stmt 1 view .LVU20
   88 0026 A847     		blx	r5
   89              	.LVL6:
-  82:Core/Src/Bootloader.c **** 
-  83:Core/Src/Bootloader.c **** }
-  90              		.loc 1 83 1 is_stmt 0 view .LVU21
+  84:Core/Src/Bootloader.c **** 
+  85:Core/Src/Bootloader.c **** }
+  90              		.loc 1 85 1 is_stmt 0 view .LVU21
   91 0028 70BD     		pop	{r4, r5, r6, pc}
   92              	.LVL7:
   93              	.L4:
-  94              		.loc 1 83 1 view .LVU22
+  94              		.loc 1 85 1 view .LVU22
   95 002a 00BF     		.align	2
   96              	.L3:
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 10
+
+
   97 002c 00400008 		.word	134234112
   98              		.cfi_endproc
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 10
-
-
   99              	.LFE65:
  101              		.section	.text.Error_Handler,"ax",%progbits
  102              		.align	1
@@ -551,128 +553,139 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
  107              		.fpu softvfp
  109              	Error_Handler:
  110              	.LFB68:
-  84:Core/Src/Bootloader.c **** /* USER CODE END PFP */
-  85:Core/Src/Bootloader.c **** 
-  86:Core/Src/Bootloader.c **** /* Private user code ---------------------------------------------------------*/
-  87:Core/Src/Bootloader.c **** /* USER CODE BEGIN 0 */
-  88:Core/Src/Bootloader.c **** 
-  89:Core/Src/Bootloader.c **** /* USER CODE END 0 */
+  86:Core/Src/Bootloader.c **** /* USER CODE END PFP */
+  87:Core/Src/Bootloader.c **** 
+  88:Core/Src/Bootloader.c **** /* Private user code ---------------------------------------------------------*/
+  89:Core/Src/Bootloader.c **** /* USER CODE BEGIN 0 */
   90:Core/Src/Bootloader.c **** 
-  91:Core/Src/Bootloader.c **** /**
-  92:Core/Src/Bootloader.c ****   * @brief  The application entry point.
-  93:Core/Src/Bootloader.c ****   * @retval int
-  94:Core/Src/Bootloader.c ****   */
-  95:Core/Src/Bootloader.c **** int main(void)
-  96:Core/Src/Bootloader.c **** {
-  97:Core/Src/Bootloader.c ****   /* USER CODE BEGIN 1 */
-  98:Core/Src/Bootloader.c **** 
-  99:Core/Src/Bootloader.c ****   /* USER CODE END 1 */
+  91:Core/Src/Bootloader.c **** /* USER CODE END 0 */
+  92:Core/Src/Bootloader.c **** 
+  93:Core/Src/Bootloader.c **** /**
+  94:Core/Src/Bootloader.c ****   * @brief  The application entry point.
+  95:Core/Src/Bootloader.c ****   * @retval int
+  96:Core/Src/Bootloader.c ****   */
+  97:Core/Src/Bootloader.c **** int main(void)
+  98:Core/Src/Bootloader.c **** {
+  99:Core/Src/Bootloader.c ****   /* USER CODE BEGIN 1 */
  100:Core/Src/Bootloader.c **** 
- 101:Core/Src/Bootloader.c ****   /* MCU Configuration--------------------------------------------------------*/
+ 101:Core/Src/Bootloader.c ****   /* USER CODE END 1 */
  102:Core/Src/Bootloader.c **** 
- 103:Core/Src/Bootloader.c ****   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
- 104:Core/Src/Bootloader.c ****   HAL_Init();
- 105:Core/Src/Bootloader.c **** 
- 106:Core/Src/Bootloader.c ****   /* USER CODE BEGIN Init */
+ 103:Core/Src/Bootloader.c ****   /* MCU Configuration--------------------------------------------------------*/
+ 104:Core/Src/Bootloader.c **** 
+ 105:Core/Src/Bootloader.c ****   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+ 106:Core/Src/Bootloader.c ****   HAL_Init();
  107:Core/Src/Bootloader.c **** 
- 108:Core/Src/Bootloader.c ****   /* USER CODE END Init */
+ 108:Core/Src/Bootloader.c ****   /* USER CODE BEGIN Init */
  109:Core/Src/Bootloader.c **** 
- 110:Core/Src/Bootloader.c ****   /* Configure the system clock */
- 111:Core/Src/Bootloader.c ****   SystemClock_Config();
- 112:Core/Src/Bootloader.c **** 
- 113:Core/Src/Bootloader.c ****   /* USER CODE BEGIN SysInit */
+ 110:Core/Src/Bootloader.c ****   /* USER CODE END Init */
+ 111:Core/Src/Bootloader.c **** 
+ 112:Core/Src/Bootloader.c ****   /* Configure the system clock */
+ 113:Core/Src/Bootloader.c ****   SystemClock_Config();
  114:Core/Src/Bootloader.c **** 
- 115:Core/Src/Bootloader.c ****   /* USER CODE END SysInit */
+ 115:Core/Src/Bootloader.c ****   /* USER CODE BEGIN SysInit */
  116:Core/Src/Bootloader.c **** 
- 117:Core/Src/Bootloader.c ****   /* Initialize all configured peripherals */
- 118:Core/Src/Bootloader.c ****   MX_GPIO_Init();
- 119:Core/Src/Bootloader.c ****   MX_CRC_Init();
- 120:Core/Src/Bootloader.c ****   MX_USART1_UART_Init();
- 121:Core/Src/Bootloader.c ****   MX_TIM2_Init();
- 122:Core/Src/Bootloader.c ****   /* USER CODE BEGIN 2 */
- 123:Core/Src/Bootloader.c ****   
- 124:Core/Src/Bootloader.c ****   
- 125:Core/Src/Bootloader.c **** 	if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12)){
- 126:Core/Src/Bootloader.c **** 
- 127:Core/Src/Bootloader.c ****     HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
- 128:Core/Src/Bootloader.c ****     HAL_Delay(2000);
- 129:Core/Src/Bootloader.c ****     HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,0);
- 130:Core/Src/Bootloader.c ****   }
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 11
+ 117:Core/Src/Bootloader.c ****   /* USER CODE END SysInit */
+ 118:Core/Src/Bootloader.c **** 
+ 119:Core/Src/Bootloader.c ****   /* Initialize all configured peripherals */
+ 120:Core/Src/Bootloader.c ****   MX_GPIO_Init();
+ 121:Core/Src/Bootloader.c ****   MX_CRC_Init();
+ 122:Core/Src/Bootloader.c ****   MX_USART1_UART_Init();
+ 123:Core/Src/Bootloader.c ****   MX_TIM2_Init();
+ 124:Core/Src/Bootloader.c ****   /* USER CODE BEGIN 2 */
+ 125:Core/Src/Bootloader.c ****   
+ 126:Core/Src/Bootloader.c ****   
+ 127:Core/Src/Bootloader.c **** 	if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12)         ||      //Boutton in toggled during start-up
+ 128:Core/Src/Bootloader.c **** 
+ 129:Core/Src/Bootloader.c ****     (test==1)                                     ||      //Bootloader was issued by main app after
+ 130:Core/Src/Bootloader.c **** 
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 11
 
 
- 131:Core/Src/Bootloader.c **** 	else {JumpToMain();}
- 132:Core/Src/Bootloader.c ****   /* USER CODE END 2 */
- 133:Core/Src/Bootloader.c **** 
- 134:Core/Src/Bootloader.c ****   /* Infinite loop */
- 135:Core/Src/Bootloader.c ****   /* USER CODE BEGIN WHILE */
- 136:Core/Src/Bootloader.c ****   while (1)
- 137:Core/Src/Bootloader.c ****   {
- 138:Core/Src/Bootloader.c ****     /* USER CODE END WHILE */
- 139:Core/Src/Bootloader.c **** 
- 140:Core/Src/Bootloader.c ****     /* USER CODE BEGIN 3 */
- 141:Core/Src/Bootloader.c ****   }
- 142:Core/Src/Bootloader.c ****   /* USER CODE END 3 */
- 143:Core/Src/Bootloader.c **** }
- 144:Core/Src/Bootloader.c **** 
- 145:Core/Src/Bootloader.c **** /**
- 146:Core/Src/Bootloader.c ****   * @brief System Clock Configuration
- 147:Core/Src/Bootloader.c ****   * @retval None
- 148:Core/Src/Bootloader.c ****   */
- 149:Core/Src/Bootloader.c **** void SystemClock_Config(void)
- 150:Core/Src/Bootloader.c **** {
- 151:Core/Src/Bootloader.c ****   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
- 152:Core/Src/Bootloader.c ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
- 153:Core/Src/Bootloader.c **** 
- 154:Core/Src/Bootloader.c ****   /** Initializes the RCC Oscillators according to the specified parameters
- 155:Core/Src/Bootloader.c ****   * in the RCC_OscInitTypeDef structure.
- 156:Core/Src/Bootloader.c ****   */
- 157:Core/Src/Bootloader.c ****   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
- 158:Core/Src/Bootloader.c ****   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
- 159:Core/Src/Bootloader.c ****   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
- 160:Core/Src/Bootloader.c ****   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
- 161:Core/Src/Bootloader.c ****   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
- 162:Core/Src/Bootloader.c ****   {
- 163:Core/Src/Bootloader.c ****     Error_Handler();
- 164:Core/Src/Bootloader.c ****   }
- 165:Core/Src/Bootloader.c ****   /** Initializes the CPU, AHB and APB buses clocks
- 166:Core/Src/Bootloader.c ****   */
- 167:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
- 168:Core/Src/Bootloader.c ****                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
- 169:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
- 170:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
- 171:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
- 172:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
- 173:Core/Src/Bootloader.c **** 
- 174:Core/Src/Bootloader.c ****   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+ 131:Core/Src/Bootloader.c ****     *(volatile uint32_t *)App_Adress==0xFFFF     // ||      //App wasn't flashed
+ 132:Core/Src/Bootloader.c ****   
+ 133:Core/Src/Bootloader.c ****     )
+ 134:Core/Src/Bootloader.c ****   
+ 135:Core/Src/Bootloader.c ****   {
+ 136:Core/Src/Bootloader.c ****         
+ 137:Core/Src/Bootloader.c ****         HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
+ 138:Core/Src/Bootloader.c ****         HAL_Delay(2000);
+ 139:Core/Src/Bootloader.c ****         test= 22 ;
+ 140:Core/Src/Bootloader.c ****         JumpToMain();
+ 141:Core/Src/Bootloader.c ****         
+ 142:Core/Src/Bootloader.c ****   }
+ 143:Core/Src/Bootloader.c **** 	else {
+ 144:Core/Src/Bootloader.c ****     JumpToMain();}
+ 145:Core/Src/Bootloader.c ****   /* USER CODE END 2 */
+ 146:Core/Src/Bootloader.c **** 
+ 147:Core/Src/Bootloader.c ****   /* Infinite loop */
+ 148:Core/Src/Bootloader.c ****   /* USER CODE BEGIN WHILE */
+ 149:Core/Src/Bootloader.c ****   while (1)
+ 150:Core/Src/Bootloader.c ****   {
+ 151:Core/Src/Bootloader.c ****     /* USER CODE END WHILE */
+ 152:Core/Src/Bootloader.c **** 
+ 153:Core/Src/Bootloader.c ****     /* USER CODE BEGIN 3 */
+ 154:Core/Src/Bootloader.c ****   }
+ 155:Core/Src/Bootloader.c ****   /* USER CODE END 3 */
+ 156:Core/Src/Bootloader.c **** }
+ 157:Core/Src/Bootloader.c **** 
+ 158:Core/Src/Bootloader.c **** /**
+ 159:Core/Src/Bootloader.c ****   * @brief System Clock Configuration
+ 160:Core/Src/Bootloader.c ****   * @retval None
+ 161:Core/Src/Bootloader.c ****   */
+ 162:Core/Src/Bootloader.c **** void SystemClock_Config(void)
+ 163:Core/Src/Bootloader.c **** {
+ 164:Core/Src/Bootloader.c ****   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+ 165:Core/Src/Bootloader.c ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+ 166:Core/Src/Bootloader.c **** 
+ 167:Core/Src/Bootloader.c ****   /** Initializes the RCC Oscillators according to the specified parameters
+ 168:Core/Src/Bootloader.c ****   * in the RCC_OscInitTypeDef structure.
+ 169:Core/Src/Bootloader.c ****   */
+ 170:Core/Src/Bootloader.c ****   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+ 171:Core/Src/Bootloader.c ****   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+ 172:Core/Src/Bootloader.c ****   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+ 173:Core/Src/Bootloader.c ****   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+ 174:Core/Src/Bootloader.c ****   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
  175:Core/Src/Bootloader.c ****   {
  176:Core/Src/Bootloader.c ****     Error_Handler();
  177:Core/Src/Bootloader.c ****   }
- 178:Core/Src/Bootloader.c **** }
- 179:Core/Src/Bootloader.c **** 
- 180:Core/Src/Bootloader.c **** /* USER CODE BEGIN 4 */
- 181:Core/Src/Bootloader.c **** 
- 182:Core/Src/Bootloader.c **** /* USER CODE END 4 */
- 183:Core/Src/Bootloader.c **** 
- 184:Core/Src/Bootloader.c **** /**
- 185:Core/Src/Bootloader.c ****   * @brief  This function is executed in case of error occurrence.
- 186:Core/Src/Bootloader.c ****   * @retval None
- 187:Core/Src/Bootloader.c ****   */
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 12
+ 178:Core/Src/Bootloader.c ****   /** Initializes the CPU, AHB and APB buses clocks
+ 179:Core/Src/Bootloader.c ****   */
+ 180:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+ 181:Core/Src/Bootloader.c ****                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+ 182:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+ 183:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+ 184:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+ 185:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+ 186:Core/Src/Bootloader.c **** 
+ 187:Core/Src/Bootloader.c ****   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 12
 
 
- 188:Core/Src/Bootloader.c **** void Error_Handler(void)
- 189:Core/Src/Bootloader.c **** {
- 111              		.loc 1 189 1 is_stmt 1 view -0
+ 188:Core/Src/Bootloader.c ****   {
+ 189:Core/Src/Bootloader.c ****     Error_Handler();
+ 190:Core/Src/Bootloader.c ****   }
+ 191:Core/Src/Bootloader.c **** }
+ 192:Core/Src/Bootloader.c **** 
+ 193:Core/Src/Bootloader.c **** /* USER CODE BEGIN 4 */
+ 194:Core/Src/Bootloader.c **** 
+ 195:Core/Src/Bootloader.c **** /* USER CODE END 4 */
+ 196:Core/Src/Bootloader.c **** 
+ 197:Core/Src/Bootloader.c **** /**
+ 198:Core/Src/Bootloader.c ****   * @brief  This function is executed in case of error occurrence.
+ 199:Core/Src/Bootloader.c ****   * @retval None
+ 200:Core/Src/Bootloader.c ****   */
+ 201:Core/Src/Bootloader.c **** void Error_Handler(void)
+ 202:Core/Src/Bootloader.c **** {
+ 111              		.loc 1 202 1 is_stmt 1 view -0
  112              		.cfi_startproc
  113              		@ Volatile: function does not return.
  114              		@ args = 0, pretend = 0, frame = 0
  115              		@ frame_needed = 0, uses_anonymous_args = 0
  116              		@ link register save eliminated.
- 190:Core/Src/Bootloader.c ****   /* USER CODE BEGIN Error_Handler_Debug */
- 191:Core/Src/Bootloader.c ****   /* User can add his own implementation to report the HAL error return state */
- 192:Core/Src/Bootloader.c ****   __disable_irq();
- 117              		.loc 1 192 3 view .LVU24
+ 203:Core/Src/Bootloader.c ****   /* USER CODE BEGIN Error_Handler_Debug */
+ 204:Core/Src/Bootloader.c ****   /* User can add his own implementation to report the HAL error return state */
+ 205:Core/Src/Bootloader.c ****   __disable_irq();
+ 117              		.loc 1 205 3 view .LVU24
  118              	.LBB8:
  119              	.LBI8:
  140:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -689,13 +702,13 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
  129              	.L6:
  130              	.LBE9:
  131              	.LBE8:
- 193:Core/Src/Bootloader.c ****   while (1)
- 132              		.loc 1 193 3 discriminator 1 view .LVU27
- 194:Core/Src/Bootloader.c ****   {
- 195:Core/Src/Bootloader.c ****   }
- 133              		.loc 1 195 3 discriminator 1 view .LVU28
- 193:Core/Src/Bootloader.c ****   while (1)
- 134              		.loc 1 193 9 discriminator 1 view .LVU29
+ 206:Core/Src/Bootloader.c ****   while (1)
+ 132              		.loc 1 206 3 discriminator 1 view .LVU27
+ 207:Core/Src/Bootloader.c ****   {
+ 208:Core/Src/Bootloader.c ****   }
+ 133              		.loc 1 208 3 discriminator 1 view .LVU28
+ 206:Core/Src/Bootloader.c ****   while (1)
+ 134              		.loc 1 206 9 discriminator 1 view .LVU29
  135 0002 FEE7     		b	.L6
  136              		.cfi_endproc
  137              	.LFE68:
@@ -705,11 +718,14 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
  142              		.syntax unified
  143              		.thumb
  144              		.thumb_func
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 13
+
+
  145              		.fpu softvfp
  147              	SystemClock_Config:
  148              	.LFB67:
- 150:Core/Src/Bootloader.c ****   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
- 149              		.loc 1 150 1 view -0
+ 163:Core/Src/Bootloader.c ****   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+ 149              		.loc 1 163 1 view -0
  150              		.cfi_startproc
  151              		@ args = 0, pretend = 0, frame = 64
  152              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -718,102 +734,99 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
  155              		.cfi_def_cfa_offset 4
  156              		.cfi_offset 14, -4
  157 0002 91B0     		sub	sp, sp, #68
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 13
-
-
  158              	.LCFI2:
  159              		.cfi_def_cfa_offset 72
- 151:Core/Src/Bootloader.c ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
- 160              		.loc 1 151 3 view .LVU31
- 151:Core/Src/Bootloader.c ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
- 161              		.loc 1 151 22 is_stmt 0 view .LVU32
+ 164:Core/Src/Bootloader.c ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+ 160              		.loc 1 164 3 view .LVU31
+ 164:Core/Src/Bootloader.c ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+ 161              		.loc 1 164 22 is_stmt 0 view .LVU32
  162 0004 2822     		movs	r2, #40
  163 0006 0021     		movs	r1, #0
  164 0008 06A8     		add	r0, sp, #24
  165 000a FFF7FEFF 		bl	memset
  166              	.LVL8:
- 152:Core/Src/Bootloader.c **** 
- 167              		.loc 1 152 3 is_stmt 1 view .LVU33
- 152:Core/Src/Bootloader.c **** 
- 168              		.loc 1 152 22 is_stmt 0 view .LVU34
+ 165:Core/Src/Bootloader.c **** 
+ 167              		.loc 1 165 3 is_stmt 1 view .LVU33
+ 165:Core/Src/Bootloader.c **** 
+ 168              		.loc 1 165 22 is_stmt 0 view .LVU34
  169 000e 0023     		movs	r3, #0
  170 0010 0193     		str	r3, [sp, #4]
  171 0012 0293     		str	r3, [sp, #8]
  172 0014 0393     		str	r3, [sp, #12]
  173 0016 0493     		str	r3, [sp, #16]
  174 0018 0593     		str	r3, [sp, #20]
- 157:Core/Src/Bootloader.c ****   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
- 175              		.loc 1 157 3 is_stmt 1 view .LVU35
- 157:Core/Src/Bootloader.c ****   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
- 176              		.loc 1 157 36 is_stmt 0 view .LVU36
+ 170:Core/Src/Bootloader.c ****   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+ 175              		.loc 1 170 3 is_stmt 1 view .LVU35
+ 170:Core/Src/Bootloader.c ****   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+ 176              		.loc 1 170 36 is_stmt 0 view .LVU36
  177 001a 0223     		movs	r3, #2
  178 001c 0693     		str	r3, [sp, #24]
- 158:Core/Src/Bootloader.c ****   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
- 179              		.loc 1 158 3 is_stmt 1 view .LVU37
- 158:Core/Src/Bootloader.c ****   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
- 180              		.loc 1 158 30 is_stmt 0 view .LVU38
+ 171:Core/Src/Bootloader.c ****   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+ 179              		.loc 1 171 3 is_stmt 1 view .LVU37
+ 171:Core/Src/Bootloader.c ****   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+ 180              		.loc 1 171 30 is_stmt 0 view .LVU38
  181 001e 0123     		movs	r3, #1
  182 0020 0A93     		str	r3, [sp, #40]
- 159:Core/Src/Bootloader.c ****   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
- 183              		.loc 1 159 3 is_stmt 1 view .LVU39
- 159:Core/Src/Bootloader.c ****   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
- 184              		.loc 1 159 41 is_stmt 0 view .LVU40
+ 172:Core/Src/Bootloader.c ****   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+ 183              		.loc 1 172 3 is_stmt 1 view .LVU39
+ 172:Core/Src/Bootloader.c ****   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+ 184              		.loc 1 172 41 is_stmt 0 view .LVU40
  185 0022 1023     		movs	r3, #16
  186 0024 0B93     		str	r3, [sp, #44]
- 160:Core/Src/Bootloader.c ****   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
- 187              		.loc 1 160 3 is_stmt 1 view .LVU41
- 161:Core/Src/Bootloader.c ****   {
- 188              		.loc 1 161 3 view .LVU42
- 161:Core/Src/Bootloader.c ****   {
- 189              		.loc 1 161 7 is_stmt 0 view .LVU43
+ 173:Core/Src/Bootloader.c ****   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+ 187              		.loc 1 173 3 is_stmt 1 view .LVU41
+ 174:Core/Src/Bootloader.c ****   {
+ 188              		.loc 1 174 3 view .LVU42
+ 174:Core/Src/Bootloader.c ****   {
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 14
+
+
+ 189              		.loc 1 174 7 is_stmt 0 view .LVU43
  190 0026 06A8     		add	r0, sp, #24
  191 0028 FFF7FEFF 		bl	HAL_RCC_OscConfig
  192              	.LVL9:
- 161:Core/Src/Bootloader.c ****   {
- 193              		.loc 1 161 6 view .LVU44
+ 174:Core/Src/Bootloader.c ****   {
+ 193              		.loc 1 174 6 view .LVU44
  194 002c 68B9     		cbnz	r0, .L11
- 167:Core/Src/Bootloader.c ****                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
- 195              		.loc 1 167 3 is_stmt 1 view .LVU45
- 167:Core/Src/Bootloader.c ****                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
- 196              		.loc 1 167 31 is_stmt 0 view .LVU46
+ 180:Core/Src/Bootloader.c ****                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+ 195              		.loc 1 180 3 is_stmt 1 view .LVU45
+ 180:Core/Src/Bootloader.c ****                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+ 196              		.loc 1 180 31 is_stmt 0 view .LVU46
  197 002e 0F23     		movs	r3, #15
  198 0030 0193     		str	r3, [sp, #4]
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 14
-
-
- 169:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
- 199              		.loc 1 169 3 is_stmt 1 view .LVU47
- 169:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
- 200              		.loc 1 169 34 is_stmt 0 view .LVU48
+ 182:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+ 199              		.loc 1 182 3 is_stmt 1 view .LVU47
+ 182:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+ 200              		.loc 1 182 34 is_stmt 0 view .LVU48
  201 0032 0021     		movs	r1, #0
  202 0034 0291     		str	r1, [sp, #8]
- 170:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
- 203              		.loc 1 170 3 is_stmt 1 view .LVU49
- 170:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
- 204              		.loc 1 170 35 is_stmt 0 view .LVU50
+ 183:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+ 203              		.loc 1 183 3 is_stmt 1 view .LVU49
+ 183:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+ 204              		.loc 1 183 35 is_stmt 0 view .LVU50
  205 0036 0391     		str	r1, [sp, #12]
- 171:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
- 206              		.loc 1 171 3 is_stmt 1 view .LVU51
- 171:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
- 207              		.loc 1 171 36 is_stmt 0 view .LVU52
+ 184:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+ 206              		.loc 1 184 3 is_stmt 1 view .LVU51
+ 184:Core/Src/Bootloader.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+ 207              		.loc 1 184 36 is_stmt 0 view .LVU52
  208 0038 0491     		str	r1, [sp, #16]
- 172:Core/Src/Bootloader.c **** 
- 209              		.loc 1 172 3 is_stmt 1 view .LVU53
- 172:Core/Src/Bootloader.c **** 
- 210              		.loc 1 172 36 is_stmt 0 view .LVU54
+ 185:Core/Src/Bootloader.c **** 
+ 209              		.loc 1 185 3 is_stmt 1 view .LVU53
+ 185:Core/Src/Bootloader.c **** 
+ 210              		.loc 1 185 36 is_stmt 0 view .LVU54
  211 003a 0591     		str	r1, [sp, #20]
- 174:Core/Src/Bootloader.c ****   {
- 212              		.loc 1 174 3 is_stmt 1 view .LVU55
- 174:Core/Src/Bootloader.c ****   {
- 213              		.loc 1 174 7 is_stmt 0 view .LVU56
+ 187:Core/Src/Bootloader.c ****   {
+ 212              		.loc 1 187 3 is_stmt 1 view .LVU55
+ 187:Core/Src/Bootloader.c ****   {
+ 213              		.loc 1 187 7 is_stmt 0 view .LVU56
  214 003c 01A8     		add	r0, sp, #4
  215 003e FFF7FEFF 		bl	HAL_RCC_ClockConfig
  216              	.LVL10:
- 174:Core/Src/Bootloader.c ****   {
- 217              		.loc 1 174 6 view .LVU57
+ 187:Core/Src/Bootloader.c ****   {
+ 217              		.loc 1 187 6 view .LVU57
  218 0042 20B9     		cbnz	r0, .L12
- 178:Core/Src/Bootloader.c **** 
- 219              		.loc 1 178 1 view .LVU58
+ 191:Core/Src/Bootloader.c **** 
+ 219              		.loc 1 191 1 view .LVU58
  220 0044 11B0     		add	sp, sp, #68
  221              	.LCFI3:
  222              		.cfi_remember_state
@@ -823,13 +836,16 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
  226              	.L11:
  227              	.LCFI4:
  228              		.cfi_restore_state
- 163:Core/Src/Bootloader.c ****   }
- 229              		.loc 1 163 5 is_stmt 1 view .LVU59
+ 176:Core/Src/Bootloader.c ****   }
+ 229              		.loc 1 176 5 is_stmt 1 view .LVU59
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 15
+
+
  230 004a FFF7FEFF 		bl	Error_Handler
  231              	.LVL11:
  232              	.L12:
- 176:Core/Src/Bootloader.c ****   }
- 233              		.loc 1 176 5 view .LVU60
+ 189:Core/Src/Bootloader.c ****   }
+ 233              		.loc 1 189 5 view .LVU60
  234 004e FFF7FEFF 		bl	Error_Handler
  235              	.LVL12:
  236              		.cfi_endproc
@@ -838,16 +854,13 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
  240              		.align	1
  241              		.global	main
  242              		.syntax unified
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 15
-
-
  243              		.thumb
  244              		.thumb_func
  245              		.fpu softvfp
  247              	main:
  248              	.LFB66:
-  96:Core/Src/Bootloader.c ****   /* USER CODE BEGIN 1 */
- 249              		.loc 1 96 1 view -0
+  98:Core/Src/Bootloader.c ****   /* USER CODE BEGIN 1 */
+ 249              		.loc 1 98 1 view -0
  250              		.cfi_startproc
  251              		@ Volatile: function does not return.
  252              		@ args = 0, pretend = 0, frame = 0
@@ -857,116 +870,150 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 1
  256              		.cfi_def_cfa_offset 8
  257              		.cfi_offset 3, -8
  258              		.cfi_offset 14, -4
- 104:Core/Src/Bootloader.c **** 
- 259              		.loc 1 104 3 view .LVU62
+ 106:Core/Src/Bootloader.c **** 
+ 259              		.loc 1 106 3 view .LVU62
  260 0002 FFF7FEFF 		bl	HAL_Init
  261              	.LVL13:
- 111:Core/Src/Bootloader.c **** 
- 262              		.loc 1 111 3 view .LVU63
+ 113:Core/Src/Bootloader.c **** 
+ 262              		.loc 1 113 3 view .LVU63
  263 0006 FFF7FEFF 		bl	SystemClock_Config
  264              	.LVL14:
- 118:Core/Src/Bootloader.c ****   MX_CRC_Init();
- 265              		.loc 1 118 3 view .LVU64
+ 120:Core/Src/Bootloader.c ****   MX_CRC_Init();
+ 265              		.loc 1 120 3 view .LVU64
  266 000a FFF7FEFF 		bl	MX_GPIO_Init
  267              	.LVL15:
- 119:Core/Src/Bootloader.c ****   MX_USART1_UART_Init();
- 268              		.loc 1 119 3 view .LVU65
+ 121:Core/Src/Bootloader.c ****   MX_USART1_UART_Init();
+ 268              		.loc 1 121 3 view .LVU65
  269 000e FFF7FEFF 		bl	MX_CRC_Init
  270              	.LVL16:
- 120:Core/Src/Bootloader.c ****   MX_TIM2_Init();
- 271              		.loc 1 120 3 view .LVU66
+ 122:Core/Src/Bootloader.c ****   MX_TIM2_Init();
+ 271              		.loc 1 122 3 view .LVU66
  272 0012 FFF7FEFF 		bl	MX_USART1_UART_Init
  273              	.LVL17:
- 121:Core/Src/Bootloader.c ****   /* USER CODE BEGIN 2 */
- 274              		.loc 1 121 3 view .LVU67
+ 123:Core/Src/Bootloader.c ****   /* USER CODE BEGIN 2 */
+ 274              		.loc 1 123 3 view .LVU67
  275 0016 FFF7FEFF 		bl	MX_TIM2_Init
  276              	.LVL18:
- 125:Core/Src/Bootloader.c **** 
- 277              		.loc 1 125 2 view .LVU68
- 125:Core/Src/Bootloader.c **** 
- 278              		.loc 1 125 5 is_stmt 0 view .LVU69
+ 127:Core/Src/Bootloader.c **** 
+ 277              		.loc 1 127 2 view .LVU68
+ 127:Core/Src/Bootloader.c **** 
+ 278              		.loc 1 127 5 is_stmt 0 view .LVU69
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 16
+
+
  279 001a 4FF48051 		mov	r1, #4096
- 280 001e 0B48     		ldr	r0, .L17
+ 280 001e 1048     		ldr	r0, .L18
  281 0020 FFF7FEFF 		bl	HAL_GPIO_ReadPin
  282              	.LVL19:
- 125:Core/Src/Bootloader.c **** 
- 283              		.loc 1 125 4 view .LVU70
- 284 0024 78B1     		cbz	r0, .L14
- 127:Core/Src/Bootloader.c ****     HAL_Delay(2000);
- 285              		.loc 1 127 5 is_stmt 1 view .LVU71
- 286 0026 0A4C     		ldr	r4, .L17+4
- 287 0028 0122     		movs	r2, #1
- 288 002a 1021     		movs	r1, #16
- 289 002c 2046     		mov	r0, r4
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 16
+ 127:Core/Src/Bootloader.c **** 
+ 283              		.loc 1 127 4 view .LVU70
+ 284 0024 48B9     		cbnz	r0, .L14
+ 129:Core/Src/Bootloader.c **** 
+ 285              		.loc 1 129 10 discriminator 1 view .LVU71
+ 286 0026 0F4B     		ldr	r3, .L18+4
+ 287 0028 1B68     		ldr	r3, [r3]
+ 127:Core/Src/Bootloader.c **** 
+ 288              		.loc 1 127 49 discriminator 1 view .LVU72
+ 289 002a 012B     		cmp	r3, #1
+ 290 002c 05D0     		beq	.L14
+ 131:Core/Src/Bootloader.c ****   
+ 291              		.loc 1 131 5 view .LVU73
+ 292 002e 0E4B     		ldr	r3, .L18+8
+ 293 0030 1A68     		ldr	r2, [r3]
+ 129:Core/Src/Bootloader.c **** 
+ 294              		.loc 1 129 51 view .LVU74
+ 295 0032 4FF6FF73 		movw	r3, #65535
+ 296 0036 9A42     		cmp	r2, r3
+ 297 0038 0ED1     		bne	.L15
+ 298              	.L14:
+ 137:Core/Src/Bootloader.c ****         HAL_Delay(2000);
+ 299              		.loc 1 137 9 is_stmt 1 view .LVU75
+ 300 003a 0122     		movs	r2, #1
+ 301 003c 1021     		movs	r1, #16
+ 302 003e 0B48     		ldr	r0, .L18+12
+ 303 0040 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 304              	.LVL20:
+ 138:Core/Src/Bootloader.c ****         test= 22 ;
+ 305              		.loc 1 138 9 view .LVU76
+ 306 0044 4FF4FA60 		mov	r0, #2000
+ 307 0048 FFF7FEFF 		bl	HAL_Delay
+ 308              	.LVL21:
+ 139:Core/Src/Bootloader.c ****         JumpToMain();
+ 309              		.loc 1 139 9 view .LVU77
+ 139:Core/Src/Bootloader.c ****         JumpToMain();
+ 310              		.loc 1 139 13 is_stmt 0 view .LVU78
+ 311 004c 054B     		ldr	r3, .L18+4
+ 312 004e 1622     		movs	r2, #22
+ 313 0050 1A60     		str	r2, [r3]
+ 140:Core/Src/Bootloader.c ****         
+ 314              		.loc 1 140 9 is_stmt 1 view .LVU79
+ 315 0052 FFF7FEFF 		bl	JumpToMain
+ 316              	.LVL22:
+ 317              	.L16:
+ 149:Core/Src/Bootloader.c ****   {
+ 318              		.loc 1 149 3 discriminator 1 view .LVU80
+ 154:Core/Src/Bootloader.c ****   /* USER CODE END 3 */
+ 319              		.loc 1 154 3 discriminator 1 view .LVU81
+ 149:Core/Src/Bootloader.c ****   {
+ 320              		.loc 1 149 9 discriminator 1 view .LVU82
+ 321 0056 FEE7     		b	.L16
+ 322              	.L15:
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 17
 
 
- 290 002e FFF7FEFF 		bl	HAL_GPIO_WritePin
- 291              	.LVL20:
- 128:Core/Src/Bootloader.c ****     HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,0);
- 292              		.loc 1 128 5 view .LVU72
- 293 0032 4FF4FA60 		mov	r0, #2000
- 294 0036 FFF7FEFF 		bl	HAL_Delay
- 295              	.LVL21:
- 129:Core/Src/Bootloader.c ****   }
- 296              		.loc 1 129 5 view .LVU73
- 297 003a 0022     		movs	r2, #0
- 298 003c 1021     		movs	r1, #16
- 299 003e 2046     		mov	r0, r4
- 300 0040 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 301              	.LVL22:
- 302              	.L15:
- 136:Core/Src/Bootloader.c ****   {
- 303              		.loc 1 136 3 discriminator 1 view .LVU74
- 141:Core/Src/Bootloader.c ****   /* USER CODE END 3 */
- 304              		.loc 1 141 3 discriminator 1 view .LVU75
- 136:Core/Src/Bootloader.c ****   {
- 305              		.loc 1 136 9 discriminator 1 view .LVU76
- 306 0044 FEE7     		b	.L15
- 307              	.L14:
- 131:Core/Src/Bootloader.c ****   /* USER CODE END 2 */
- 308              		.loc 1 131 8 view .LVU77
- 309 0046 FFF7FEFF 		bl	JumpToMain
- 310              	.LVL23:
- 311 004a FBE7     		b	.L15
- 312              	.L18:
- 313              		.align	2
- 314              	.L17:
- 315 004c 000C0140 		.word	1073810432
- 316 0050 00080140 		.word	1073809408
- 317              		.cfi_endproc
- 318              	.LFE66:
- 320              		.text
- 321              	.Letext0:
- 322              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
- 323              		.file 4 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
- 324              		.file 5 "Drivers/CMSIS/Include/core_cm3.h"
- 325              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
- 326              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h"
- 327              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
- 328              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
- 329              		.file 10 "Core/Inc/gpio.h"
- 330              		.file 11 "Core/Inc/crc.h"
- 331              		.file 12 "Core/Inc/usart.h"
- 332              		.file 13 "Core/Inc/tim.h"
- 333              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
- 334              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 335              		.file 16 "<built-in>"
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s 			page 17
+ 144:Core/Src/Bootloader.c ****   /* USER CODE END 2 */
+ 323              		.loc 1 144 5 view .LVU83
+ 324 0058 FFF7FEFF 		bl	JumpToMain
+ 325              	.LVL23:
+ 326 005c FBE7     		b	.L16
+ 327              	.L19:
+ 328 005e 00BF     		.align	2
+ 329              	.L18:
+ 330 0060 000C0140 		.word	1073810432
+ 331 0064 00000000 		.word	.LANCHOR0
+ 332 0068 00400008 		.word	134234112
+ 333 006c 00080140 		.word	1073809408
+ 334              		.cfi_endproc
+ 335              	.LFE66:
+ 337              		.global	test
+ 338              		.section	.noinit,"aw"
+ 339              		.align	2
+ 340              		.set	.LANCHOR0,. + 0
+ 343              	test:
+ 344 0000 00000000 		.space	4
+ 345              		.text
+ 346              	.Letext0:
+ 347              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
+ 348              		.file 4 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
+ 349              		.file 5 "Drivers/CMSIS/Include/core_cm3.h"
+ 350              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
+ 351              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h"
+ 352              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
+ 353              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 354              		.file 10 "Core/Inc/gpio.h"
+ 355              		.file 11 "Core/Inc/crc.h"
+ 356              		.file 12 "Core/Inc/usart.h"
+ 357              		.file 13 "Core/Inc/tim.h"
+ 358              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 359              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 360              		.file 16 "<built-in>"
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cccOw90k.s 			page 18
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Bootloader.c
-C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s:16     .text.JumpToMain:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s:24     .text.JumpToMain:00000000 JumpToMain
-C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s:97     .text.JumpToMain:0000002c $d
-C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s:102    .text.Error_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s:109    .text.Error_Handler:00000000 Error_Handler
-C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s:140    .text.SystemClock_Config:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s:147    .text.SystemClock_Config:00000000 SystemClock_Config
-C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s:240    .text.main:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s:247    .text.main:00000000 main
-C:\Users\T470S\AppData\Local\Temp\ccdnFl6r.s:315    .text.main:0000004c $d
+C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:16     .text.JumpToMain:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:24     .text.JumpToMain:00000000 JumpToMain
+C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:97     .text.JumpToMain:0000002c $d
+C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:102    .text.Error_Handler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:109    .text.Error_Handler:00000000 Error_Handler
+C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:140    .text.SystemClock_Config:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:147    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:240    .text.main:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:247    .text.main:00000000 main
+C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:330    .text.main:00000060 $d
+C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:343    .noinit:00000000 test
+C:\Users\T470S\AppData\Local\Temp\cccOw90k.s:339    .noinit:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_RCC_DeInit

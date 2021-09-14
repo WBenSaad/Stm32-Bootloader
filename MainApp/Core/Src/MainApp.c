@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-__attribute__((section(".shared_memory"))) uint32_t test;
+__attribute__((section(".noinit"))) volatile uint32_t test  ;
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -54,13 +54,22 @@ void sys_reset(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void sys_rest(void){
+void system_reset(void){
 
+  IWDG->KR  =0xCCCC; //STart Watchdog timer
+  IWDG->KR  =0x5555; //Allow Access to the watchdog's reload Register
+  IWDG->RLR =0x0000; //Write 0 to the Watchdog to prompt a system reset
+  IWDG->KR  =0xAAAA; //Reload the Watchdog with the previously loaded value
+}
 
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 
+  if(GPIO_Pin ==GPIO_PIN_12){
 
+    test = 1;
+    system_reset();
 
-  
+  }
 }
 /* USER CODE END 0 */
 
@@ -94,6 +103,16 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
+  //HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
+  //HAL_Delay(500);
+/*
+  if(test =='B'){
+  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
+  }
+
+  test = 'B';
+  system_reset();
+*/
 
   /* USER CODE END 2 */
 
@@ -102,8 +121,10 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_4);
-	HAL_Delay(700);
+	//HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
+  //HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_4);
+	//HAL_Delay(700);
+  //sys_reset();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

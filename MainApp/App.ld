@@ -72,10 +72,16 @@ RAM         (xrw)       : ORIGIN = 0x20000020,  LENGTH = 20K
 
 SECTIONS
 {
-  /* Shared Memory Section */  
-  .shared_memory (NOLOAD) : {
-    KEEP(*(.shared_memory))
-  } > sharedRam
+
+	.noinit (NOLOAD):
+	{
+		. = ALIGN(4);
+		_start_of_noinit = .;
+		*(.noinit)
+		*(.noinit.*)
+		. = ALIGN(4);
+		_end_of_noinit = .;
+  } >sharedRam
 
   /* The startup code goes first into FLASH */
   .isr_vector :

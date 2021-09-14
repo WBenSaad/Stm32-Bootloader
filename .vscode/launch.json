@@ -40,6 +40,32 @@
                     "ignoreFailures": true
                 }
             ]
-        }
+        },
+        {
+            "name": "STlink launch",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/MainApp/build/Main_App.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stutil",
+            "device": "STM32F10x",
+            "interface": "swd",
+            // "preLaunchCommands": ["Build all"], // you can execute command instead of task
+            "svdFile": "", // Include svd to watch device peripherals
+            "swoConfig": {} // currently (v1.7.0) not supported
+        },
+        {
+            "name": "STlink attach",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/Bootloader/build/Bootloader.elf",
+            "request": "attach",
+            "type": "cortex-debug",
+            "servertype": "stutil",
+            "device": "STM32F10x",
+            "interface": "swd",
+            // "preLaunchCommands": ["Build all"], // you can execute command instead of task
+            "svdFile": "", // Include svd to watch device peripherals
+            "swoConfig": {} // currently (v1.7.0) not supported
+        },
     ]
 }

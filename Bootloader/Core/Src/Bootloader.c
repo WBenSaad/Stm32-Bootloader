@@ -30,6 +30,8 @@
 #define	  Reset_Handler			(App_Adress + 4)
 typedef   void (*pFunction) (void);
 
+ __attribute__((section(".noinit"))) volatile uint32_t test ;
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -122,13 +124,24 @@ int main(void)
   /* USER CODE BEGIN 2 */
   
   
-	if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12)){
+	if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12)         ||      //Boutton in toggled during start-up
 
-    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
-    HAL_Delay(2000);
-    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,0);
+    (test==1)                                     ||      //Bootloader was issued by main app after softreset
+
+    *(volatile uint32_t *)App_Adress==0xFFFF     // ||      //App wasn't flashed
+  
+    )
+  
+  {
+        
+        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
+        HAL_Delay(2000);
+        test= 22 ;
+        JumpToMain();
+        
   }
-	else {JumpToMain();}
+	else {
+    JumpToMain();}
   /* USER CODE END 2 */
 
   /* Infinite loop */
