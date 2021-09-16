@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\cclJiZ7a.s 			page 1
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccxqqzOb.s 			page 1
+>>>>>>> Stashed changes
 
 
    1              		.cpu cortex-m3
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cclJiZ7a.s 			page 1
   30:Core/Src/gpio.c **** /* USER CODE BEGIN 1 */
   31:Core/Src/gpio.c **** 
   32:Core/Src/gpio.c **** /* USER CODE END 1 */
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\cclJiZ7a.s 			page 2
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccxqqzOb.s 			page 2
+>>>>>>> Stashed changes
 
 
   33:Core/Src/gpio.c **** 
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cclJiZ7a.s 			page 1
   65              		.loc 1 48 3 view .LVU10
   66              		.loc 1 48 3 view .LVU11
   67 0022 9A69     		ldr	r2, [r3, #24]
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\cclJiZ7a.s 			page 3
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccxqqzOb.s 			page 3
+>>>>>>> Stashed changes
 
 
   68 0024 42F00802 		orr	r2, r2, #8
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cclJiZ7a.s 			page 1
   62:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
  109              		.loc 1 62 3 is_stmt 1 view .LVU27
  110              		.loc 1 62 24 is_stmt 0 view .LVU28
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\cclJiZ7a.s 			page 4
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccxqqzOb.s 			page 4
+>>>>>>> Stashed changes
 
 
  111 005c 0394     		str	r4, [sp, #12]
@@ -214,14 +230,24 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\cclJiZ7a.s 			page 1
  138              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
  139              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
  140              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\cclJiZ7a.s 			page 5
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccxqqzOb.s 			page 5
+>>>>>>> Stashed changes
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 gpio.c
+<<<<<<< Updated upstream
 C:\Users\T470S\AppData\Local\Temp\cclJiZ7a.s:16     .text.MX_GPIO_Init:00000000 $t
 C:\Users\T470S\AppData\Local\Temp\cclJiZ7a.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
 C:\Users\T470S\AppData\Local\Temp\cclJiZ7a.s:129    .text.MX_GPIO_Init:0000006c $d
+=======
+C:\Users\T470S\AppData\Local\Temp\ccxqqzOb.s:16     .text.MX_GPIO_Init:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccxqqzOb.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\T470S\AppData\Local\Temp\ccxqqzOb.s:129    .text.MX_GPIO_Init:0000006c $d
+>>>>>>> Stashed changes
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

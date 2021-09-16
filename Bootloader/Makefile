@@ -185,7 +185,7 @@ $(BUILD_DIR):
 # OpenOcd
 #######################################
 flash: all
-	openocd -f interface/stlink.cfg -f board/stm32f103c8_blue_pill.cfg -c "program $(BUILD_DIR)/$(TARGET).bin 0x08000000	verify reset exit"
+	openocd -f interface/stlink.cfg -f board/stm32f103c8_blue_pill.cfg -c "program $(BUILD_DIR)/$(TARGET).hex	verify reset exit"
  
 #######################################
 # dependencies

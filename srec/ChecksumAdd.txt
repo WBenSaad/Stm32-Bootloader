@@ -1,0 +1,15 @@
+MainApp/build/Main_App.bin 		#Load our MainAPP
+-binary 				#As a bianry file
+
+-fill 0xFF  0x0000 0x1BFFC		#Between the end of our MainApp code and the The Adress 
+					#where we store our checksum there are holes that we need
+					#to fill with 0xFF in order to get valid CRC calculation in our code	
+
+-range-padding 4			#4 Byte aligned
+
+-crop 0x0000 0x1BFFC
+
+-stm32-l-e 0x1BFFC			#We store our image Checksum at the end of flash at adress 0x1BFFC
+
+-o App.bin				#output image as a binary
+-binary

@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s 			page 1
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s 			page 1
+>>>>>>> Stashed changes
 
 
    1              		.cpu cortex-m3
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s 			page 1
   29:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   * All rights reserved.</center></h2>
   30:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   *
   31:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   * This software component is licensed by ST under BSD 3-Clause license,
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s 			page 2
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s 			page 2
+>>>>>>> Stashed changes
 
 
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   * the "License"; You may not use this file except in compliance with the
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s 			page 1
   31              		@ frame_needed = 0, uses_anonymous_args = 0
   32              		@ link register save eliminated.
   83:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   /* Verify the parameters */
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s 			page 3
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s 			page 3
+>>>>>>> Stashed changes
 
 
   84:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   assert_param(IS_AFIO_EVENTOUT_PORT(GPIO_PortSource));
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s 			page 1
   74 000a 7047     		bx	lr
   75              	.L6:
   76              		.align	2
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s 			page 4
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s 			page 4
+>>>>>>> Stashed changes
 
 
   77              	.L5:
@@ -226,11 +242,16 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s 			page 1
  113              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
  114              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
  115              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s 			page 5
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s 			page 5
+>>>>>>> Stashed changes
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_gpio_ex.c
+<<<<<<< Updated upstream
 C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s:16     .text.HAL_GPIOEx_ConfigEventout:00000000 $t
 C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s:24     .text.HAL_GPIOEx_ConfigEventout:00000000 HAL_GPIOEx_ConfigEventout
 C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s:49     .text.HAL_GPIOEx_ConfigEventout:00000010 $d
@@ -240,5 +261,16 @@ C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s:78     .text.HAL_GPIOEx_EnableEvent
 C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s:83     .text.HAL_GPIOEx_DisableEventout:00000000 $t
 C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s:90     .text.HAL_GPIOEx_DisableEventout:00000000 HAL_GPIOEx_DisableEventout
 C:\Users\T470S\AppData\Local\Temp\ccfDRv8h.s:107    .text.HAL_GPIOEx_DisableEventout:0000000c $d
+=======
+C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s:16     .text.HAL_GPIOEx_ConfigEventout:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s:24     .text.HAL_GPIOEx_ConfigEventout:00000000 HAL_GPIOEx_ConfigEventout
+C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s:49     .text.HAL_GPIOEx_ConfigEventout:00000010 $d
+C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s:54     .text.HAL_GPIOEx_EnableEventout:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s:61     .text.HAL_GPIOEx_EnableEventout:00000000 HAL_GPIOEx_EnableEventout
+C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s:78     .text.HAL_GPIOEx_EnableEventout:0000000c $d
+C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s:83     .text.HAL_GPIOEx_DisableEventout:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s:90     .text.HAL_GPIOEx_DisableEventout:00000000 HAL_GPIOEx_DisableEventout
+C:\Users\T470S\AppData\Local\Temp\ccvWl2M8.s:107    .text.HAL_GPIOEx_DisableEventout:0000000c $d
+>>>>>>> Stashed changes
 
 NO UNDEFINED SYMBOLS

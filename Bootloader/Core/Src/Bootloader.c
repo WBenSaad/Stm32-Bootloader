@@ -28,16 +28,51 @@
 /* USER CODE BEGIN Includes */
 #define 	App_Adress			  0x8004000UL
 #define	  Reset_Handler			(App_Adress + 4)
+<<<<<<< Updated upstream
+=======
+
+#define   APP_END           (uint8_t*) 0x801FFFBUL  // App end address
+#define   ROM_LEN						(uint32_t) (APP_END - App_Adress +1u )//APP size on flash
+#define   ROM_LEN_WORD			(uint32_t) (ROM_LEN / 4u) //CRC Calculation process 4bytes per iternation
+                                                      //so we get how much Words there are in our App
+
+#define   ExpectedCRCValue  *(uint32_t *) 0x0801FFFC //Where we store the postBuild generated Checksum
+volatile uint32_t CRCValue = 0;
+
+
+>>>>>>> Stashed changes
 typedef   void (*pFunction) (void);
 
  __attribute__((section(".noinit"))) volatile uint32_t test ;
 
+<<<<<<< Updated upstream
+=======
+
+
+
+ 
+
+
+
+
+>>>>>>> Stashed changes
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-//void  (*Jump)(void);
 void  JumpToMain(void);
+
+//FLASH_EraseInitTypeDef eraseInit = {
+  //  FLASH_TYPEERASE_PAGES,  /*!< Pages erase only (Mass erase is disabled)*/
+    //0,                      /*!< Select banks to erase when Mass erase is enabled.*/
+    //0x08003000,              /*!< Initial FLASH page address to erase when mass erase is disabled
+                                 //This parameter must be a number between Min_Data = 0x08000000 and Max_Data = FLASH_BANKx_END 
+                                 //(x = 1 or 2 depending on devices)*/
+    //1                       /*!< Number of pagess to be erased.
+                                 //This parameter must be a value between Min_Data = 1 and Max_Data = (max number of pages - value of initial page)*/
+//};
+ 
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -61,8 +96,6 @@ void SystemClock_Config(void);
 
 void JumpToMain(void){
 	
-//pFunction  (*Jump)(void);
-
 uint32_t reset_Handler =*(volatile uint32_t *)Reset_Handler;
 uint32_t msp_val = *(volatile uint32_t *)App_Adress;
 
@@ -122,13 +155,32 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
+<<<<<<< Updated upstream
+=======
+    CRCValue =HAL_CRC_Calculate(&hcrc, (uint32_t*)App_Adress,( uint32_t ) ROM_LEN_WORD);
+  /*HAL_FLASH_Unlock();
+  HAL_FLASHEx_Erase(&eraseInit, &pageError);
+  HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, 0x08002000,CRCValue);
+  HAL_FLASH_Lock();*/
   
+  /*  
+    if(CRCValue == ExpectedCRCValue ){
+    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
+    HAL_Delay(2000);
+    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,0);
+
+ }*/
+
   
-	if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12)         ||      //Boutton in toggled during start-up
+>>>>>>> Stashed changes
+  
+	  if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12)         ||      //Boutton in toggled during start-up
 
-    (test==1)                                     ||      //Bootloader was issued by main app after softreset
+    (test==1)                                      ||      //Bootloader was issued by main app after softreset
 
-    *(volatile uint32_t *)App_Adress==0xFFFF     // ||      //App wasn't flashed
+    CRCValue != ExpectedCRCValue                   ||
+    
+    *(volatile uint32_t *)App_Adress==0xFFFF       //||      //App wasn't flashed
   
     )
   
@@ -136,7 +188,7 @@ int main(void)
         
         HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
         HAL_Delay(2000);
-        
+        test=0;
         JumpToMain();
         
   }

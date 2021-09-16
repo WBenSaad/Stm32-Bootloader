@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 1
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s 			page 1
+>>>>>>> Stashed changes
 
 
    1              		.cpu cortex-m3
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 1
   30:Core/Src/tim.c **** void MX_TIM2_Init(void)
   31:Core/Src/tim.c **** {
   27              		.loc 1 31 1 view -0
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 2
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s 			page 2
+>>>>>>> Stashed changes
 
 
   28              		.cfi_startproc
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 1
   67              		.loc 1 46 3 is_stmt 1 view .LVU11
   68              		.loc 1 46 26 is_stmt 0 view .LVU12
   69 002e 8360     		str	r3, [r0, #8]
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 3
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s 			page 3
+>>>>>>> Stashed changes
 
 
   47:Core/Src/tim.c ****   htim2.Init.Period = 999;
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 1
   62:Core/Src/tim.c ****   }
   63:Core/Src/tim.c ****   sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
  109              		.loc 1 63 3 is_stmt 1 view .LVU30
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 4
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s 			page 4
+>>>>>>> Stashed changes
 
 
  110              		.loc 1 63 37 is_stmt 0 view .LVU31
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 1
   81:Core/Src/tim.c **** }
  147              		.loc 1 81 1 view .LVU48
  148 007e 0FB0     		add	sp, sp, #60
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 5
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s 			page 5
+>>>>>>> Stashed changes
 
 
  149              	.LCFI2:
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 1
   82:Core/Src/tim.c **** 
   83:Core/Src/tim.c **** void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
   84:Core/Src/tim.c **** {
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 6
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s 			page 6
+>>>>>>> Stashed changes
 
 
  200              		.loc 1 84 1 is_stmt 1 view -0
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 1
  242 002a FFF7FEFF 		bl	HAL_NVIC_SetPriority
  243              	.LVL12:
   96:Core/Src/tim.c ****     HAL_NVIC_EnableIRQ(TIM2_IRQn);
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 7
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s 			page 7
+>>>>>>> Stashed changes
 
 
  244              		.loc 1 96 5 is_stmt 1 view .LVU68
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 1
  111:Core/Src/tim.c ****     /* Peripheral clock disable */
  112:Core/Src/tim.c ****     __HAL_RCC_TIM2_CLK_DISABLE();
  113:Core/Src/tim.c **** 
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 8
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s 			page 8
+>>>>>>> Stashed changes
 
 
  114:Core/Src/tim.c ****     /* TIM2 interrupt Deinit */
@@ -476,11 +508,16 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 1
  327              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h"
  328              		.file 10 "Core/Inc/main.h"
  329              		.file 11 "Core/Inc/tim.h"
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s 			page 9
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s 			page 9
+>>>>>>> Stashed changes
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tim.c
+<<<<<<< Updated upstream
 C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s:16     .text.MX_TIM2_Init:00000000 $t
 C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s:24     .text.MX_TIM2_Init:00000000 MX_TIM2_Init
 C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s:185    .text.MX_TIM2_Init:000000a4 $d
@@ -491,6 +528,18 @@ C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s:265    .text.HAL_TIM_Base_MspDeInit
 C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s:306    .text.HAL_TIM_Base_MspDeInit:00000020 $d
 C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s:316    .bss.htim2:00000000 htim2
 C:\Users\T470S\AppData\Local\Temp\ccgM4SSE.s:312    .bss.htim2:00000000 $d
+=======
+C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s:16     .text.MX_TIM2_Init:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s:24     .text.MX_TIM2_Init:00000000 MX_TIM2_Init
+C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s:185    .text.MX_TIM2_Init:000000a4 $d
+C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s:190    .text.HAL_TIM_Base_MspInit:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s:197    .text.HAL_TIM_Base_MspInit:00000000 HAL_TIM_Base_MspInit
+C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s:258    .text.HAL_TIM_Base_MspDeInit:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s:265    .text.HAL_TIM_Base_MspDeInit:00000000 HAL_TIM_Base_MspDeInit
+C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s:306    .text.HAL_TIM_Base_MspDeInit:00000020 $d
+C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s:316    .bss.htim2:00000000 htim2
+C:\Users\T470S\AppData\Local\Temp\ccQzM62A.s:312    .bss.htim2:00000000 $d
+>>>>>>> Stashed changes
 
 UNDEFINED SYMBOLS
 HAL_TIM_Base_Init

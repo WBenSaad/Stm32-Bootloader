@@ -1,7 +1,7 @@
-App.hex
--intel
+App.bin
+-binary
 -Output_Block_Size=16
 -address-length=4
--o App.hex
--intel
+-o App.bin
+-binary
 

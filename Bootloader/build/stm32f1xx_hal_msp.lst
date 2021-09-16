@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccF64PPS.s 			page 1
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccpjbkSH.s 			page 1
+>>>>>>> Stashed changes
 
 
    1              		.cpu cortex-m3
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccF64PPS.s 			page 1
   30:Core/Src/stm32f1xx_hal_msp.c **** 
   31:Core/Src/stm32f1xx_hal_msp.c **** /* USER CODE END TD */
   32:Core/Src/stm32f1xx_hal_msp.c **** 
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccF64PPS.s 			page 2
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccpjbkSH.s 			page 2
+>>>>>>> Stashed changes
 
 
   33:Core/Src/stm32f1xx_hal_msp.c **** /* Private define ------------------------------------------------------------*/
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccF64PPS.s 			page 1
   43              		.loc 1 70 3 view .LVU4
   44 000c 9A69     		ldr	r2, [r3, #24]
   45 000e 02F00102 		and	r2, r2, #1
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccF64PPS.s 			page 3
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccpjbkSH.s 			page 3
+>>>>>>> Stashed changes
 
 
   46 0012 0092     		str	r2, [sp]
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccF64PPS.s 			page 1
   88              	.L4:
   89 003a 00BF     		.align	2
   90              	.L3:
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccF64PPS.s 			page 4
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccpjbkSH.s 			page 4
+>>>>>>> Stashed changes
 
 
   91 003c 00100240 		.word	1073876992
@@ -190,13 +206,23 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccF64PPS.s 			page 1
   98              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
   99              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
  100              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccF64PPS.s 			page 5
+=======
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccpjbkSH.s 			page 5
+>>>>>>> Stashed changes
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_msp.c
+<<<<<<< Updated upstream
 C:\Users\T470S\AppData\Local\Temp\ccF64PPS.s:16     .text.HAL_MspInit:00000000 $t
 C:\Users\T470S\AppData\Local\Temp\ccF64PPS.s:24     .text.HAL_MspInit:00000000 HAL_MspInit
 C:\Users\T470S\AppData\Local\Temp\ccF64PPS.s:91     .text.HAL_MspInit:0000003c $d
+=======
+C:\Users\T470S\AppData\Local\Temp\ccpjbkSH.s:16     .text.HAL_MspInit:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccpjbkSH.s:24     .text.HAL_MspInit:00000000 HAL_MspInit
+C:\Users\T470S\AppData\Local\Temp\ccpjbkSH.s:91     .text.HAL_MspInit:0000003c $d
+>>>>>>> Stashed changes
 
 NO UNDEFINED SYMBOLS
