@@ -28,8 +28,6 @@
 /* USER CODE BEGIN Includes */
 #define 	App_Adress			  0x8004000UL
 #define	  Reset_Handler			(App_Adress + 4)
-<<<<<<< Updated upstream
-=======
 
 #define   APP_END           (uint8_t*) 0x801FFFBUL  // App end address
 #define   ROM_LEN						(uint32_t) (APP_END - App_Adress +1u )//APP size on flash
@@ -40,22 +38,11 @@
 volatile uint32_t CRCValue = 0;
 
 
->>>>>>> Stashed changes
 typedef   void (*pFunction) (void);
 
  __attribute__((section(".noinit"))) volatile uint32_t test ;
 
-<<<<<<< Updated upstream
-=======
 
-
-
- 
-
-
-
-
->>>>>>> Stashed changes
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -155,9 +142,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-<<<<<<< Updated upstream
-=======
-    CRCValue =HAL_CRC_Calculate(&hcrc, (uint32_t*)App_Adress,( uint32_t ) ROM_LEN_WORD);
+  CRCValue =HAL_CRC_Calculate(&hcrc, (uint32_t*)App_Adress,( uint32_t ) ROM_LEN_WORD);
   /*HAL_FLASH_Unlock();
   HAL_FLASHEx_Erase(&eraseInit, &pageError);
   HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, 0x08002000,CRCValue);
@@ -172,7 +157,6 @@ int main(void)
  }*/
 
   
->>>>>>> Stashed changes
   
 	  if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12)         ||      //Boutton in toggled during start-up
 
