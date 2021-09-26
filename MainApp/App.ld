@@ -61,11 +61,13 @@ _Min_Stack_Size = 0x400; /* required amount of stack */
 /* Specify the memory areas */
 MEMORY
 {
-Bootloader 	(rx)      	: ORIGIN = 0x08000000,  LENGTH = 16K
-AppCode 	  (rx)      	: ORIGIN = 0x08004000,  LENGTH = 0x0801FFFF
+Bootloader 	(rx)      	 : ORIGIN = 0x08000000,  LENGTH = 16K
+AppCode 	  (rx)      	 : ORIGIN = 0x08004000,  LENGTH = 56K
+Backup      (rx)         : ORIGIN = 0x08012000,  LENGTH = 56K
+
 /* 32 bit shared memory */
-sharedRam 	(xrw)      	: ORIGIN = 0x20000000,  LENGTH = 32
-RAM         (xrw)       : ORIGIN = 0x20000020,  LENGTH = 20K 
+sharedRam 	(xrw)      	 : ORIGIN = 0x20000000,  LENGTH = 32
+RAM         (xrw)        : ORIGIN = 0x20000020,  LENGTH = 20K 
 }
 
 /* Define output sections */

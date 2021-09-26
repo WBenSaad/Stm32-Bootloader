@@ -7,6 +7,8 @@ prefix="serial."
 
 def parseCommandLineArguments():
     ap = argparse.ArgumentParser()
+    ap.add_argument("-a", "--address",required=True,
+                              help="specify Port Name")
     ap.add_argument("-p", "--Port", required=True,
                               help="specify Port Name")
     ap.add_argument("-b", "--Baud", type=int,required=True,
@@ -30,7 +32,8 @@ def parseCommandLineArguments():
     Stop= args["StopBits"]
     Parity= args["parity"]
     FlowC=args["FlowControl"]
+    address=args["address"]
 
-    return Port,BaudRate,Timeout,ByteSize,Stop,Parity,FlowC
+    return address,Port,BaudRate,Timeout,ByteSize,Stop,Parity,FlowC
 
 
