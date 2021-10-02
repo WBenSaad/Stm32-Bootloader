@@ -7,7 +7,7 @@ prefix="serial."
 
 def parseCommandLineArguments():
     ap = argparse.ArgumentParser()
-    ap.add_argument("-a", "--address",required=True,
+    ap.add_argument("-a", "--address",
                               help="specify Port Name")
     ap.add_argument("-p", "--Port", required=True,
                               help="specify Port Name")

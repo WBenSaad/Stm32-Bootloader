@@ -8,21 +8,36 @@ Bootloader_Flash                        =0x01
 
 data_buf = []
 
+Crc = 0xFFFFFFFF
+
+CRC_TABLE = (0x00000000, 0x04C11DB7, 0x09823B6E, 0x0D4326D9,
+             0x130476DC, 0x17C56B6B, 0x1A864DB2, 0x1E475005,
+             0x2608EDB8, 0x22C9F00F, 0x2F8AD6D6, 0x2B4BCB61,
+             0x350C9B64, 0x31CD86D3, 0x3C8EA00A, 0x384FBDBD)
+
+
 def get_size():
     size=os.path.getsize("App.bin")
     return size
 
-def get_crc(buff, length):
-    Crc = 0xFFFFFFFF
-    #print(length)
-    for data in buff[0:length]:
-        Crc = Crc ^ data
-        for i in range(32):
-            if(Crc & 0x80000000):
-                Crc = (Crc << 1) ^ 0x04C11DB7
-            else:
-                Crc = (Crc << 1)
-    return Crc
+def dword(value):
+    return value & 0xFFFFFFFF
+
+def crc32_fast(crc, data):
+    crc, data = dword(crc), dword(data)
+    crc ^= data
+    for _ in range(8):
+        crc = dword(crc << 4) ^ CRC_TABLE[crc >> 28]
+    return crc
+
+def crc32_fast_bytes(crc, bytes_data):
+    if len(bytes_data) & 3:
+        raise ValueError('bytes_data length must be multiple of four')
+    for index in range(0, len(bytes_data)-4, 4):
+        data = int.from_bytes(bytes_data[index : index + 4], 'little')
+        crc = crc32_fast(crc, data)
+    return crc
+
 
 def word_to_byte(addr, index , lowerfirst):
     value = (addr >> ( 8 * ( index -1)) & 0x000000FF )
@@ -39,26 +54,7 @@ def read_serial_port(length):
 
 
 def mem_flash():
-    """data_file=open("App.bin","rb")
-    remaining_bytes=get_size(data_file)
-    data_to_read=0
-    packet_length=0
-    while(remaining_bytes!=0):
-        if(remaining_bytes < 128):
-            data_to_read=remaining_bytes
-        else:
-            data_to_read =128
-        packet_length=data_to_read+4+4 #mem address + CRC + datalength + data
-        data_buf[0]=word_to_byte(mem_address,1,1)
-        data_buf[1]=word_to_byte(mem_address,2,1)
-        data_buf[2]=word_to_byte(mem_address,3,1)
-        data_buf[3]=word_to_byte(mem_address,4,1)
-        data_buf[4]=word_to_byte(CRC,1,1)
-        data_buf[5]=word_to_byte(CRC,2,1)
-        data_buf[6]=word_to_byte(CRC,3,1)
-        data_buf[7]=word_to_byte(CRC,4,1)
-        
-"""
+
     print("\n   Command == > BL_MEM_WRITE")
     bytes_remaining=0
     t_len_of_file=0
@@ -66,7 +62,7 @@ def mem_flash():
     len_to_read=0
     base_mem_address=0
 
-    for i in range(255):    ### Initializing the Buffer
+    for i in range(132):    ### Initializing the Buffer
         data_buf.append(0)
 
     bin_file=open("App.bin","rb")
@@ -76,6 +72,8 @@ def mem_flash():
 
 
     bytes_remaining = t_len_of_file - bytes_so_far_sent
+
+     #notify bootloader flashing
 
     global mem_write_active
     while(bytes_remaining):
@@ -92,12 +90,7 @@ def mem_flash():
             
              
 
-        """    #populate base mem address
-        data_buf[0] = word_to_byte(base_mem_address,1,1)
-        data_buf[1] = word_to_byte(base_mem_address,2,1)
-        data_buf[2] = word_to_byte(base_mem_address,3,1)
-        data_buf[3] = word_to_byte(base_mem_address,4,1)
-        """
+
         #data_buf[0] = len_to_read
 
             #/*((4 byte mem base address + 1 byte payload len)) + len_to_read is amount of bytes read from file
@@ -108,42 +101,50 @@ def mem_flash():
 
             #first field is "len_to_follow"
             #data_buf[0] =mem_write_cmd_total_len-1
-
-        crc32= get_crc(data_buf,mem_write_cmd_total_len-4)
         
-        data_buf[2+len_to_read] = word_to_byte(crc32,1,1)
-        data_buf[3+len_to_read] = word_to_byte(crc32,2,1)
-        data_buf[4+len_to_read] = word_to_byte(crc32,3,1)
-        data_buf[5+len_to_read] = word_to_byte(crc32,4,1)
+        crc32= crc32_fast_bytes(0xFFFFFFFF,data_buf)
+        
+        data_buf[len_to_read]   = word_to_byte(crc32,1,1)
+        data_buf[1+len_to_read] = word_to_byte(crc32,2,1)
+        data_buf[2+len_to_read] = word_to_byte(crc32,3,1)
+        data_buf[3+len_to_read] = word_to_byte(crc32,4,1)
 
             #update base mem address for the next loop
         #base_mem_address+=len_to_read
 
         #Notify the Bootloader of flashing
-        
-        Write_to_serial_port(Bootloader_Flash,1) #Prompts Bootloader to Enter the Flash sequence
+        Write_to_serial_port(Bootloader_Flash,1)    
+         #Prompts Bootloader to Enter the Flash sequence
         Write_to_serial_port(mem_write_cmd_total_len,1) #Notify Bootloader of upcoming Packet size
+        print(mem_write_cmd_total_len)
         
         for i in data_buf[0:mem_write_cmd_total_len]:  ## Data starts from index 0
             Write_to_serial_port(i,mem_write_cmd_total_len-1)
-
+        ack=read_serial_port(4)
+        print(ack)
+        bck=read_serial_port(4)
+        print(bck)
+        ack=read_serial_port(1)
+        #ack=b'0'
+        if(ack.decode() == 0): 
+            while(ack.decode()==0):
+                for i in data_buf[0:mem_write_cmd_total_len]:  ## Data starts from index 0
+                    Write_to_serial_port(i,mem_write_cmd_total_len-1)
+                ack=read_serial_port(1)             
+        elif(ack.decode()==1):
+            break
+        
+        print(data_buf)
         bytes_so_far_sent+=len_to_read
         bytes_remaining = t_len_of_file - bytes_so_far_sent
         print("\n   bytes_so_far_sent:{0} -- bytes_remaining:{1}\n".format(bytes_so_far_sent,bytes_remaining)) 
-        
+
         
     mem_write_active=0
 
 
 ########################################################################################################
 
-
-""""
-str=b'\xa79Nz'
-f=open("C:/Users/T470S/Desktop/Bootloader/App.bin","rb" )
-print(f.read())
-#print(str.decode())
-"""
 
 base_mem_address,Port,BaudRate,Timeout,ByteSize,Stop,Parity,FlowChart =parseCommandLineArguments()
 
