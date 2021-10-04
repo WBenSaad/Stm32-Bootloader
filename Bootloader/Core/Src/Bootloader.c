@@ -1,22 +1,3 @@
-/* USER CODE BEGIN Header */
-/**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
-  * All rights reserved.</center></h2>
-  *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
-  *
-  ******************************************************************************
-  */
-/* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "crc.h"
@@ -24,62 +5,101 @@
 #include "usart.h"
 #include "gpio.h"
 
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
+/* Private typedef -----------------------------------------------------------*/
+typedef   void (*pFunction) (void);
+
+/* Private define ------------------------------------------------------------*/
 #define 	App_Adress			  0x8004000UL
 #define	  Reset_Handler			(App_Adress + 4)
 
-#define   APP_END           (uint8_t*) 0x801FFFBUL  // App end address
-#define   ROM_LEN						(uint32_t) (APP_END - App_Adress +1u )//APP size on flash
-#define   ROM_LEN_WORD			(uint32_t) (ROM_LEN / 4u) //CRC Calculation process 4bytes per iternation
-                                                      //so we get how much Words there are in our App
+#define   APP_END           (uint8_t*) 0x8011FFBUL                  //App end address
+#define   ROM_LEN						(uint32_t) (APP_END - App_Adress +1u )  //APP size on flash
+#define   ROM_LEN_WORD			(uint32_t) (ROM_LEN / 4u)               //CRC Calculation process 4bytes per iternation
+                                                                    //so we get how much Words there are in our App
 
-#define   ExpectedCRCValue  *(uint32_t *) 0x0801FFFC //Where we store the postBuild generated Checksum
-volatile uint32_t CRCValue = 0;
+#define   ExpectedCRCValue  *(uint32_t *) 0x08011FFCUL //Where we store the postBuild generated Checksum
 
+#define Max_Buffer_Size		300 
 
-typedef   void (*pFunction) (void);
-
- __attribute__((section(".noinit"))) volatile uint32_t test ;
-
-
-/* USER CODE END Includes */
-
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
-void  JumpToMain(void);
-
-//FLASH_EraseInitTypeDef eraseInit = {
-  //  FLASH_TYPEERASE_PAGES,  /*!< Pages erase only (Mass erase is disabled)*/
-    //0,                      /*!< Select banks to erase when Mass erase is enabled.*/
-    //0x08003000,              /*!< Initial FLASH page address to erase when mass erase is disabled
-                                 //This parameter must be a number between Min_Data = 0x08000000 and Max_Data = FLASH_BANKx_END 
-                                 //(x = 1 or 2 depending on devices)*/
-    //1                       /*!< Number of pagess to be erased.
-                                 //This parameter must be a value between Min_Data = 1 and Max_Data = (max number of pages - value of initial page)*/
-//};
- 
-
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
+ __attribute__((section(".noinit"))) volatile uint32_t test ; //Shared Memory between APP and Bootloader
 
 /* Private variables ---------------------------------------------------------*/
-
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
+volatile uint32_t CRCValue = 0;
+uint32_t buffer2[Max_Buffer_Size] ;
+uint32_t buffer[Max_Buffer_Size];
 
 /* Private function prototypes -----------------------------------------------*/
+void JumpToMain(void);
+void Bootloader_flash(uint32_t* buffer);
+void memory_erase(void);
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+
+void memory_erase(void){
+	
+  HAL_FLASH_Unlock();
+  uint32_t PAGEError;
+	static FLASH_EraseInitTypeDef EraseInitStruct;
+	EraseInitStruct.TypeErase   = FLASH_TYPEERASE_PAGES;
+	EraseInitStruct.PageAddress = App_Adress  ;
+	EraseInitStruct.NbPages     = 55 ;
+	
+	HAL_FLASHEx_Erase(&EraseInitStruct,&PAGEError);
+
+  HAL_FLASH_Lock();
+	
+}
+
+void Bootloader_flash(uint32_t* buffer){
+    static uint32_t mem_address = App_Adress;
+		
+		int remaining=0;
+		
+    //First Receive the Packet Length
+		HAL_UART_Receive(&huart1,(uint8_t*)&buffer[0],1,HAL_MAX_DELAY);
+		uint8_t packet_length=*(uint8_t *)&buffer[0];
+    
+    //Now receive the entire Packet
+		HAL_UART_Receive(&huart1,(uint8_t*)buffer2,packet_length,HAL_MAX_DELAY);
+		
+    
+    uint8_t payload_length= (packet_length - 4) ;			//Basically Data length is size of Packet received minus CRC WORD
+	  uint32_t packet_CRC =*(uint32_t*)(&buffer2[( payload_length / 4 )]);//CRC is the last Word on our packet
+		
+		//
+		uint32_t CRCValue=HAL_CRC_Calculate(&hcrc,(uint32_t*)buffer2 ,(payload_length / 4));
+
+		// We calulate the CRC of the received Packet before flashing it and if doesnt match 
+    // the Checksum we have ,we request a resend from the HOST on the PC
+		while(CRCValue!=packet_CRC){
+			
+			HAL_UART_Transmit(&huart1,(uint8_t*)"0",1,HAL_MAX_DELAY);
+			HAL_UART_Receive(&huart1,(uint8_t*)buffer2,packet_length,HAL_MAX_DELAY);
+			CRCValue=HAL_CRC_Calculate(&hcrc,(uint32_t*)buffer2,(payload_length / 4));
+		}
+			HAL_UART_Transmit(&huart1,(uint8_t*)"1",1,HAL_MAX_DELAY);
+		
+			HAL_FLASH_Unlock();
+			
+		// We got the number of words that forms our payload because we will Flash a Word at a time	
+			int numofwords = (payload_length/4)+((payload_length % 4)!=0);
+			
+			while(remaining  < numofwords ){
+			
+			HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD,mem_address,buffer2[remaining]);
+			
+				
+				
+			mem_address += 4;
+			remaining+=1;
+	}
+			
+		 HAL_FLASH_Lock();
+		
+}
+
+
+/**************************Jump to App implementation ************************************/
 
 void JumpToMain(void){
 	
@@ -103,12 +123,7 @@ __set_MSP(msp_val);
 Jump();
 
 }
-/* USER CODE END PFP */
 
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
@@ -116,25 +131,14 @@ Jump();
   */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
 
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
 
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
 
   /* Configure the system clock */
   SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
@@ -142,53 +146,48 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
+  
   CRCValue =HAL_CRC_Calculate(&hcrc, (uint32_t*)App_Adress,( uint32_t ) ROM_LEN_WORD);
-  /*HAL_FLASH_Unlock();
-  HAL_FLASHEx_Erase(&eraseInit, &pageError);
-  HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, 0x08002000,CRCValue);
-  HAL_FLASH_Lock();*/
-  
-  /*  
-    if(CRCValue == ExpectedCRCValue ){
-    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
-    HAL_Delay(2000);
-    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,0);
 
- }*/
-
-  
   
 	  if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12)         ||      //Boutton in toggled during start-up
 
     (test==1)                                      ||      //Bootloader was issued by main app after softreset
 
-    CRCValue != ExpectedCRCValue                   ||
+    CRCValue != ExpectedCRCValue                   ||      //Invalid Checksum =>Invalid Image
     
-    *(volatile uint32_t *)App_Adress==0xFFFF       //||      //App wasn't flashed
+    *(volatile uint32_t *)App_Adress==0xFFFF               //no app in memory
   
     )
   
   {
         
-        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
-        HAL_Delay(2000);
-        test=0;
-        JumpToMain();
-        
+      while (1)
+      {
+    
+		    static int i=0;
+        if(i==0){
+		      memory_erase(); //We start by erasing the location of our new app during our first iteration 
+		      i=1;              
+        }
+    
+        HAL_UART_Receive(&huart1,(uint8_t*)&buffer[0],1,HAL_MAX_DELAY);		
+		    switch(buffer[0])
+		    {
+			    case 0x1:                      //0x1 for Flashing 
+				    Bootloader_flash(buffer);
+				    break;
+			    
+          case 0x9:                     //0x9 flashing done
+				    JumpToMain();
+            break;
+			  }
+	    }	
   }
-	else {
-    JumpToMain();}
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
+	else 
   {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
+   JumpToMain();
   }
-  /* USER CODE END 3 */
 }
 
 /**
@@ -200,9 +199,6 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
-  /** Initializes the RCC Oscillators according to the specified parameters
-  * in the RCC_OscInitTypeDef structure.
-  */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
@@ -226,9 +222,6 @@ void SystemClock_Config(void)
   }
 }
 
-/* USER CODE BEGIN 4 */
-
-/* USER CODE END 4 */
 
 /**
   * @brief  This function is executed in case of error occurrence.
@@ -242,7 +235,6 @@ void Error_Handler(void)
   while (1)
   {
   }
-  /* USER CODE END Error_Handler_Debug */
 }
 
 #ifdef  USE_FULL_ASSERT
@@ -255,10 +247,7 @@ void Error_Handler(void)
   */
 void assert_failed(uint8_t *file, uint32_t line)
 {
-  /* USER CODE BEGIN 6 */
-  /* User can add his own implementation to report the file name and line number,
-     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
-  /* USER CODE END 6 */
+
 }
 #endif /* USE_FULL_ASSERT */
 

@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 1
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
   29:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c **** 
   30:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   @endverbatim
   31:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   ******************************************************************************
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 2
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 2
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 2
 
 
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   * @attention
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
   86:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   * @{
   87:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   */
   88:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c **** 
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 3
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 3
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 3
 
 
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c **** /**
@@ -190,11 +178,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
  143:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   /* Change CRC peripheral state */
  144:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   hcrc->State = HAL_CRC_STATE_BUSY;
  145:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c **** 
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 4
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 4
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 4
 
 
  146:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   /* Reset CRC calculation unit */
@@ -254,11 +238,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
   50              		.loc 1 96 1 is_stmt 1 view -0
   51              		.cfi_startproc
   52              		@ args = 0, pretend = 0, frame = 0
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 5
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 5
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 5
 
 
   53              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -318,11 +298,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
   91              	.LVL5:
   92              	.L5:
   93              	.LCFI1:
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 6
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 6
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 6
 
 
   94              		.cfi_def_cfa_offset 0
@@ -382,11 +358,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
  135              	HAL_CRC_DeInit:
  136              	.LVL8:
  137              	.LFB66:
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 7
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 7
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 7
 
 
  127:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   /* Check the CRC handle allocation */
@@ -446,11 +418,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
  178              		.loc 1 153 3 view .LVU38
  179 0024 2846     		mov	r0, r5
  180 0026 FFF7FEFF 		bl	HAL_CRC_MspDeInit
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 8
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 8
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 8
 
 
  181              	.LVL10:
@@ -510,11 +478,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
  199:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c **** /** @defgroup CRC_Exported_Functions_Group2 Peripheral Control functions
  200:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   *  @brief    management functions.
  201:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   *
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 9
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 9
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 9
 
 
  202:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c **** @verbatim
@@ -574,11 +538,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
  241              		.loc 1 236 3 is_stmt 0 view .LVU58
  242 0008 9342     		cmp	r3, r2
  243 000a 11D2     		bcs	.L26
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 10
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 10
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 10
 
 
  228:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   uint32_t index;      /* CRC input data buffer index */
@@ -638,11 +598,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
  282              		.cfi_restore 14
  240:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c **** 
  283              		.loc 1 240 3 is_stmt 1 view .LVU73
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 11
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 11
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 11
 
 
  240:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c **** 
@@ -702,11 +658,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
  263:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   hcrc->State = HAL_CRC_STATE_BUSY;
  320              		.loc 1 263 3 view .LVU84
  321              		.loc 1 263 15 is_stmt 0 view .LVU85
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 12
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 12
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 12
 
 
  322 0002 0223     		movs	r3, #2
@@ -766,11 +718,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
  360              		.loc 1 274 14 is_stmt 0 view .LVU100
  361 002a DCF80030 		ldr	r3, [ip]
  362              	.LVL30:
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 13
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 13
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 13
 
 
  363              		.loc 1 274 8 view .LVU101
@@ -830,11 +778,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
  282:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c **** 
  283:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c **** /**
  284:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   * @}
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 14
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 14
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 14
 
 
  285:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c ****   */
@@ -883,45 +827,24 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 1
  424              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
  425              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
  426              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h"
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s 			page 15
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s 			page 15
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_crc.c
-<<<<<<< Updated upstream
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:16     .text.HAL_CRC_MspInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:24     .text.HAL_CRC_MspInit:00000000 HAL_CRC_MspInit
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:40     .text.HAL_CRC_Init:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:47     .text.HAL_CRC_Init:00000000 HAL_CRC_Init
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:106    .text.HAL_CRC_MspDeInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:113    .text.HAL_CRC_MspDeInit:00000000 HAL_CRC_MspDeInit
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:128    .text.HAL_CRC_DeInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:135    .text.HAL_CRC_DeInit:00000000 HAL_CRC_DeInit
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:212    .text.HAL_CRC_Accumulate:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:219    .text.HAL_CRC_Accumulate:00000000 HAL_CRC_Accumulate
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:301    .text.HAL_CRC_Calculate:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:308    .text.HAL_CRC_Calculate:00000000 HAL_CRC_Calculate
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:396    .text.HAL_CRC_GetState:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccw3zvhr.s:403    .text.HAL_CRC_GetState:00000000 HAL_CRC_GetState
-=======
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:16     .text.HAL_CRC_MspInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:24     .text.HAL_CRC_MspInit:00000000 HAL_CRC_MspInit
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:40     .text.HAL_CRC_Init:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:47     .text.HAL_CRC_Init:00000000 HAL_CRC_Init
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:106    .text.HAL_CRC_MspDeInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:113    .text.HAL_CRC_MspDeInit:00000000 HAL_CRC_MspDeInit
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:128    .text.HAL_CRC_DeInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:135    .text.HAL_CRC_DeInit:00000000 HAL_CRC_DeInit
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:212    .text.HAL_CRC_Accumulate:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:219    .text.HAL_CRC_Accumulate:00000000 HAL_CRC_Accumulate
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:301    .text.HAL_CRC_Calculate:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:308    .text.HAL_CRC_Calculate:00000000 HAL_CRC_Calculate
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:396    .text.HAL_CRC_GetState:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccaD9IAc.s:403    .text.HAL_CRC_GetState:00000000 HAL_CRC_GetState
->>>>>>> Stashed changes
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:16     .text.HAL_CRC_MspInit:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:24     .text.HAL_CRC_MspInit:00000000 HAL_CRC_MspInit
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:40     .text.HAL_CRC_Init:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:47     .text.HAL_CRC_Init:00000000 HAL_CRC_Init
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:106    .text.HAL_CRC_MspDeInit:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:113    .text.HAL_CRC_MspDeInit:00000000 HAL_CRC_MspDeInit
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:128    .text.HAL_CRC_DeInit:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:135    .text.HAL_CRC_DeInit:00000000 HAL_CRC_DeInit
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:212    .text.HAL_CRC_Accumulate:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:219    .text.HAL_CRC_Accumulate:00000000 HAL_CRC_Accumulate
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:301    .text.HAL_CRC_Calculate:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:308    .text.HAL_CRC_Calculate:00000000 HAL_CRC_Calculate
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:396    .text.HAL_CRC_GetState:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccVMSFrM.s:403    .text.HAL_CRC_GetState:00000000 HAL_CRC_GetState
 
 NO UNDEFINED SYMBOLS

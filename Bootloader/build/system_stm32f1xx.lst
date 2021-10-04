@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s 			page 1
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 1
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 1
   30:Core/Src/system_stm32f1xx.c ****   *    are using different crystal you have to adapt the HSE value to your own
   31:Core/Src/system_stm32f1xx.c ****   *    configuration.
   32:Core/Src/system_stm32f1xx.c ****   *        
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s 			page 2
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 2
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s 			page 2
 
 
   33:Core/Src/system_stm32f1xx.c ****   ******************************************************************************
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 1
   87:Core/Src/system_stm32f1xx.c **** /*!< Uncomment the following line if you need to use external SRAM  */ 
   88:Core/Src/system_stm32f1xx.c **** #if defined(STM32F100xE) || defined(STM32F101xE) || defined(STM32F101xG) || defined(STM32F103xE) ||
   89:Core/Src/system_stm32f1xx.c **** /* #define DATA_IN_ExtSRAM */
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s 			page 3
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 3
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s 			page 3
 
 
   90:Core/Src/system_stm32f1xx.c **** #endif /* STM32F100xE || STM32F101xE || STM32F101xG || STM32F103xE || STM32F103xG */
@@ -190,11 +178,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 1
  144:Core/Src/system_stm32f1xx.c **** const uint8_t APBPrescTable[8U] =  {0, 0, 0, 0, 1, 2, 3, 4};
  145:Core/Src/system_stm32f1xx.c **** 
  146:Core/Src/system_stm32f1xx.c **** /**
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s 			page 4
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 4
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s 			page 4
 
 
  147:Core/Src/system_stm32f1xx.c ****   * @}
@@ -254,11 +238,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 1
   40              		.syntax unified
   41              		.thumb
   42              		.thumb_func
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s 			page 5
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 5
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s 			page 5
 
 
   43              		.fpu softvfp
@@ -318,11 +298,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 1
  233:Core/Src/system_stm32f1xx.c **** #if defined(STM32F100xB) || defined(STM32F100xE)
  234:Core/Src/system_stm32f1xx.c ****   uint32_t prediv1factor = 0U;
  235:Core/Src/system_stm32f1xx.c **** #endif /* STM32F100xB or STM32F100xE */
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s 			page 6
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 6
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s 			page 6
 
 
  236:Core/Src/system_stm32f1xx.c ****     
@@ -382,11 +358,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 1
  277:Core/Src/system_stm32f1xx.c ****         }
  278:Core/Src/system_stm32f1xx.c ****  #endif
  279:Core/Src/system_stm32f1xx.c ****       }
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s 			page 7
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 7
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s 			page 7
 
 
  280:Core/Src/system_stm32f1xx.c **** #else
@@ -446,11 +418,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 1
   77              	.L9:
  243:Core/Src/system_stm32f1xx.c ****       break;
   78              		.loc 1 243 7 view .LVU12
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s 			page 8
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 8
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s 			page 8
 
 
  243:Core/Src/system_stm32f1xx.c ****       break;
@@ -510,11 +478,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 1
  118              	.L4:
  251:Core/Src/system_stm32f1xx.c ****       pllsource = RCC->CFGR & RCC_CFGR_PLLSRC;
  119              		.loc 1 251 7 view .LVU27
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s 			page 9
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 9
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s 			page 9
 
 
  251:Core/Src/system_stm32f1xx.c ****       pllsource = RCC->CFGR & RCC_CFGR_PLLSRC;
@@ -574,11 +538,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 1
  158              		.loc 1 270 12 view .LVU43
  159 0060 12F4003F 		tst	r2, #131072
  160 0064 05D0     		beq	.L8
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s 			page 10
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 10
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s 			page 10
 
 
  272:Core/Src/system_stm32f1xx.c ****         }
@@ -638,11 +598,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 1
  211              		.align	2
  214              	APBPrescTable:
  215 0000 00000000 		.ascii	"\000\000\000\000\001\002\003\004"
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s 			page 11
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 11
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s 			page 11
 
 
  215      01020304 
@@ -653,39 +609,21 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 1
  220              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
  221              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
  222              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s 			page 12
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s 			page 12
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 system_stm32f1xx.c
-<<<<<<< Updated upstream
-C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s:16     .text.SystemInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s:24     .text.SystemInit:00000000 SystemInit
-C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s:38     .text.SystemCoreClockUpdate:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s:45     .text.SystemCoreClockUpdate:00000000 SystemCoreClockUpdate
-C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s:184    .text.SystemCoreClockUpdate:00000080 $d
-C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s:214    .rodata.APBPrescTable:00000000 APBPrescTable
-C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s:207    .rodata.AHBPrescTable:00000000 AHBPrescTable
-C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s:200    .data.SystemCoreClock:00000000 SystemCoreClock
-C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s:196    .data.SystemCoreClock:00000000 $d
-C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s:203    .rodata.AHBPrescTable:00000000 $d
-C:\Users\T470S\AppData\Local\Temp\ccFjJhYc.s:211    .rodata.APBPrescTable:00000000 $d
-=======
-C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s:16     .text.SystemInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s:24     .text.SystemInit:00000000 SystemInit
-C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s:38     .text.SystemCoreClockUpdate:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s:45     .text.SystemCoreClockUpdate:00000000 SystemCoreClockUpdate
-C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s:184    .text.SystemCoreClockUpdate:00000080 $d
-C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s:214    .rodata.APBPrescTable:00000000 APBPrescTable
-C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s:207    .rodata.AHBPrescTable:00000000 AHBPrescTable
-C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s:200    .data.SystemCoreClock:00000000 SystemCoreClock
-C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s:196    .data.SystemCoreClock:00000000 $d
-C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s:203    .rodata.AHBPrescTable:00000000 $d
-C:\Users\T470S\AppData\Local\Temp\ccHlAUA6.s:211    .rodata.APBPrescTable:00000000 $d
->>>>>>> Stashed changes
+C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s:16     .text.SystemInit:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s:24     .text.SystemInit:00000000 SystemInit
+C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s:38     .text.SystemCoreClockUpdate:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s:45     .text.SystemCoreClockUpdate:00000000 SystemCoreClockUpdate
+C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s:184    .text.SystemCoreClockUpdate:00000080 $d
+C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s:214    .rodata.APBPrescTable:00000000 APBPrescTable
+C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s:207    .rodata.AHBPrescTable:00000000 AHBPrescTable
+C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s:200    .data.SystemCoreClock:00000000 SystemCoreClock
+C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s:196    .data.SystemCoreClock:00000000 $d
+C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s:203    .rodata.AHBPrescTable:00000000 $d
+C:\Users\T470S\AppData\Local\Temp\ccL5QOyQ.s:211    .rodata.APBPrescTable:00000000 $d
 
 NO UNDEFINED SYMBOLS

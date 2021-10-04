@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s 			page 1
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 1
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 1
   30:Core/Src/usart.c **** 
   31:Core/Src/usart.c **** void MX_USART1_UART_Init(void)
   32:Core/Src/usart.c **** {
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s 			page 2
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 2
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s 			page 2
 
 
   27              		.loc 1 32 1 view -0
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 1
   49:Core/Src/usart.c ****   if (HAL_UART_Init(&huart1) != HAL_OK)
   65              		.loc 1 49 3 is_stmt 1 view .LVU17
   66              		.loc 1 49 7 is_stmt 0 view .LVU18
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s 			page 3
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 3
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s 			page 3
 
 
   67 001e FFF7FEFF 		bl	HAL_UART_Init
@@ -190,11 +178,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 1
  111              	.LCFI2:
  112              		.cfi_def_cfa_offset 40
   61:Core/Src/usart.c **** 
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s 			page 4
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 4
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s 			page 4
 
 
   62:Core/Src/usart.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -254,11 +238,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 1
  135 0018 30BD     		pop	{r4, r5, pc}
  136              	.LVL4:
  137              	.L10:
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s 			page 5
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 5
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s 			page 5
 
 
  138              	.LCFI4:
@@ -318,11 +298,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 1
  176              		.loc 1 77 26 is_stmt 0 view .LVU46
  177 0048 0223     		movs	r3, #2
  178 004a 0393     		str	r3, [sp, #12]
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s 			page 6
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 6
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s 			page 6
 
 
   78:Core/Src/usart.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -382,11 +358,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 1
  220              		.align	2
  221              	.L11:
  222 0080 00380140 		.word	1073821696
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s 			page 7
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 7
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s 			page 7
 
 
  223 0084 00080140 		.word	1073809408
@@ -446,11 +418,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 1
  116:Core/Src/usart.c ****   /* USER CODE END USART1_MspDeInit 1 */
  117:Core/Src/usart.c ****   }
  118:Core/Src/usart.c **** }
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s 			page 8
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 8
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s 			page 8
 
 
  257              		.loc 1 118 1 view .LVU66
@@ -509,40 +477,22 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 1
  305              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
  306              		.file 10 "Core/Inc/main.h"
  307              		.file 11 "Core/Inc/usart.h"
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s 			page 9
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s 			page 9
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usart.c
-<<<<<<< Updated upstream
-C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s:16     .text.MX_USART1_UART_Init:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s:24     .text.MX_USART1_UART_Init:00000000 MX_USART1_UART_Init
-C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s:83     .text.MX_USART1_UART_Init:0000002c $d
-C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s:89     .text.HAL_UART_MspInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s:96     .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
-C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s:222    .text.HAL_UART_MspInit:00000080 $d
-C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s:228    .text.HAL_UART_MspDeInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s:235    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
-C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s:282    .text.HAL_UART_MspDeInit:00000028 $d
-C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s:294    .bss.huart1:00000000 huart1
-C:\Users\T470S\AppData\Local\Temp\ccqlxm8Z.s:290    .bss.huart1:00000000 $d
-=======
-C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s:16     .text.MX_USART1_UART_Init:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s:24     .text.MX_USART1_UART_Init:00000000 MX_USART1_UART_Init
-C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s:83     .text.MX_USART1_UART_Init:0000002c $d
-C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s:89     .text.HAL_UART_MspInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s:96     .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
-C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s:222    .text.HAL_UART_MspInit:00000080 $d
-C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s:228    .text.HAL_UART_MspDeInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s:235    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
-C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s:282    .text.HAL_UART_MspDeInit:00000028 $d
-C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s:294    .bss.huart1:00000000 huart1
-C:\Users\T470S\AppData\Local\Temp\ccqC9gSa.s:290    .bss.huart1:00000000 $d
->>>>>>> Stashed changes
+C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s:16     .text.MX_USART1_UART_Init:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s:24     .text.MX_USART1_UART_Init:00000000 MX_USART1_UART_Init
+C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s:83     .text.MX_USART1_UART_Init:0000002c $d
+C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s:89     .text.HAL_UART_MspInit:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s:96     .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
+C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s:222    .text.HAL_UART_MspInit:00000080 $d
+C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s:228    .text.HAL_UART_MspDeInit:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s:235    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
+C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s:282    .text.HAL_UART_MspDeInit:00000028 $d
+C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s:294    .bss.huart1:00000000 huart1
+C:\Users\T470S\AppData\Local\Temp\ccMG0V6p.s:290    .bss.huart1:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_UART_Init

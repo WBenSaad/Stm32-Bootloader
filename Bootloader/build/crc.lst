@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s 			page 1
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s 			page 1
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s 			page 1
   30:Core/Src/crc.c **** void MX_CRC_Init(void)
   31:Core/Src/crc.c **** {
   27              		.loc 1 31 1 view -0
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s 			page 2
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s 			page 2
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s 			page 2
 
 
   28              		.cfi_startproc
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s 			page 1
   64              		.section	.text.HAL_CRC_MspInit,"ax",%progbits
   65              		.align	1
   66              		.global	HAL_CRC_MspInit
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s 			page 3
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s 			page 3
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s 			page 3
 
 
   67              		.syntax unified
@@ -190,11 +178,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s 			page 1
   62:Core/Src/crc.c **** 
   63:Core/Src/crc.c ****   /* USER CODE END CRC_MspInit 1 */
   64:Core/Src/crc.c ****   }
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s 			page 4
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s 			page 4
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s 			page 4
 
 
   65:Core/Src/crc.c **** }
@@ -254,11 +238,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s 			page 1
  148              	.L18:
   76:Core/Src/crc.c ****   /* USER CODE BEGIN CRC_MspDeInit 1 */
  149              		.loc 1 76 5 is_stmt 1 view .LVU26
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s 			page 5
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s 			page 5
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s 			page 5
 
 
  150 000a 044A     		ldr	r2, .L19+4
@@ -290,40 +270,22 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s 			page 1
  178              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h"
  179              		.file 7 "Core/Inc/main.h"
  180              		.file 8 "Core/Inc/crc.h"
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s 			page 6
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s 			page 6
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 crc.c
-<<<<<<< Updated upstream
-C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s:16     .text.MX_CRC_Init:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s:24     .text.MX_CRC_Init:00000000 MX_CRC_Init
-C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s:59     .text.MX_CRC_Init:00000018 $d
-C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s:65     .text.HAL_CRC_MspInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s:72     .text.HAL_CRC_MspInit:00000000 HAL_CRC_MspInit
-C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s:118    .text.HAL_CRC_MspInit:00000028 $d
-C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s:123    .text.HAL_CRC_MspDeInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s:130    .text.HAL_CRC_MspDeInit:00000000 HAL_CRC_MspDeInit
-C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s:159    .text.HAL_CRC_MspDeInit:00000018 $d
-C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s:170    .bss.hcrc:00000000 hcrc
-C:\Users\T470S\AppData\Local\Temp\ccsgblzj.s:166    .bss.hcrc:00000000 $d
-=======
-C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s:16     .text.MX_CRC_Init:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s:24     .text.MX_CRC_Init:00000000 MX_CRC_Init
-C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s:59     .text.MX_CRC_Init:00000018 $d
-C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s:65     .text.HAL_CRC_MspInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s:72     .text.HAL_CRC_MspInit:00000000 HAL_CRC_MspInit
-C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s:118    .text.HAL_CRC_MspInit:00000028 $d
-C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s:123    .text.HAL_CRC_MspDeInit:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s:130    .text.HAL_CRC_MspDeInit:00000000 HAL_CRC_MspDeInit
-C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s:159    .text.HAL_CRC_MspDeInit:00000018 $d
-C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s:170    .bss.hcrc:00000000 hcrc
-C:\Users\T470S\AppData\Local\Temp\ccOgOo5j.s:166    .bss.hcrc:00000000 $d
->>>>>>> Stashed changes
+C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s:16     .text.MX_CRC_Init:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s:24     .text.MX_CRC_Init:00000000 MX_CRC_Init
+C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s:59     .text.MX_CRC_Init:00000018 $d
+C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s:65     .text.HAL_CRC_MspInit:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s:72     .text.HAL_CRC_MspInit:00000000 HAL_CRC_MspInit
+C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s:118    .text.HAL_CRC_MspInit:00000028 $d
+C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s:123    .text.HAL_CRC_MspDeInit:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s:130    .text.HAL_CRC_MspDeInit:00000000 HAL_CRC_MspDeInit
+C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s:159    .text.HAL_CRC_MspDeInit:00000018 $d
+C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s:170    .bss.hcrc:00000000 hcrc
+C:\Users\T470S\AppData\Local\Temp\cctnsuIf.s:166    .bss.hcrc:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_CRC_Init

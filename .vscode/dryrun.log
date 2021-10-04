@@ -1,18 +1,18 @@
-make.exe --dry-run --keep-going --print-directory
+make.exe --dry-run --always-make --keep-going --print-directory
 make.exe: entrant dans le r�pertoire � c:/Users/T470S/Desktop/Bootloader �
 make.exe -C __pycache__/. 
  
 make.exe[1]: entrant dans le r�pertoire � c:/Users/T470S/Desktop/Bootloader/__pycache__ �
+make.exe[1]: quittant le r�pertoire � c:/Users/T470S/Desktop/Bootloader/__pycache__ �
  
 make.exe[1]: *** Pas de cibles sp�cifi�es et aucun makefile n'a �t� trouv�. Arr�t.
- 
-make.exe[1]: quittant le r�pertoire � c:/Users/T470S/Desktop/Bootloader/__pycache__ �
  
 make.exe: *** [__pycache__/.] Erreur 2
  
 make.exe -C Bootloader/. 
  
 make.exe[1]: entrant dans le r�pertoire � c:/Users/T470S/Desktop/Bootloader/Bootloader �
+mkdir build		
  
 arm-none-eabi-gcc -c -mcpu=cortex-m3 -mthumb   -DUSE_HAL_DRIVER -DSTM32F103xB -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/Bootloader.d" -Wa,-a,-ad,-alms=build/Bootloader.lst Core/Src/Bootloader.c -o build/Bootloader.o
  
@@ -65,7 +65,6 @@ arm-none-eabi-gcc -x assembler-with-cpp -c -mcpu=cortex-m3 -mthumb   -DUSE_HAL_D
 arm-none-eabi-gcc build/Bootloader.o build/gpio.o build/crc.o build/tim.o build/usart.o build/stm32f1xx_it.o build/stm32f1xx_hal_msp.o build/stm32f1xx_hal_gpio_ex.o build/stm32f1xx_hal_crc.o build/stm32f1xx_hal.o build/stm32f1xx_hal_rcc.o build/stm32f1xx_hal_rcc_ex.o build/stm32f1xx_hal_gpio.o build/stm32f1xx_hal_dma.o build/stm32f1xx_hal_cortex.o build/stm32f1xx_hal_pwr.o build/stm32f1xx_hal_flash.o build/stm32f1xx_hal_flash_ex.o build/stm32f1xx_hal_exti.o build/stm32f1xx_hal_tim.o build/stm32f1xx_hal_tim_ex.o build/stm32f1xx_hal_uart.o build/system_stm32f1xx.o build/startup_stm32f103xb.o -mcpu=cortex-m3 -mthumb   -specs=nano.specs -TBootloader.ld  -lc -lm -lnosys  -Wl,-Map=build/Bootloader.map,--cref -Wl,--gc-sections -o build/Bootloader.elf
 arm-none-eabi-size build/Bootloader.elf
 arm-none-eabi-objcopy -O ihex build/Bootloader.elf build/Bootloader.hex
- 
 arm-none-eabi-objcopy --pad-to=0x4000 --gap-fill=0xFF -O binary build/Bootloader.elf build/Bootloader.bin
  
 make.exe[1]: quittant le r�pertoire � c:/Users/T470S/Desktop/Bootloader/Bootloader �
@@ -73,6 +72,9 @@ make.exe[1]: quittant le r�pertoire � c:/Users/T470S/Desktop/Bootloader/Boot
 make.exe -C MainApp/. 
  
 make.exe[1]: entrant dans le r�pertoire � c:/Users/T470S/Desktop/Bootloader/MainApp �
+ 
+mkdir build		
+ 
 arm-none-eabi-gcc -c -mcpu=cortex-m3 -mthumb   -DUSE_HAL_DRIVER -DSTM32F103xB -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/MainApp.d" -Wa,-a,-ad,-alms=build/MainApp.lst Core/Src/MainApp.c -o build/MainApp.o
  
 arm-none-eabi-gcc -c -mcpu=cortex-m3 -mthumb   -DUSE_HAL_DRIVER -DSTM32F103xB -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32f1xx_it.d" -Wa,-a,-ad,-alms=build/stm32f1xx_it.lst Core/Src/stm32f1xx_it.c -o build/stm32f1xx_it.o
@@ -112,7 +114,6 @@ arm-none-eabi-gcc -x assembler-with-cpp -c -mcpu=cortex-m3 -mthumb   -DUSE_HAL_D
 arm-none-eabi-gcc build/MainApp.o build/stm32f1xx_it.o build/stm32f1xx_hal_msp.o build/stm32f1xx_hal_gpio_ex.o build/stm32f1xx_hal_tim.o build/stm32f1xx_hal_tim_ex.o build/stm32f1xx_hal.o build/stm32f1xx_hal_rcc.o build/stm32f1xx_hal_rcc_ex.o build/stm32f1xx_hal_gpio.o build/stm32f1xx_hal_dma.o build/stm32f1xx_hal_cortex.o build/stm32f1xx_hal_pwr.o build/stm32f1xx_hal_flash.o build/stm32f1xx_hal_flash_ex.o build/stm32f1xx_hal_exti.o build/system_stm32f1xx.o build/startup_stm32f103xb.o -mcpu=cortex-m3 -mthumb   -specs=nano.specs -TApp.ld  -lc -lm -lnosys  -Wl,-Map=build/Main_App.map,--cref -Wl,--gc-sections -o build/Main_App.elf
 arm-none-eabi-size build/Main_App.elf
 arm-none-eabi-objcopy -O ihex build/Main_App.elf build/Main_App.hex
- 
 arm-none-eabi-objcopy -O binary -S build/Main_App.elf build/Main_App.bin	
 make.exe[1]: quittant le r�pertoire � c:/Users/T470S/Desktop/Bootloader/MainApp �
  
@@ -120,9 +121,9 @@ make.exe -C Python/.
  
 make.exe[1]: entrant dans le r�pertoire � c:/Users/T470S/Desktop/Bootloader/Python �
  
-make.exe[1]: *** Pas de cibles sp�cifi�es et aucun makefile n'a �t� trouv�. Arr�t.
- 
 make.exe[1]: quittant le r�pertoire � c:/Users/T470S/Desktop/Bootloader/Python �
+ 
+make.exe[1]: *** Pas de cibles sp�cifi�es et aucun makefile n'a �t� trouv�. Arr�t.
  
 make.exe: *** [Python/.] Erreur 2
  

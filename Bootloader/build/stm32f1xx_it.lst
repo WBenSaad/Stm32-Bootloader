@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccp655gx.s 			page 1
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 1
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 1
   30:Core/Src/stm32f1xx_it.c **** 
   31:Core/Src/stm32f1xx_it.c **** /* USER CODE END TD */
   32:Core/Src/stm32f1xx_it.c **** 
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccp655gx.s 			page 2
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 2
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s 			page 2
 
 
   33:Core/Src/stm32f1xx_it.c **** /* Private define ------------------------------------------------------------*/
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 1
   79:Core/Src/stm32f1xx_it.c ****   }
   35              		.loc 1 79 3 discriminator 1 view .LVU2
   77:Core/Src/stm32f1xx_it.c ****   {
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccp655gx.s 			page 3
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 3
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s 			page 3
 
 
   36              		.loc 1 77 9 discriminator 1 view .LVU3
@@ -190,11 +178,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 1
   98:Core/Src/stm32f1xx_it.c **** /**
   99:Core/Src/stm32f1xx_it.c ****   * @brief This function handles Memory management fault.
  100:Core/Src/stm32f1xx_it.c ****   */
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccp655gx.s 			page 4
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 4
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s 			page 4
 
 
  101:Core/Src/stm32f1xx_it.c **** void MemManage_Handler(void)
@@ -254,11 +238,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 1
  124:Core/Src/stm32f1xx_it.c ****     /* USER CODE END W1_BusFault_IRQn 0 */
  125:Core/Src/stm32f1xx_it.c ****   }
  107              		.loc 1 125 3 discriminator 1 view .LVU14
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccp655gx.s 			page 5
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 5
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s 			page 5
 
 
  121:Core/Src/stm32f1xx_it.c ****   {
@@ -318,11 +298,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 1
  143:Core/Src/stm32f1xx_it.c **** /**
  144:Core/Src/stm32f1xx_it.c ****   * @brief This function handles System service call via SWI instruction.
  145:Core/Src/stm32f1xx_it.c ****   */
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccp655gx.s 			page 6
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 6
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s 			page 6
 
 
  146:Core/Src/stm32f1xx_it.c **** void SVC_Handler(void)
@@ -382,11 +358,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 1
  182              		.thumb_func
  183              		.fpu softvfp
  185              	PendSV_Handler:
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccp655gx.s 			page 7
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 7
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s 			page 7
 
 
  186              	.LFB72:
@@ -446,11 +418,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 1
  191:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN SysTick_IRQn 1 */
  192:Core/Src/stm32f1xx_it.c **** 
  193:Core/Src/stm32f1xx_it.c ****   /* USER CODE END SysTick_IRQn 1 */
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccp655gx.s 			page 8
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 8
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s 			page 8
 
 
  194:Core/Src/stm32f1xx_it.c **** }
@@ -510,11 +478,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 1
  253              		.cfi_endproc
  254              	.LFE74:
  256              		.section	.text.USART1_IRQHandler,"ax",%progbits
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccp655gx.s 			page 9
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 9
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s 			page 9
 
 
  257              		.align	1
@@ -570,66 +534,35 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 1
  295              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
  296              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h"
  297              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccp655gx.s 			page 10
-=======
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s 			page 10
->>>>>>> Stashed changes
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_it.c
-<<<<<<< Updated upstream
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:16     .text.NMI_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:24     .text.NMI_Handler:00000000 NMI_Handler
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:42     .text.HardFault_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:49     .text.HardFault_Handler:00000000 HardFault_Handler
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:66     .text.MemManage_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:73     .text.MemManage_Handler:00000000 MemManage_Handler
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:90     .text.BusFault_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:97     .text.BusFault_Handler:00000000 BusFault_Handler
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:114    .text.UsageFault_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:121    .text.UsageFault_Handler:00000000 UsageFault_Handler
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:138    .text.SVC_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:145    .text.SVC_Handler:00000000 SVC_Handler
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:158    .text.DebugMon_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:165    .text.DebugMon_Handler:00000000 DebugMon_Handler
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:178    .text.PendSV_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:185    .text.PendSV_Handler:00000000 PendSV_Handler
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:198    .text.SysTick_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:205    .text.SysTick_Handler:00000000 SysTick_Handler
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:225    .text.TIM2_IRQHandler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:232    .text.TIM2_IRQHandler:00000000 TIM2_IRQHandler
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:252    .text.TIM2_IRQHandler:0000000c $d
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:257    .text.USART1_IRQHandler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:264    .text.USART1_IRQHandler:00000000 USART1_IRQHandler
-C:\Users\T470S\AppData\Local\Temp\ccp655gx.s:284    .text.USART1_IRQHandler:0000000c $d
-=======
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:16     .text.NMI_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:24     .text.NMI_Handler:00000000 NMI_Handler
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:42     .text.HardFault_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:49     .text.HardFault_Handler:00000000 HardFault_Handler
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:66     .text.MemManage_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:73     .text.MemManage_Handler:00000000 MemManage_Handler
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:90     .text.BusFault_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:97     .text.BusFault_Handler:00000000 BusFault_Handler
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:114    .text.UsageFault_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:121    .text.UsageFault_Handler:00000000 UsageFault_Handler
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:138    .text.SVC_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:145    .text.SVC_Handler:00000000 SVC_Handler
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:158    .text.DebugMon_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:165    .text.DebugMon_Handler:00000000 DebugMon_Handler
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:178    .text.PendSV_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:185    .text.PendSV_Handler:00000000 PendSV_Handler
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:198    .text.SysTick_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:205    .text.SysTick_Handler:00000000 SysTick_Handler
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:225    .text.TIM2_IRQHandler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:232    .text.TIM2_IRQHandler:00000000 TIM2_IRQHandler
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:252    .text.TIM2_IRQHandler:0000000c $d
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:257    .text.USART1_IRQHandler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:264    .text.USART1_IRQHandler:00000000 USART1_IRQHandler
-C:\Users\T470S\AppData\Local\Temp\ccPKN1oq.s:284    .text.USART1_IRQHandler:0000000c $d
->>>>>>> Stashed changes
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:16     .text.NMI_Handler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:24     .text.NMI_Handler:00000000 NMI_Handler
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:42     .text.HardFault_Handler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:49     .text.HardFault_Handler:00000000 HardFault_Handler
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:66     .text.MemManage_Handler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:73     .text.MemManage_Handler:00000000 MemManage_Handler
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:90     .text.BusFault_Handler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:97     .text.BusFault_Handler:00000000 BusFault_Handler
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:114    .text.UsageFault_Handler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:121    .text.UsageFault_Handler:00000000 UsageFault_Handler
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:138    .text.SVC_Handler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:145    .text.SVC_Handler:00000000 SVC_Handler
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:158    .text.DebugMon_Handler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:165    .text.DebugMon_Handler:00000000 DebugMon_Handler
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:178    .text.PendSV_Handler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:185    .text.PendSV_Handler:00000000 PendSV_Handler
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:198    .text.SysTick_Handler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:205    .text.SysTick_Handler:00000000 SysTick_Handler
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:225    .text.TIM2_IRQHandler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:232    .text.TIM2_IRQHandler:00000000 TIM2_IRQHandler
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:252    .text.TIM2_IRQHandler:0000000c $d
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:257    .text.USART1_IRQHandler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:264    .text.USART1_IRQHandler:00000000 USART1_IRQHandler
+C:\Users\T470S\AppData\Local\Temp\ccISGu1L.s:284    .text.USART1_IRQHandler:0000000c $d
 
 UNDEFINED SYMBOLS
 HAL_IncTick

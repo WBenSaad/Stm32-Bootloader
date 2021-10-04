@@ -20,7 +20,7 @@ make.exe -C __pycache__/.
 # make.exe[1]: entrant dans le rï¿½pertoire ï¿½ c:/Users/T470S/Desktop/Bootloader/__pycache__ ï¿½
  
 
-# Base de donnï¿½es de Make, imprimï¿½e le Sat Oct 02 12:48:13 2021
+# Base de donnï¿½es de Make, imprimï¿½e le Sun Oct 03 17:01:00 2021
 
 # Variables
 
@@ -59,6 +59,8 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile
 MAKEFILE_LIST := 
 # environnement
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environnement
 TMP = C:\Users\T470S\AppData\Local\Temp
 # environnement
 VSCODE_VERBOSE_LOGGING = true
@@ -69,7 +71,7 @@ PROGRAMDATA = C:\ProgramData
 # environnement
 AUTINSTLOG = C:\ProgramData\Siemens\Automation\Logfiles\Setup\
 # environnement
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-8bc468b5-8cdd-4342-ad12-9e0975c3ebba-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-96fb0e37-7563-48b6-bd4e-c37d20001697-sock
 # environnement
 VSCODE_CWD = C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code
 # environnement
@@ -97,7 +99,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatique
 %F = $(notdir $%)
 # environnement
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_29096_VBGRFRALCCFANCXY
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9828_RXVOPDUODRRQTJGY
 # environnement
 VSCODE_PIPE_LOGGING = true
 # environnement
@@ -196,8 +198,7 @@ SUFFIXES :=
 SYSTEMDRIVE = C:
 # environnement
 SESSIONNAME = Console
-# envir 
-onnement
+# environnement
 PROCESSOR_REVISION = 4e03
 # environnement
 MAKELEVEL := 1
@@ -206,29 +207,29 @@ LANG = C
 # environnement
 PROCESSOR_LEVEL = 6
 # environnement
-VSCODE_PID = 29096
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environnement
+VSCODE_PID = 9828
 # environnement
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-A47D7VN
 # variables initialisï¿½es dans les statistiques de table de hachage:
-# Charge=92/1024=9%, Refait le hachage=0, Collisions=10/111=9%
+# Charge=94/1024=9%, Refait le hachage=0, Collisions=10/113=9%
 
-# Valeurs de variable avec modï¿½le spï¿½cifique
+# Valeurs de variable avec modï¿½le s 
+pï¿½cifique
 
 # pas de valeurs de variable avec modï¿½le spï¿½cifique
 
 # Rï¿½pertoires
 
-# C:\Users\T470S\AppData\Local\Programs\Pyth 
-on\Python38\ (pï¿½riphï¿½rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/, mtime 1620245485): 18 fichiers, non impossibilitï¿½s.
+# C:\Users\T470S\AppData\Local\Programs\Python\Python38\ (pï¿½riphï¿½rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/, mtime 1620245485): 18 fichiers, non impossibilitï¿½s.
 # C:\Users\T470S\AppData\Local\Microsoft\WindowsApps (pï¿½riphï¿½rique C:/Users/T470S/AppData/Local/Microsoft/WindowsApps, mtime 1629588726): 25 fichiers, non impossibilitï¿½s.
 # C:\Users\T470S\AppData\Local\Programs\Python\Python38\Scripts\ (pï¿½riphï¿½rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/Scripts/, mtime 1631828819): 7 fichiers, non impossibilitï¿½s.
-# C:\WINDOWS 
-\System32\WindowsPowerShell\v1.0\ (pï¿½riphï¿½rique C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1619092694): 30 fichiers, non impossibilitï¿½s.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (pï¿½riphï¿½rique C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1619092694): 30 fichiers, non impossibilitï¿½s.
 # C:\WINDOWS\System32\Wbem (pï¿½riphï¿½rique C:/WINDOWS/System32/Wbem, mtime 1620652955): 171 fichiers, non impossibilitï¿½s.
-# . (pï¿½riphï¿½rique c:/Users/T470S/Desktop/Bootloader/__pycache__, mtime 1632925890): 3 fichiers, non impossibilitï¿½s.
+# . (pï¿½riphï¿½rique c:/Users/T470S/Desktop/Bootloader/__pycache__, mtime 1633172604): 3 fichiers, non impossibilitï¿½s.
 # C:\Program Files\Renode\bin (pï¿½riphï¿½rique C:/Program Files/Renode/bin, mtime 1628336759): 50 fichiers, non impossibilitï¿½s.
-# C:\P 
-rogram Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility (pï¿½riphï¿½rique C:/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility, mtime 1619115277): 11 fichiers, non impossibilitï¿½s.
+# C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility (pï¿½riphï¿½rique C:/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility, mtime 1619115277): 11 fichiers, non impossibilitï¿½s.
 # C:\Dwimperl\c\bin (pï¿½riphï¿½rique C:/Dwimperl/c/bin, mtime 1630279056): 74 fichiers, non impossibilitï¿½s.
 # C:\src\OpenOCD-20210729-0.11.0\bin (pï¿½riphï¿½rique C:/src/OpenOCD-20210729-0.11.0/bin, mtime 1631200447): 7 fichiers, non impossibilitï¿½s.
 # C:\WINDOWS\System32\OpenSSH\ : statut indisponible.
@@ -236,7 +237,7 @@ rogram Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility (pï¿
 # C:\Program Files\Common Files\Siemens\Automation\Simatic OAM\bin (pï¿½riphï¿½rique C:/Program Files/Common Files/Siemens/Automation/Simatic OAM/bin, mtime 1627555803): 53 fichiers, non impossibilitï¿½s.
 # C:\Dwimperl\perl\site\bin (pï¿½riphï¿½rique C:/Dwimperl/perl/site/bin, mtime 1630279079): 65 fichiers, non impossibilitï¿½s.
 # C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (pï¿½riphï¿½rique C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1629627825): 4 fichiers, non impossibilitï¿½s.
-# C:\WINDOWS (pï¿½riphï¿½rique C:/WINDOWS, mtime 1632126092): 116 fichiers, non impossibilitï¿½s.
+# C:\WINDOWS (pï¿½riphï¿½rique C:/WINDOWS, mtime 1633273212): 117 fichiers, non impossibilitï¿½s.
 # C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin (pï¿½riphï¿½rique C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin, mtime 1627595024): 35 fichiers, non impossibilitï¿½s.
 # C:\Dwimperl\perl\bin (pï¿½riphï¿½rique C:/Dwimperl/perl/bin, mtime 1630279069): 127 fichiers, non impossibilitï¿½s.
 # C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin (pï¿½riphï¿½rique C:/Program Files/AdoptOpenJDK/jdk-11.0.11.9-hotspot/bin, mtime 1620076192): 127 fichiers, non impossibilitï¿½s.
@@ -244,11 +245,11 @@ rogram Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility (pï¿
 # C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code\bin (pï¿½riphï¿½rique C:/Users/T470S/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1632335743): 4 fichiers, non impossibilitï¿½s.
 # C:\src\stlink-1.7.0-x86_64-w64-mingw32\stlink-1.7.0-x86_64-w64-mingw32\bin (pï¿½riphï¿½rique C:/src/stlink-1.7.0-x86_64-w64-mingw32/stlink-1.7.0-x86_64-w64-mingw32/bin, mtime 1619304258): 6 fichiers, non impossibilitï¿½s.
 # C:\Program Files\Git\cmd (pï¿½riphï¿½rique C:/Program Files/Git/cmd, mtime 1620305829): 8 fichiers, non impossibilitï¿½s.
-# C:\WINDOWS\system32 (pï¿½riphï¿½rique C:/WINDOWS/system32, mtime 1632789963): 3217 fichiers, non impossibilitï¿½s.
-# C:\Program Files (x86)\GnuWin32\bin (pï¿½riphï¿½rique C:/Program Files (x86)/ 
-GnuWin32/bin, mtime 1627598314): 7 fichiers, non impossibilitï¿½s.
+# C:\WINDOWS\system32 (pï¿½riphï¿½rique C:/WINDOWS/system32, mtime  
+1632789963): 3217 fichiers, non impossibilitï¿½s.
+# C:\Program Files (x86)\GnuWin32\bin (pï¿½riphï¿½rique C:/Program Files (x86)/GnuWin32/bin, mtime 1627598314): 7 fichiers, non impossibilitï¿½s.
 
-# 4185 fichiers, non impossibilitï¿½s dans 25 rï¿½pertoires.
+# 4186 fichiers, non impossibilitï¿½s dans 25 rï¿½pertoires.
 
 # Rï¿½gles Implicites
 
@@ -264,7 +265,8 @@ GnuWin32/bin, mtime 1627598314): 7 fichiers, non impossibilitï¿½s.
 
 # Pas une cible :
 makefile:
-#  Une valeur par dï¿½faut MAKEFILES ou -include/sinclude makefile.
+#  Une valeur  
+par dï¿½faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de rï¿½gle implicite effectuï¿½e.
 # Fichier inexistant.
 #  Fichier a ï¿½tï¿½ mis ï¿½ jour.
@@ -283,8 +285,7 @@ GNUmakefile:
 #  Une valeur par dï¿½faut MAKEFILES ou -include/sinclude makefile.
 #  Recherche de rï¿½gle implicite effectuï¿½e.
 # Fichier inexistant.
-#  Fichi 
-er a ï¿½tï¿½ mis ï¿½ jour.
+#  Fichier a ï¿½tï¿½ mis ï¿½ jour.
 #  N'a pas pu ï¿½tre mis ï¿½ jour.
 # variables initialisï¿½es dans les statistiques de table de hachage:
 # Charge=0/32=0%, Refait le hachage=0, Collisions=0/0=0%
@@ -295,24 +296,24 @@ er a ï¿½tï¿½ mis ï¿½ jour.
 
 # Pas de chemins de recherche ï¿½ vpath ï¿½.
 
-# Pas de chemin de recherche gï¿½nï¿½ral (variable ï¿½ VPATH ï¿½).
+# Pas de chemin de recherch 
+make.exe[1]: *** Pas de cibles spï¿½cifiï¿½es et aucun makefile n'a ï¿½tï¿½ trouvï¿½. Arrï¿½t.
+ 
+e gï¿½nï¿½ral (variable ï¿½ VPATH ï¿½).
 
 # # of strings in strcache: 0
 # # of strcache buffers: 0
-# strcache size: total = 0 / max  
-make.exe[1]: *** Pas de cibles spï¿½cifiï¿½es et aucun makefile n'a ï¿½tï¿½ trouvï¿½. Arrï¿½t.
- 
-= 0 / min = 4096 / avg = 0
+# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Fin de la base de donnï¿½es de Make le Sat Oct 02 12:48:13 2021
+# Fin de la base de donnï¿½es de Make le Sun Oct 03 17:01:00 2021
 
 # make.exe[1]: quittant le rï¿½pertoire ï¿½ c:/Users/T470S/Desktop/Bootloader/__pycache__ ï¿½
  
 make.exe: *** [__pycache__/.] Erreur 2
  
 
-# Base de donnï¿½es de Make, imprimï¿½e le Sat Oct 02 12:48:13 2021
+# Base de donnï¿½es de Make, imprimï¿½e le Sun Oct 03 17:01:00 2021
 
 # Variables
 
@@ -338,8 +339,7 @@ HOMEDRIVE = C:
 CURDIR := c:/Users/T470S/Desktop/Bootloader
 # dï¿½faut
 SHELL := sh.exe
-# en 
-vironnement
+# environnement
 WINDIR = C:\WINDOWS
 # environnement
 VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{},"_languagePackSupport":true}
@@ -351,6 +351,8 @@ ONEDRIVE = C:\Users\T470S\OneDrive
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (de ï¿½ makefile ï¿½, ligne 1)
 MAKEFILE_LIST :=  makefile
+# environnement
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environnement
 TMP = C:\Users\T470S\AppData\Local\Temp
 # environnement
@@ -364,7 +366,7 @@ PROGRAMDATA = C:\ProgramData
 # environnement
 AUTINSTLOG = C:\ProgramData\Siemens\Automation\Logfiles\Setup\
 # environnement
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-8bc468b5-8cdd-4342-ad12-9e0975c3ebba-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-96fb0e37-7563-48b6-bd4e-c37d20001697-sock
 # environnement
 VSCODE_CWD = C:\Users\T470S\AppData\Local\Programs\Microsoft VS Code
 # environnement
@@ -396,7 +398,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatique
 %F = $(notdir $%)
 # environnement
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_29096_VBGRFRALCCFANCXY
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9828_RXVOPDUODRRQTJGY
 # environnement
 VSCODE_PIPE_LOGGING = true
 # environnement
@@ -516,14 +518,16 @@ LANG = C
 # environnement
 PROCESSOR_LEVEL = 6
 # environnement
-VSCODE_PID = 29096
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environnement
+VSCODE_PID = 9828
 # makefile (de ï¿½ makefile ï¿½, ligne 12)
-mkfile_path := c:/Users/T470S/Desktop/Bootloader/makefile
+m 
+kfile_path := c:/Users/T470S/Desktop/Bootloader/makefile
 # environnement
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-A47D7VN
-# vari 
-ables initialisï¿½es dans les statistiques de table de hachage:
-# Charge=102/1024=10%, Refait le hachage=0, Collisions=12/135=9%
+# variables initialisï¿½es dans les statistiques de table de hachage:
+# Charge=104/1024=10%, Refait le hachage=0, Collisions=12/137=9%
 
 # Valeurs de variable avec modï¿½le spï¿½cifique
 
@@ -532,17 +536,18 @@ ables initialisï¿½es dans les statistiques de table de hachage:
 # Rï¿½pertoires
 
 # Python (pï¿½riphï¿½rique c:/Users/T470S/Desktop/Bootloader/Python, mtime 1631890497): 1 fichiers, non impossibilitï¿½s jusqu'ici.
-# C:\Users\T470S\AppData\Local\Programs\Python\Python38\ (pï¿½riphï¿½rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/, mtime 1620245485): 18 fichiers, non impossibilitï¿½s.
+# C:\Users\T470S\AppD 
+ata\Local\Programs\Python\Python38\ (pï¿½riphï¿½rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/, mtime 1620245485): 18 fichiers, non impossibilitï¿½s.
 # C:\Users\T470S\AppData\Local\Microsoft\WindowsApps (pï¿½riphï¿½rique C:/Users/T470S/AppData/Local/Microsoft/WindowsApps, mtime 1629588726): 25 fichiers, non impossibilitï¿½s.
-# Flasher.py (clï¿½ c:/Users/T470S/Desktop/Bootloader/Flasher.py, mtime 1633171677): n'a pu ï¿½tre ouvert.
+# Flasher.py (clï¿½ c:/Users/T470S/Desktop/Bootloader/Flasher.py, mtime 1633174758): n'a pu ï¿½tre ouvert.
 # C:\Users\T470S\AppData\Local\Programs\Python\Python38\Scripts\ (pï¿½riphï¿½rique C:/Users/T470S/AppData/Local/Programs/Python/Python38/Scripts/, mtime 1631828819): 7 fichiers, non impossibilitï¿½s.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (pï¿½riphï¿½rique C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1619092694): 30 fichiers, non impossibilitï¿½s.
 # C:\WINDOWS\System32\Wbem (pï¿½riphï¿½rique C:/WINDOWS/System32/Wbem, mtime 1620652955): 171 fichiers, non impossibilitï¿½s.
-# . (pï¿½riphï¿½rique c:/Users/T470S/Desktop/Bootloader, mtime 1632615279): 18 fichiers, non impossibilitï¿½s.
+# . (pï¿½riphï¿½rique c:/Users/T470S/Desktop/Bootloader, mtime 1633174675): 18 fichiers, non impossibilitï¿½s.
 # C:\Program Files\Renode\bin (pï¿½riphï¿½rique C:/Program Files/Renode/bin, mtime 1628336759): 50 fichiers, non impossibilitï¿½s.
 # C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility (pï¿½riphï¿½rique C:/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility, mtime 1619115277): 11 fichiers, non impossibilitï¿½s.
 # C:\Dwimperl\c\bin (pï¿½riphï¿½rique C:/Dwimperl/c/bin, mtime 1630279056): 74 fichiers, non impossibilitï¿½s.
-# __pycache__ (pï¿½riphï¿½rique c:/Users/T470S/Desktop/Bootloader/__pycache__, mtime 1632925890): 1 fichiers, non impossibilitï¿½s jusqu'ici.
+# __pycache__ (pï¿½riphï¿½rique c:/Users/T470S/Desktop/Bootloader/__pycache__, mtime 1633172604): 1 fichiers, non impossibilitï¿½s jusqu'ici.
 # Makefile (clï¿½ c:/Users/T470S/Desktop/Bootloader/Makefile, mtime 1631655846): n'a pu ï¿½tre ouvert.
 # C:\src\OpenOCD-20210729-0.11.0\bin (pï¿½riphï¿½rique C:/src/OpenOCD-20210729-0.11.0/bin, mtime 1631200447): 7 fichiers, non impossibilitï¿½s.
 # Bootloader (pï¿½riphï¿½rique c:/Users/T470S/Desktop/Bootloader/Bootloader, mtime 1631822668): 1 fichiers, non impossibilitï¿½s jusqu'ici.
@@ -552,9 +557,9 @@ ables initialisï¿½es dans les statistiques de table de hachage:
 # C:\Program Files\PuTTY\ (pï¿½riphï¿½rique C:/Program Files/PuTTY/, mtime 1628953769): 12 fichiers, non impossibilitï¿½s.
 # C:\Program Files\Common Files\Siemens\Automation\Simatic OAM\bin (pï¿½riphï¿½rique C:/Program Files/Common Files/Siemens/Automation/Simatic OAM/bin, mtime 1627555803): 53 fichiers, non impossibilitï¿½s.
 # C:\Dwimperl\perl\site\bin (pï¿½riphï¿½rique C:/Dwimperl/perl/site/bin, mtime 1630279079): 65 fichiers, non impossibilitï¿½s.
-# MainApp.bat (clï¿½ c:/Users/T470S/Desktop/Bootloader/MainApp.bat, mtime 1631822208): n'a pu ï¿½tre ouvert.
+# MainApp.bat (clï¿½ c:/Users/T470S/Desktop/Bootloader/MainApp.bat, mtime 1633174571): n'a pu ï¿½tre ouvert.
 # C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (pï¿½riphï¿½rique C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1629627825): 4 fichiers, non impossibilitï¿½s.
-# C:\WINDOWS (pï¿½riphï¿½rique C:/WINDOWS, mtime 1632126092): 116 fichiers, non impossibilitï¿½s.
+# C:\WINDOWS (pï¿½riphï¿½rique C:/WINDOWS, mtime 1633273212): 117 fichiers, non impossibilitï¿½s.
 # C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin (pï¿½riphï¿½rique C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin, mtime 1627595024): 35 fichiers, non impossibilitï¿½s.
 # C:\Dwimperl\perl\bin (pï¿½riphï¿½rique C:/Dwimperl/perl/bin, mtime 1630279069): 127 fichiers, non impossibilitï¿½s.
 # C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin (pï¿½riphï¿½rique C:/Program Files/AdoptOpenJDK/jdk-11.0.11.9-hotspot/bin, mtime 1620076192): 127 fichiers, non impossibilitï¿½s.
@@ -565,13 +570,13 @@ ables initialisï¿½es dans les statistiques de table de hachage:
 # C:\Program Files\Git\cmd (pï¿½riphï¿½rique C:/Program Files/Git/cmd, mtime 1620305829): 8 fichiers, non impossibilitï¿½s.
 # C:\WINDOWS\system32 (pï¿½riphï¿½rique C:/WINDOWS/system32, mtime 1632789963): 3217 fichiers, non impossibilitï¿½s.
 # README.md (clï¿½ c:/Users/T470S/Desktop/Bootloader/README.md, mtime 1631657704): n'a pu ï¿½tre ouvert.
-# MainApp (pï¿½riphï¿½rique c:/Users/T470S/Desktop/Bootloader/MainApp, mtime 1631822630): 1 fichiers, non impossibilitï¿½s jusqu'ici.
-# Bootloader.bat (clï¿½ c:/Users/T470S/Desktop/Bootloader/Bootloader.bat, mtime 16 
-31821489): n'a pu ï¿½tre ouvert.
-# App.bin (clï¿½ c:/Users/T470S/Desktop/Bootloader/App.bin, mtime 1633171674): n'a pu ï¿½tre ouvert.
+# MainApp (pï¿½riphï¿½rique c:/Users/T470S/Desktop/Bootloader/MainApp, mtime 1631822630): 
+ 1 fichiers, non impossibilitï¿½s jusqu'ici.
+# Bootloader.bat (clï¿½ c:/Users/T470S/Desktop/Bootloader/Bootloader.bat, mtime 1631821489): n'a pu ï¿½tre ouvert.
+# App.bin (clï¿½ c:/Users/T470S/Desktop/Bootloader/App.bin, mtime 1633174675): n'a pu ï¿½tre ouvert.
 # C:\Program Files (x86)\GnuWin32\bin (pï¿½riphï¿½rique C:/Program Files (x86)/GnuWin32/bin, mtime 1627598314): 7 fichiers, non impossibilitï¿½s.
 
-# 4205 fichiers, non impossibilitï¿½s dans 38 rï¿½pertoires.
+# 4206 fichiers, non impossibilitï¿½s dans 38 rï¿½pertoires.
 
 # Rï¿½gles Implicites
 
@@ -579,11 +584,11 @@ ables initialisï¿½es dans les statistiques de table de hachage:
 
 # Fichiers
 
+ 
 Bootloader/.:
 #  Cible factice (dï¿½pendance de .PHONY).
 #  Recherche de rï¿½gle implicite n'a pas ï¿½tï¿½ effectuï¿½e.
-# Fichier ine 
-xistant.
+# Fichier inexistant.
 #  Fichier n'a pas ï¿½tï¿½ mis ï¿½ jour.
 #  commandes ï¿½ exï¿½cuter (de ï¿½ makefile ï¿½, ligne 32):
 	$(MAKE) -C $@ 
@@ -608,8 +613,7 @@ __pycache__/.:
 # | := 
 # automatique
 # < := 
-# automatiq 
-ue
+# automatique
 # ^ := 
 # automatique
 # ? := 
@@ -638,8 +642,7 @@ MainApp/.:
 #  Recherche de rï¿½gle implicite n'a pas ï¿½tï¿½ effectuï¿½e.
 # Fichier inexistant.
 #  Fichier n'a pas ï¿½tï¿½ mis ï¿½ jour.
-#  commandes ï¿½ exï¿½cuter (de ï¿½ makefi 
-le ï¿½, ligne 32):
+#  commandes ï¿½ exï¿½cuter (de ï¿½ makefile ï¿½, ligne 32):
 	$(MAKE) -C $@ 
 	
 
@@ -673,8 +676,7 @@ build: __pycache__/. Bootloader/. MainApp/. Python/. srec/.
 
 flash:
 #  Cible factice (dï¿½pendance de .PHONY).
-#  Recherche de rï¿½gle implicite n'a p 
-as ï¿½tï¿½ effectuï¿½e.
+#  Recherche de rï¿½gle implicite n'a pas ï¿½tï¿½ effectuï¿½e.
 # Fichier inexistant.
 #  Fichier n'a pas ï¿½tï¿½ mis ï¿½ jour.
 
@@ -689,7 +691,8 @@ srec/.:
 
 Python/.:
 #  Cible factice (dï¿½pendance de .PHONY).
-#  Recherche de rï¿½gle implicite n'a pas ï¿½tï¿½ effectuï¿½e.
+#  Recherche de rï¿½gle implici 
+te n'a pas ï¿½tï¿½ effectuï¿½e.
 # Fichier inexistant.
 #  Fichier n'a pas ï¿½tï¿½ mis ï¿½ jour.
 #  commandes ï¿½ exï¿½cuter (de ï¿½ makefile ï¿½, ligne 32):
@@ -709,6 +712,6 @@ Python/.:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Fin de la base de donnï¿½es de Make le Sat Oct 02 12:48:13 2021
+# Fin de la base de donnï¿½es de Make le Sun Oct 03 17:01:00 2021
 
  

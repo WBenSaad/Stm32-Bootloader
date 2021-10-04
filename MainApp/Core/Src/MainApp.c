@@ -120,11 +120,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
-	//HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
-  //HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_4);
-	//HAL_Delay(700);
-  //sys_reset();
+    HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_4);
+    HAL_Delay(500);
+    
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

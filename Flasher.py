@@ -120,10 +120,7 @@ def mem_flash():
         
         for i in data_buf[0:mem_write_cmd_total_len]:  ## Data starts from index 0
             Write_to_serial_port(i,mem_write_cmd_total_len-1)
-        ack=read_serial_port(4)
-        print(ack)
-        bck=read_serial_port(4)
-        print(bck)
+
         ack=read_serial_port(1)
         #ack=b'0'
         if(ack.decode() == 0): 
@@ -141,7 +138,7 @@ def mem_flash():
 
         
     mem_write_active=0
-
+    Write_to_serial_port(9,1)
 
 ########################################################################################################
 
