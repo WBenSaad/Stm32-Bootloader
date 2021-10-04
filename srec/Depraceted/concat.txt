@@ -1,8 +1,0 @@
-#Concat the App and Bootloader code into the same image
-
-MainApp/build/Main_App.hex 
--intel 
-Bootloader/build/Bootloader.hex 
--intel 
--o App.hex 
--intel

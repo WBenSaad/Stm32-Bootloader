@@ -1,5 +1,0 @@
-App.hex 
--intel
--offset - -minimum-addr App.hex 
--intel
--o App.bin 

@@ -1,7 +1,0 @@
-App.bin
--binary
--Output_Block_Size=16
--address-length=4
--o App.bin
--binary
-
