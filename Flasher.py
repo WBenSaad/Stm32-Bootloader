@@ -5,6 +5,7 @@ import struct
 
 
 Bootloader_Flash                        =0x01
+Bootloader_Flash_end                    =0x09
 
 data_buf = []
 
@@ -16,8 +17,9 @@ CRC_TABLE = (0x00000000, 0x04C11DB7, 0x09823B6E, 0x0D4326D9,
              0x350C9B64, 0x31CD86D3, 0x3C8EA00A, 0x384FBDBD)
 
 
-def get_size():
-    size=os.path.getsize("App.bin")
+
+def get_size(str):
+    size=os.path.getsize(str)
     return size
 
 def dword(value):
@@ -53,7 +55,7 @@ def read_serial_port(length):
     return read_value
 
 
-def mem_flash():
+def mem_flash(str):
 
     print("\n   Command == > BL_MEM_WRITE")
     bytes_remaining=0
@@ -68,7 +70,7 @@ def mem_flash():
     bin_file=open("App.bin","rb")
 
         #First get the total number of bytes in the .bin file.
-    t_len_of_file =get_size()
+    t_len_of_file =get_size(str)
 
 
     bytes_remaining = t_len_of_file - bytes_so_far_sent
@@ -89,18 +91,7 @@ def mem_flash():
             data_buf[x]= int(file_read_value[0])
             
              
-
-
-        #data_buf[0] = len_to_read
-
-            #/*((4 byte mem base address + 1 byte payload len)) + len_to_read is amount of bytes read from file
-            #*                                      + 4 byte CRC
-            # TO simplify Things we will just Send Data + 4bytes CRC
-            #*/
         mem_write_cmd_total_len = 4+len_to_read  #Total Packet contains Data bytes +4 Bytes CRC
-
-            #first field is "len_to_follow"
-            #data_buf[0] =mem_write_cmd_total_len-1
         
         crc32= crc32_fast_bytes(0xFFFFFFFF,data_buf)
         
@@ -109,20 +100,21 @@ def mem_flash():
         data_buf[2+len_to_read] = word_to_byte(crc32,3,1)
         data_buf[3+len_to_read] = word_to_byte(crc32,4,1)
 
-            #update base mem address for the next loop
-        #base_mem_address+=len_to_read
 
         #Notify the Bootloader of flashing
         Write_to_serial_port(Bootloader_Flash,1)    
-         #Prompts Bootloader to Enter the Flash sequence
-        Write_to_serial_port(mem_write_cmd_total_len,1) #Notify Bootloader of upcoming Packet size
+        
+        #Notify Bootloader of upcoming Packet size
+        Write_to_serial_port(mem_write_cmd_total_len,1) 
         print(mem_write_cmd_total_len)
         
         for i in data_buf[0:mem_write_cmd_total_len]:  ## Data starts from index 0
             Write_to_serial_port(i,mem_write_cmd_total_len-1)
 
+        #The Bootloader will send a 0 if the Packet was corrupted during transmission(Having a non matching Checksum )
+        #then the we will keep resending the entire packet until we get a favorable response (1) from the Bootloader
+
         ack=read_serial_port(1)
-        #ack=b'0'
         if(ack.decode() == 0): 
             while(ack.decode()==0):
                 for i in data_buf[0:mem_write_cmd_total_len]:  ## Data starts from index 0
@@ -138,13 +130,13 @@ def mem_flash():
 
         
     mem_write_active=0
-    Write_to_serial_port(9,1)
+    #Notify the Bootloader that the transmission is over
+    Write_to_serial_port(Bootloader_Flash_end,1)
 
-########################################################################################################
 
 
-base_mem_address,Port,BaudRate,Timeout,ByteSize,Stop,Parity,FlowChart =parseCommandLineArguments()
 
+filename,Port,BaudRate,Timeout,ByteSize,Stop,Parity,FlowChart =parseCommandLineArguments()
 
 
 ByteSize = getattr(serial, ByteSize)
@@ -161,39 +153,5 @@ if ser.is_open==False :
 
 else: 
     print("Port already open")
-mem_flash()
-#str="0x1"
-#Write_to_serial_port(0x1,1)
 
-
-#ser.write(str.encode())
-#nack=read_serial_port(3)
-#print(nack)
-"""
-while 1:
-    buffer=ser.read(5)
-    Dec=buffer.decode()
-    if Dec=="Hello":
-        print("GUCCI")
-        print(buffer)
-    else :
-        print("NON_GUCCI")
-        print(buffer)
-        
-
-
-ser.write(b'1')
-buffer=ser.read(3)
-if(buffer.decode()=="ACK"):
-    print(buffer)
-    
-else:
-    print("3asba1")
-
-ser.write(b'9')
-buffer2=ser.read(4)
-if(buffer2.decode()=="NACK"):
-    print(buffer2)
-else:
-    print("3asba2")
-    """
+mem_flash(filename)

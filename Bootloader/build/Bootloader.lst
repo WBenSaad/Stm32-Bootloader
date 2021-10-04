@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
   30:Core/Src/Bootloader.c **** 
   31:Core/Src/Bootloader.c **** /* Private function prototypes -----------------------------------------------*/
   32:Core/Src/Bootloader.c **** void JumpToMain(void);
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 2
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 2
 
 
   33:Core/Src/Bootloader.c **** void Bootloader_flash(uint32_t* buffer);
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
   51:Core/Src/Bootloader.c **** }
   63              		.loc 1 51 1 is_stmt 0 view .LVU12
   64 0020 03B0     		add	sp, sp, #12
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 3
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 3
 
 
   65              	.LCFI2:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
   58:Core/Src/Bootloader.c ****     //First Receive the Packet Length
   59:Core/Src/Bootloader.c **** 		HAL_UART_Receive(&huart1,(uint8_t*)&buffer[0],1,HAL_MAX_DELAY);
  115              		.loc 1 59 3 view .LVU17
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 4
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 4
 
 
  116 0006 2D4E     		ldr	r6, .L11
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
   71:Core/Src/Bootloader.c **** 
   72:Core/Src/Bootloader.c **** 		// We calulate the CRC of the received Packet before flashing it and if doesnt match 
   73:Core/Src/Bootloader.c ****     // the Checksum we have ,we request a resend from the HOST on the PC
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 5
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 5
 
 
   74:Core/Src/Bootloader.c **** 		while(CRCValue!=packet_CRC){
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  203              	.LVL20:
   83:Core/Src/Bootloader.c **** 			
   84:Core/Src/Bootloader.c **** 		// We got the number of words that forms our payload because we will Flash a Word at a time	
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 6
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 6
 
 
   85:Core/Src/Bootloader.c **** 			int numofwords = (payload_length/4)+((payload_length % 4)!=0);
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  243              		.loc 1 97 4 view .LVU54
  244 00b4 FFF7FEFF 		bl	HAL_FLASH_Lock
  245              	.LVL26:
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 7
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 7
 
 
   98:Core/Src/Bootloader.c **** 		
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  108:Core/Src/Bootloader.c **** 
  109:Core/Src/Bootloader.c **** pFunction Jump= (pFunction) reset_Handler;
  292              		.loc 1 109 1 is_stmt 1 view .LVU62
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 8
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 8
 
 
  110:Core/Src/Bootloader.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
   17:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
   18:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Unless required by applicable law or agreed to in writing, software
   19:Drivers/CMSIS/Include/cmsis_gcc.h ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 9
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 9
 
 
   20:Drivers/CMSIS/Include/cmsis_gcc.h ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
   74:Drivers/CMSIS/Include/cmsis_gcc.h ****   struct __attribute__((packed)) T_UINT32 { uint32_t v; };
   75:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
   76:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32(x)                  (((struct T_UINT32 *)(x))->v)
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 10
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 10
 
 
   77:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  131:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsie i" : : : "memory");
  132:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  133:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 11
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 11
 
 
  134:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  188:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  189:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Control Register (non-secure)
  190:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Writes the given value to the non-secure Control Register when in secure state.
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 12
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 12
 
 
  191:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    control  Control Register value to set
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  245:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               PSP Register value
  246:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  247:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_PSP(void)
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 13
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 13
 
 
  248:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  302:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  303:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  304:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 14
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 14
 
 
  305:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msp" : "=r" (result) );
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  340 002a 00BF     		.align	2
  341              	.L15:
  342 002c 00400008 		.word	134234112
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 15
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 15
 
 
  343              		.cfi_endproc
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  169:Core/Src/Bootloader.c ****         if(i==0){
  170:Core/Src/Bootloader.c **** 		      memory_erase(); //We start by erasing the location of our new app during our first iteratio
  171:Core/Src/Bootloader.c **** 		      i=1;              
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 16
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 16
 
 
  172:Core/Src/Bootloader.c ****         }
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  226:Core/Src/Bootloader.c **** /**
  227:Core/Src/Bootloader.c ****   * @brief  This function is executed in case of error occurrence.
  228:Core/Src/Bootloader.c ****   * @retval None
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 17
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 17
 
 
  229:Core/Src/Bootloader.c ****   */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  399              	.LCFI5:
  400              		.cfi_def_cfa_offset 4
  401              		.cfi_offset 14, -4
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 18
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 18
 
 
  402 0002 91B0     		sub	sp, sp, #68
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  212:Core/Src/Bootloader.c ****                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
  441              		.loc 1 212 31 is_stmt 0 view .LVU103
  442 002e 0F23     		movs	r3, #15
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 19
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 19
 
 
  443 0030 0193     		str	r3, [sp, #4]
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  484              		.section	.text.main,"ax",%progbits
  485              		.align	1
  486              		.global	main
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 20
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 20
 
 
  487              		.syntax unified
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  531              		.loc 1 153 4 is_stmt 1 view .LVU128
  153:Core/Src/Bootloader.c **** 
  532              		.loc 1 153 7 is_stmt 0 view .LVU129
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 21
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 21
 
 
  533 002a 4FF48051 		mov	r1, #4096
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  574 0064 134B     		ldr	r3, .L37+24
  575 0066 0122     		movs	r2, #1
  576 0068 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 22
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 22
 
 
  577 006a 06E0     		b	.L29
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  618              	.L38:
  619 009a 00BF     		.align	2
  620              	.L37:
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 23
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 23
 
 
  621 009c 00400008 		.word	134234112
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  675              		.set	.LANCHOR2,. + 0
  678              	mem_address.1:
  679 0000 00400008 		.word	134234112
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 24
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 24
 
 
  680              		.section	.noinit,"aw"
@@ -1407,42 +1407,42 @@ ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 1
  705              		.file 19 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
  706              		.file 20 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h"
  707              		.file 21 "<built-in>"
-ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccingwx3.s 			page 25
+ARM GAS  C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s 			page 25
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Bootloader.c
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:16     .text.memory_erase:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:24     .text.memory_erase:00000000 memory_erase
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:72     .text.memory_erase:00000028 $d
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:78     .rodata.Bootloader_flash.str1.4:00000000 $d
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:85     .text.Bootloader_flash:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:92     .text.Bootloader_flash:00000000 Bootloader_flash
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:253    .text.Bootloader_flash:000000bc $d
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:263    .text.JumpToMain:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:270    .text.JumpToMain:00000000 JumpToMain
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:342    .text.JumpToMain:0000002c $d
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:347    .text.Error_Handler:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:354    .text.Error_Handler:00000000 Error_Handler
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:385    .text.SystemClock_Config:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:392    .text.SystemClock_Config:00000000 SystemClock_Config
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:485    .text.main:00000000 $t
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:492    .text.main:00000000 main
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:621    .text.main:0000009c $d
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:657    .bss.buffer:00000000 buffer
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:664    .bss.buffer2:00000000 buffer2
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:643    .bss.CRCValue:00000000 CRCValue
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:685    .noinit:00000000 test
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:639    .bss.CRCValue:00000000 $d
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:646    .bss.EraseInitStruct.2:00000000 $d
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:650    .bss.EraseInitStruct.2:00000000 EraseInitStruct.2
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:653    .bss.buffer:00000000 $d
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:660    .bss.buffer2:00000000 $d
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:667    .bss.i.0:00000000 $d
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:671    .bss.i.0:00000000 i.0
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:674    .data.mem_address.1:00000000 $d
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:678    .data.mem_address.1:00000000 mem_address.1
-C:\Users\T470S\AppData\Local\Temp\ccingwx3.s:681    .noinit:00000000 $d
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:16     .text.memory_erase:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:24     .text.memory_erase:00000000 memory_erase
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:72     .text.memory_erase:00000028 $d
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:78     .rodata.Bootloader_flash.str1.4:00000000 $d
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:85     .text.Bootloader_flash:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:92     .text.Bootloader_flash:00000000 Bootloader_flash
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:253    .text.Bootloader_flash:000000bc $d
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:263    .text.JumpToMain:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:270    .text.JumpToMain:00000000 JumpToMain
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:342    .text.JumpToMain:0000002c $d
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:347    .text.Error_Handler:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:354    .text.Error_Handler:00000000 Error_Handler
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:385    .text.SystemClock_Config:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:392    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:485    .text.main:00000000 $t
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:492    .text.main:00000000 main
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:621    .text.main:0000009c $d
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:657    .bss.buffer:00000000 buffer
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:664    .bss.buffer2:00000000 buffer2
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:643    .bss.CRCValue:00000000 CRCValue
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:685    .noinit:00000000 test
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:639    .bss.CRCValue:00000000 $d
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:646    .bss.EraseInitStruct.2:00000000 $d
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:650    .bss.EraseInitStruct.2:00000000 EraseInitStruct.2
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:653    .bss.buffer:00000000 $d
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:660    .bss.buffer2:00000000 $d
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:667    .bss.i.0:00000000 $d
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:671    .bss.i.0:00000000 i.0
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:674    .data.mem_address.1:00000000 $d
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:678    .data.mem_address.1:00000000 mem_address.1
+C:\Users\T470S\AppData\Local\Temp\ccwt6p1g.s:681    .noinit:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_FLASH_Unlock
