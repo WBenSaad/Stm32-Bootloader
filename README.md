@@ -13,19 +13,13 @@
       <ul>
         <li><a href="#hardware-requirements">Hardware Requirements</a></li>
         <li><a href="#software-requirements">Software Requirements</a></li>
-        <li><a href="#backend-setup">Backend Setup</a></li>
       </ul>
     </li>
-    <li><a href="#understanding-the-hardware">Understanding the hardware</a>
       <ul>
-        <li><a href="#the-dht11-humidity-and-temperature-sensor">the DHT11 humidity and temperature sensor</a></li>
-        <li><a href="#the-rgb-leds">the RGB LEDs</a></li>
-      </ul>
+    </ul>
  </li> 
     <li><a href="#software-implementation">Software implementation</a></li>
     <li><a href="#executing-the-program">Executing the program</a></li>
-    <li><a href="#making-an-upgrade">Making an upgrade</a></li>
-    <li><a href="#3d-conception">3D Conception</a></li>
     <li><a href="#conclusion-and-perspective">Conclusion and perspective</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -40,26 +34,14 @@
 ![image](https://user-images.githubusercontent.com/86969450/128428449-4470b309-326e-4470-a66a-8fdc706914c3.png)
 
 
-ESP32 is a powerful hardware platform for IoT applications and is widely used for prototyping and development of IoT applications.
+Project is an STM32 Bootloader capable of performing in-application-programming through UART ,as well Image validity verification on each start-up with a Checksum
 
-This prject will demonstrate the fastest method to connect your ESP32 to Google’s Firebase backend. Firebase has become a very convenient option for developers to rapidly prototype their ideas, in this tutorial we lay the ground work for the development of a realtime temperature and humidity monitoring solution. 
-
-This tutorial further demostrates how to interface the DHT11 temperature and humidity sensor with the ESP32 using Arduino IDE and how to upload sensor data on google Firebase's  realtime database . 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Hardware Requirements:
-* ESP32 development board (any ESP32 board is okay, for this project we will be using the ESP32 DevKit v1).
-* DHT11 temperature and humidity sensor or sensor module .
-* x2 RGB LEDs
-* x6 390 ohm resistors
-* one 10K resistor (in case you have the sensorwithout the module since the module has a built-in resistor) 
-* Breadboard
-* Wires
-
-### Software Requirements:
-* Arduino IDE (If you haven't already installed or configured it using esp32, check this awesome [tutorial](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) by Rui Santos)
+### Prerequisites
+* ARM GCC
 * DHT11 sensor library : DHTNEW for arduino by RobTillaart , you can find it [here](https://github.com/RobTillaart/DHTNEW)
 * Wifi library (should be installed by default)
 * Firebase esp library : Firebase Realtime Database Arduino Library for ESP32 by Mobizt, you can find it [here](https://github.com/mobizt/Firebase-ESP32)
