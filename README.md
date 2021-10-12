@@ -11,16 +11,16 @@
     <li><a href="#about-the-project">About The Project</a></li>  
     <li><a href="#Capabilities">Capabilities</a>
     <li><a href="#Prerequisites">Prerequisites</a></li>
-    <li><a href="#Microcontroller Configuration">Microcontroller Configuration</a></li>
-    <li><a href="#Memory Map">Memory Map</a></li>
-    <li><a href="#Generating a Checksum  using Srecord">Generating a Checksum  using Srecord</a></li>
-    <li><a href="#Behaviour Overview">Bootloader implementation</a></li>
+    <li><a href="#Microcontroller-Configuration">Microcontroller Configuration</a></li>
+    <li><a href="#Memory-Map">Memory Map</a></li>
+    <li><a href="#Generating-a-Checksum-using-Srecord">Generating a Checksum  using Srecord</a></li>
+    <li><a href="#Behaviour-Overview">Bootloader implementation</a></li>
       <ul>
-        <li><a href="#General system Behaviour">Bootloader implementation</a></li>
-        <li><a href="#Bootloader Behaviour">Bootloader implementation</a></li>
+        <li><a href="#General-system-Behaviour">Bootloader implementation</a></li>
+        <li><a href="#Bootloader-Behaviour">Bootloader implementation</a></li>
       </ul>
     <li><a href="#Code">Code</a></li>
-    <li><a href="#Host App">HOST APP</a></li>
+    <li><a href="#Host-App">HOST APP</a></li>
     <li><a href="#Usage">Usage</a></li>
     <li><a href="#Refrences">Refrences</a></li>
     
