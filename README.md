@@ -42,21 +42,21 @@ Project is an STM32 Bootloader capable of performing in-application-programming 
 
 <!-- GETTING STARTED -->
 
-### Prerequisites
+## Prerequisites
 * ARM GCC  :  For compilation.
 * OpenOCD  :  Will be used to Flash the Bootloader.
 * SRecord  :  Will be generate the App Checksum Post Build.
 * Python 3 :  For the App that will send the Binary File to the MCU.
 
 
-### Microcontroller Configuration  
+## Microcontroller Configuration  
 Using CubeMX , we set the USART1 peripheral : PA10 as  RX and PA9 as TX.
 We need another pin as Input to read the push Button value . I used PIN PB12.
 A press to the push-Button will force the MCU into flashing Mode.
 ![image](https://user-images.githubusercontent.com/33790012/136715859-4d3c0550-9772-4e1e-b0cb-ad01ea956e2e.png)
 
 
-### Memory Map
+## Memory Map
 We modify the memory layout the generated programs through the Linker Scripts and it goes as follows :
 ![image](https://user-images.githubusercontent.com/33790012/136716066-9241d08c-e75c-4617-a23b-aa81d45b4f8b.png)
 We Will allocate 16K for the Bootloader and the Rest of the flash will be split between our main app and an eventual Backup.
@@ -65,19 +65,19 @@ It will be defined as noinit so that it survives soft resets and doesn't get ini
 If the User presses the Push-Button when in App is running ,the system will do a soft reset and Boot variable will be set which will allow the UC to go into flashing mode.
 ![image](https://user-images.githubusercontent.com/33790012/136716184-c22fb8a4-8797-4302-a194-4e4525436a20.png)
 
-### Generating a Checksum  using Srecord
+## Generating a Checksum using Srecord
  
  After generating our App binary we will use SRecord to append at the end of it a checksum.  
  SRecord can generate a valid stm32 CRC checksum and put at any place in the binary.  
  It will be stored at the end of the binary file.  
  SRecord Script is under /srec and is thoroughly commented.
  
-### Behaviour overview 
-#### General system Behaviour
+## Behaviour overview 
+### General system Behaviour
 Entire system Behaviour 
 ![image](https://user-images.githubusercontent.com/33790012/136871514-b3e10559-295c-42e1-8e31-af3137a2bc82.png)
 
-#### Bootloader Behaviour 
+### Bootloader Behaviour 
 The bootloader will enter flashing mode in 4 differents cases : 
 1. There is no App in memory Basically the start Address of the App section will have 0xFFFF
 2. An invalid App Image bascially The Checksum Calculated at the start of the Bootloader doesn't match the one generated beforehand with Srecord
@@ -93,11 +93,11 @@ The packet received are 132 bytes long and are formed like this :
 If CRC doesn't match then the Bootloader will request a resend from the Host Application
 
 
-#### Code
+### Code
 The Bootloader is implemented under /Bootloader/SRC and the Main App is under /MainApp/src.  
 Everything else is provided by ST.
 
-### Host App
+## Host App
 
 App is executed from Terminal and the USART configuration is done through the Command Line as well.  
 For example to have a USART configured as 115200 baud rate and COM10 you would write :
@@ -112,7 +112,7 @@ to visualize all of them.
 3 Flags are obligatory : The Filename,the Port and the Baud Rate.
 
 
-### Usage
+## Usage
 1- Compile then Flash the Bootloader into your MCU with the script: 
 ```
 bash Bootloader.sh 
@@ -129,7 +129,7 @@ The name of the Image,the baud rate and the Port are the only compulsory paramet
 the flags please look at Section "Host App".
 
 
-### Refrences 
+## Refrences 
 
 [STM32 Reference Manual](https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-arm-based-32-bit-mcus-stmicroelectronics.pdf)  
 [AN4187 : CRC on STM32](https://www.st.com/resource/en/application_note/an4187-using-the-crc-peripheral-in-the-stm32-family-stmicroelectronics.pdf)  
