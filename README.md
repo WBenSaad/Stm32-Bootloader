@@ -132,8 +132,8 @@ to visualize all of them.
 [AN4187 : CRC on STM32](https://www.st.com/resource/en/application_note/an4187-using-the-crc-peripheral-in-the-stm32-family-stmicroelectronics.pdf)  
 
 Bootloader Design Refrences :  
-[Memfault's excellent Blog 1](https://interrupt.memfault.com/blog/how-to-write-a-bootloader-from-scratch)     
-[Memfault's excellent Blog 1](https://interrupt.memfault.com/blog/device-firmware-update-cookbook)  
+[Memfault's Bootloader from scratch](https://interrupt.memfault.com/blog/how-to-write-a-bootloader-from-scratch)     
+[Memfault's Device Firmware cookbook](https://interrupt.memfault.com/blog/device-firmware-update-cookbook)  
 [Beningo's Blog](https://www.beningo.com/wp-content/uploads/images/Papers/bootloader_design_for_microcontrollers_in_embedded_systems%20.pdf)   
 
 SRecord Refrences :
