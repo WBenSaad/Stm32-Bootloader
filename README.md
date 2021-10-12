@@ -13,7 +13,6 @@
     <li><a href="#Getting Started">Getting Started</a></li>
     <li><a href="#Prerequisites">Prerequisites</a></li>
     <li><a href="#Microcontroller Configuration">Microcontroller Configuration</a></li>
-    <li><a href="#Usage">Usage</a></li>
     <li><a href="#Memory Map">Memory Map</a></li>
     <li><a href="#Generating a Checksum  using Srecord">Generating a Checksum  using Srecord</a></li>
     <li><a href="#Behaviour Overview">Bootloader implementation</a></li>
@@ -23,6 +22,7 @@
       </ul>
     <li><a href="#Code">Code</a></li>
     <li><a href="#HOST APP">HOST APP</a></li>
+    <li><a href="#Usage">Usage</a></li>
     <li><a href="#Refrences">Refrences</a></li>
     
     
@@ -58,23 +58,6 @@ Using CubeMX , we set the USART1 peripheral : PA10 as  RX and PA9 as TX.
 We need another pin as Input to read the push Button value . I used PIN PB12.
 A press to the push-Button will force the MCU into flashing Mode.
 ![image](https://user-images.githubusercontent.com/33790012/136715859-4d3c0550-9772-4e1e-b0cb-ad01ea956e2e.png)
-
-    
-### Usage
-1- Compile then Flash the Bootloader into your MCU with the script: 
-```
-bash Bootloader.sh 
-```
-2- Compilation of the App and Signing it with SRecord can be done with :
-```
-bash MainApp.sh 
-```
-3- Send your Binary file to UC with the following :
-```
-python3 Flasher.py -n "APP_NAME" -b BAUD RATE -p "Port"
-```
-The name of the Image,the baud rate and the Port are the only compulsory parameters. For more details on all 
-the flags please look at Section "Host App".
 
 
 ### Memory Map
@@ -125,6 +108,24 @@ python3 Flasher.py -h
 ```
 to visualize all of them.  
 3 Flags are obligatory : The Filename,the Port and the Baud Rate.
+
+
+### Usage
+1- Compile then Flash the Bootloader into your MCU with the script: 
+```
+bash Bootloader.sh 
+```
+2- Compilation of the App and Signing it with SRecord can be done with :
+```
+bash MainApp.sh 
+```
+3- Send your Binary file to UC with the following :
+```
+python3 Flasher.py -n "APP_NAME" -b BAUD RATE -p "Port"
+```
+The name of the Image,the baud rate and the Port are the only compulsory parameters. For more details on all 
+the flags please look at Section "Host App".
+
 
 ### Refrences 
 
