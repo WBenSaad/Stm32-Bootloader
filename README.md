@@ -73,8 +73,11 @@ It will be defined as noinit so that it survives soft resets and doesn't get ini
  After generating our App binary we will use SRecord to append at the end of it a checksum.
  SRecord can generate a valid stm32 CRC checksum and put at any place in the binary.
  It will be stored at the end of the binary file.
- 
-###
+ Considering the App start at 0x4000 and takes up 56K of flash we should get a CRC at address 0x11FFC
+ ![image](https://user-images.githubusercontent.com/33790012/136864182-9f4e37ba-5152-4385-945f-23311ab18245.png)
+
+### Bootloader Behaviour 
+
  
 
 
