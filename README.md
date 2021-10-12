@@ -10,7 +10,6 @@
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>  
     <li><a href="#Capabilities">Capabilities</a>
-    <li><a href="#Getting Started">Getting Started</a></li>
     <li><a href="#Prerequisites">Prerequisites</a></li>
     <li><a href="#Microcontroller Configuration">Microcontroller Configuration</a></li>
     <li><a href="#Memory Map">Memory Map</a></li>
@@ -21,7 +20,7 @@
         <li><a href="#Bootloader Behaviour">Bootloader implementation</a></li>
       </ul>
     <li><a href="#Code">Code</a></li>
-    <li><a href="#HOST APP">HOST APP</a></li>
+    <li><a href="#Host App">HOST APP</a></li>
     <li><a href="#Usage">Usage</a></li>
     <li><a href="#Refrences">Refrences</a></li>
     
@@ -33,10 +32,8 @@
    
 ## About the project
 
-![image](https://user-images.githubusercontent.com/86969450/128428449-4470b309-326e-4470-a66a-8fdc706914c3.png)
 
-
-Project is an STM32 Bootloader capable of performing in-application-programming through UART ,as well Image validity verification on each start-up 
+Project is an STM32 Bootloader capable of performing in-application-programming through UART ,as well Image validity verification on each start-up. 
 
 ## Capabilities
 * Flash Programming through  USART 
@@ -44,7 +41,6 @@ Project is an STM32 Bootloader capable of performing in-application-programming 
 * Robust data transfer
 
 <!-- GETTING STARTED -->
-## Getting Started
 
 ### Prerequisites
 * ARM GCC  :  For compilation.
@@ -88,8 +84,14 @@ The bootloader will enter flashing mode in 4 differents cases :
 3. Button was pressed during start-up
 4. An application request , which means the Button was pressed when App was running and it was forced to reset and go into Flash Mode
 
+
 The General behaviour of the Bootloader is described in this graph :
 ![image](https://user-images.githubusercontent.com/33790012/136867880-3dff74dd-f520-4f82-af46-32d47cb58973.png)
+
+The packet received are 132 bytes long and are formed like this :
+![image](https://user-images.githubusercontent.com/33790012/136940473-2e28eb81-c152-48a8-a7b5-602fb61e777b.png)  
+If CRC doesn't match then the Bootloader will request a resend from the Host Application
+
 
 #### Code
 The Bootloader is implemented under /Bootloader/SRC and the Main App is under /MainApp/src.  
