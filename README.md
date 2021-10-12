@@ -132,14 +132,14 @@ to visualize all of them.
 [AN4187 : CRC on STM32](https://www.st.com/resource/en/application_note/an4187-using-the-crc-peripheral-in-the-stm32-family-stmicroelectronics.pdf)  
 
 Bootloader Design Refrences :  
-[Memfault's excellent Blog 1](https://interrupt.memfault.com/blog/how-to-write-a-bootloader-from-scratch) 
-[Memfault's excellent Blog 1](https://interrupt.memfault.com/blog/device-firmware-update-cookbook)
-[Beningo's Blog](https://www.beningo.com/wp-content/uploads/images/Papers/bootloader_design_for_microcontrollers_in_embedded_systems%20.pdf)
+[Memfault's excellent Blog 1](https://interrupt.memfault.com/blog/how-to-write-a-bootloader-from-scratch)     
+[Memfault's excellent Blog 1](https://interrupt.memfault.com/blog/device-firmware-update-cookbook)  
+[Beningo's Blog](https://www.beningo.com/wp-content/uploads/images/Papers/bootloader_design_for_microcontrollers_in_embedded_systems%20.pdf)   
 
 SRecord Refrences :
-[The official Manual](http://srecord.sourceforge.net/srecord-1.64.pdf)
-[EEV Blog](https://www.eevblog.com/forum/microcontrollers/stm32-hex-file-signing-with-crc/)
-[SourceForge thread](https://sourceforge.net/p/srecord/discussion/248569/thread/b8fac9db76/?limit=25)
+[The official Manual](http://srecord.sourceforge.net/srecord-1.64.pdf)  
+[EEV Blog](https://www.eevblog.com/forum/microcontrollers/stm32-hex-file-signing-with-crc/)  
+[SourceForge thread](https://sourceforge.net/p/srecord/discussion/248569/thread/b8fac9db76/?limit=25)  
 
 
 
