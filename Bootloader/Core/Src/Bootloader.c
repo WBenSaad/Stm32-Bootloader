@@ -18,7 +18,7 @@ typedef   void (*pFunction) (void);
 
 #define   ExpectedCRCValue  			*(uint32_t *) 0x08011FFCUL 		//Where we store the postBuild generated Checksum
 
-#define Max_Buffer_Size		300 
+#define Max_Buffer_Size				300 
 
  __attribute__((section(".noinit"))) volatile uint32_t test ; //Shared Memory between APP and Bootloader
 
@@ -52,49 +52,48 @@ void memory_erase(void){
 void Bootloader_flash(uint32_t* buffer){
     static uint32_t mem_address = App_Adress;
 		
-		int remaining=0;
+    int remaining=0;
 		
     //First Receive the Packet Length
-		HAL_UART_Receive(&huart1,(uint8_t*)&buffer[0],1,HAL_MAX_DELAY);
-		uint8_t packet_length=*(uint8_t *)&buffer[0];
+    HAL_UART_Receive(&huart1,(uint8_t*)&buffer[0],1,HAL_MAX_DELAY);
+    uint8_t packet_length=*(uint8_t *)&buffer[0];
     
     //Now receive the entire Packet
-		HAL_UART_Receive(&huart1,(uint8_t*)buffer2,packet_length,HAL_MAX_DELAY);
+    HAL_UART_Receive(&huart1,(uint8_t*)buffer2,packet_length,HAL_MAX_DELAY);
 		
     
-    uint8_t payload_length= (packet_length - 4) ;			//Basically Data length is size of Packet received minus CRC WORD
-	  uint32_t packet_CRC =*(uint32_t*)(&buffer2[( payload_length / 4 )]);//CRC is the last Word on our packet
+    uint8_t payload_length= (packet_length - 4) ;				//Basically Data length is size of Packet received minus CRC WORD
+    uint32_t packet_CRC =*(uint32_t*)(&buffer2[( payload_length / 4 )]);	//CRC is the last Word on our packet
 		
 		//
-		uint32_t CRCValue=HAL_CRC_Calculate(&hcrc,(uint32_t*)buffer2 ,(payload_length / 4));
+    uint32_t CRCValue=HAL_CRC_Calculate(&hcrc,(uint32_t*)buffer2 ,(payload_length / 4));
 
-		// We calulate the CRC of the received Packet before flashing it and if doesnt match 
+    // We calulate the CRC of the received Packet before flashing it and if doesnt match 
     // the Checksum we have ,we request a resend from the HOST on the PC
-		while(CRCValue!=packet_CRC){
+    while(CRCValue!=packet_CRC){
 			
-			HAL_UART_Transmit(&huart1,(uint8_t*)"0",1,HAL_MAX_DELAY);
-			HAL_UART_Receive(&huart1,(uint8_t*)buffer2,packet_length,HAL_MAX_DELAY);
-			CRCValue=HAL_CRC_Calculate(&hcrc,(uint32_t*)buffer2,(payload_length / 4));
-		}
-			HAL_UART_Transmit(&huart1,(uint8_t*)"1",1,HAL_MAX_DELAY);
+	HAL_UART_Transmit(&huart1,(uint8_t*)"0",1,HAL_MAX_DELAY);
+	HAL_UART_Receive(&huart1,(uint8_t*)buffer2,packet_length,HAL_MAX_DELAY);
+	CRCValue=HAL_CRC_Calculate(&hcrc,(uint32_t*)buffer2,(payload_length / 4));
 		
-			HAL_FLASH_Unlock();
-			
-		// We got the number of words that forms our payload because we will Flash a Word at a time	
-			int numofwords = (payload_length/4)+((payload_length % 4)!=0);
-			
-			while(remaining  < numofwords ){
-			
-			HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD,mem_address,buffer2[remaining]);
-			
-				
-				
-			mem_address += 4;
-			remaining+=1;
-	}
-			
-		 HAL_FLASH_Lock();
+    }
+    HAL_UART_Transmit(&huart1,(uint8_t*)"1",1,HAL_MAX_DELAY);
 		
+    HAL_FLASH_Unlock();
+			
+   // We got the number of words that forms our payload because we will Flash a Word at a time	
+   int numofwords = (payload_length/4)+((payload_length % 4)!=0);
+			
+   while(remaining  < numofwords ){
+			
+  	HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD,mem_address,buffer2[remaining]);
+								
+  	mem_address += 4;
+	remaining+=1;
+	
+   }
+			
+    HAL_FLASH_Lock();
 }
 
 
@@ -163,11 +162,11 @@ int main(void)
         
       while (1)
       {
-    
-		    static int i=0;
+   
+	static int i=0;
         if(i==0){
-		      memory_erase(); //We start by erasing the location of our new app during our first iteration 
-		      i=1;              
+	   memory_erase(); //We start by erasing the location of our new app during our first iteration 
+	   i=1;              
         }
     
         HAL_UART_Receive(&huart1,(uint8_t*)&buffer[0],1,HAL_MAX_DELAY);		
@@ -177,10 +176,10 @@ int main(void)
 				    Bootloader_flash(buffer);
 				    break;
 			    
-          case 0x9:                     //0x9 flashing done
+          		    case 0x9:                     //0x9 flashing done
 				    JumpToMain();
-            break;
-			  }
+            			    break;
+		   }
 	    }	
   }
 	else 
