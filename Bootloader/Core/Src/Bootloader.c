@@ -9,15 +9,14 @@
 typedef   void (*pFunction) (void);
 
 /* Private define ------------------------------------------------------------*/
-#define 	App_Adress			  0x8004000UL
-#define	  Reset_Handler			(App_Adress + 4)
+#define   App_Adress			  	0x8004000UL
+#define	  Reset_Handler				(App_Adress + 4)
+#define   APP_END           			(uint8_t*) 0x8011FFBUL                  //App end address
+#define   ROM_LEN				(uint32_t) (APP_END - App_Adress +1u )  //APP size on flash
+#define   ROM_LEN_WORD				(uint32_t) (ROM_LEN / 4u)               //CRC Calculation process 4bytes per iternation
+                                                                    			//so we get how much Words there are in our App
 
-#define   APP_END           (uint8_t*) 0x8011FFBUL                  //App end address
-#define   ROM_LEN						(uint32_t) (APP_END - App_Adress +1u )  //APP size on flash
-#define   ROM_LEN_WORD			(uint32_t) (ROM_LEN / 4u)               //CRC Calculation process 4bytes per iternation
-                                                                    //so we get how much Words there are in our App
-
-#define   ExpectedCRCValue  *(uint32_t *) 0x08011FFCUL //Where we store the postBuild generated Checksum
+#define   ExpectedCRCValue  			*(uint32_t *) 0x08011FFCUL 		//Where we store the postBuild generated Checksum
 
 #define Max_Buffer_Size		300 
 
